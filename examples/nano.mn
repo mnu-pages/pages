@@ -1,0 +1,33 @@
+.TITLE "nano"
+
+.DIV "DESCRIPTION"
+nano is a simple terminal text editor used on Linux and other Unix-like systems.
+
+It is a good choice when you want to open and edit a file quickly without learning a lot first.
+You can think of it as a basic editor that is easy to start using right away.
+
+.DIV "EXAMPLE"
+nano notes.txt
+
+.DIV "EXPLANATION"
+**nano** opens the file so you can edit it in the terminal.
+
+Here, __nano__ is the editor.
+__notes.txt__ is the file you are opening.
+
+If the file does not exist yet, nano can create it when you save it.
+
+.DIV "EXAMPLE"
+nano myfile.txt
+
+.DIV "EXPLANATION"
+**nano** opens __myfile.txt__ so you can read or edit it.
+
+This is useful when you want to quickly change a small file.
+
+Remember to save your changes before leaving the editor.
+
+.DIV "SUMMARY"
+nano is a simple terminal editor for quick file edits.
+
+Use it when you want something easy to open, edit, and save.

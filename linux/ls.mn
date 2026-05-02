@@ -1,0 +1,42 @@
+.TITLE "ls"
+
+.DIV "DESCRIPTION"
+ls is a tool used to **see the contents** of a folder.
+
+You can think of it like turning on the lights in a room to see what is on the shelves. 
+It helps you **know where you are** and what files you can work with.
+
+.DIV "EXAMPLE"
+ls
+
+.DIV "EXPLANATION"
+**ls** lists the names of files and folders in your current location.
+
+Here, __ls__ is the tool. 
+It gives you a quick overview of what is in the folder so you can **decide what to do next**.
+
+.DIV "EXAMPLE"
+ls -l
+
+.DIV "EXPLANATION"
+**ls -l** displays your files in a **detailed list**.
+
+Here, __-l__ is a flag for __long format__. 
+It shows you more than just names, like __how big a file is__ or __who owns it__.
+
+This is useful when you need to **inspect file details** or check permissions.
+
+.DIV "EXAMPLE"
+ls -a
+
+.DIV "EXPLANATION"
+**ls -a** shows **every file** in the folder, even hidden ones.
+
+Here, __-a__ stands for __all__. 
+In Linux, some files start with a __.__ and are usually kept out of sight.
+
+This is useful when you need to **find settings** or configuration files that are normally hidden.
+
+.DIV "SUMMARY"
+ls is your primary way to **look around** your system.
+Always **use ls** when you enter a new folder to **orient yourself** and see what is available.

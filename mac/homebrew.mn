@@ -1,0 +1,44 @@
+.TITLE "homebrew"
+
+.DIV "DESCRIPTION"
+Homebrew is a tool that lets you **install software** directly from your terminal.
+
+It was created by __Max Howell__ in __2009__.
+You can think of it like an App Store for the command line.
+It manages the **downloading and setup** of tools so you can start using them right away.
+
+.DIV "EXAMPLE"
+brew install wget
+
+.DIV "EXPLANATION"
+**brew install** finds and adds a new tool to your computer.
+
+Here, __brew__ is the name of the tool.
+__install__ is the action that gets the software.
+__wget__ is an example of a tool you might want to get.
+
+This is much faster than searching the web for a download button.
+
+.DIV "EXAMPLE"
+brew update
+
+.DIV "EXPLANATION"
+**brew update** makes sure Homebrew knows about the newest versions of software.
+
+Here, __update__ tells the tool to **check for any changes** or new tools available online.
+
+Think of this like **checking the news** to see what has been updated since you last looked.
+
+.DIV "EXAMPLE"
+brew list
+
+.DIV "EXPLANATION"
+**brew list** shows you everything you have installed using Homebrew.
+
+Here, __list__ is the subcommand that **shows your collection**.
+
+Use this when you want to **see what you already have** or if you forgot the name of a tool.
+
+.DIV "SUMMARY"
+Homebrew keeps your tools organized and easy to manage.
+Make it a habit to run **brew update** before you **install something new** so you always have the latest version.

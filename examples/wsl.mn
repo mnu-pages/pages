@@ -1,0 +1,43 @@
+.TITLE "wsl"
+
+.DIV "DESCRIPTION"
+WSL stands for Windows Subsystem for Linux.
+
+It lets you run a Linux environment on Windows without needing a full virtual machine.
+You can think of it as a way to use Linux tools from inside Windows.
+
+.DIV "EXAMPLE"
+wsl
+
+.DIV "EXPLANATION"
+**wsl** opens your default Linux environment from Windows.
+
+Here, __wsl__ is the tool.
+It starts the Linux shell that is installed on your system.
+
+This is useful when you want to use Linux commands on a Windows machine.
+
+.DIV "EXAMPLE"
+wsl ls
+
+.DIV "EXPLANATION"
+**wsl ls** runs the __ls__ command inside Linux from Windows.
+
+Here, __ls__ is the Linux command being run through WSL.
+
+This is helpful when you want to work with Linux tools without leaving Windows.
+
+.DIV "EXAMPLE"
+wsl --version
+
+.DIV "EXPLANATION"
+**wsl --version** shows the version of WSL installed on your system.
+
+Here, __--version__ is a flag that asks the program to print version details.
+
+Use this when you want to check what WSL you are using.
+
+.DIV "SUMMARY"
+WSL lets Windows users run Linux tools and commands.
+
+It is useful when you need Linux access without switching systems.

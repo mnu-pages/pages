@@ -1,0 +1,45 @@
+.TITLE "winget"
+
+.DIV "DESCRIPTION"
+winget is a tool that lets you **install and update software** using your terminal.
+
+It was created by __Microsoft__ to make managing apps easier.
+You can think of it like a personal assistant for your computer. 
+Instead of searching the web for a download button, you just **ask winget to get it** for you.
+
+.DIV "EXAMPLE"
+winget search vscode
+
+.DIV "EXPLANATION"
+**winget search** looks for the app you want to install.
+
+Here, __winget__ is the name of the tool.
+__search__ is the action that scans the available apps.
+__vscode__ is an example of what you might be looking for.
+
+This helps you **find the exact name** of the software before you download it.
+
+.DIV "EXAMPLE"
+winget install vscode
+
+.DIV "EXPLANATION"
+**winget install** gets the app and sets it up on your computer.
+
+Here, __install__ is the command that **does all the work**.
+
+This is much safer than downloading files from the web, as it **skips the manual setup** windows.
+
+.DIV "EXAMPLE"
+winget upgrade --all
+
+.DIV "EXPLANATION"
+**winget upgrade --all** brings all your apps up to the latest version.
+
+Here, __upgrade__ tells the tool to check for newer versions.
+__--all__ is a flag that tells it to **update everything it finds**.
+
+This is the easiest way to **keep your software current** and running smoothly.
+
+.DIV "SUMMARY"
+winget takes the stress out of managing software on Windows.
+Try running **winget upgrade --all** once a week to **keep your system fresh** and secure.

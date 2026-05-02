@@ -1,0 +1,46 @@
+.TITLE "git"
+
+.DIV "DESCRIPTION"
+Git is a version control system used to track changes in code.
+
+It was created by __Linus Torvalds__ in __2005__.
+You can think of it like a timeline for your project, where each change is saved.
+
+.DIV "EXAMPLE"
+git status
+
+.DIV "EXPLANATION"
+**git status** shows the current state of your project.
+
+Here, __git__ is the tool you're using.
+__status__ is the subcommand that checks changes.
+
+This helps you see what files are modified before doing anything else.
+
+.DIV "EXAMPLE"
+git add file.txt
+
+.DIV "EXPLANATION"
+**git add** prepares a file to be saved.
+
+Here, __git__ is the tool.
+__add__ is the subcommand that includes the file.
+file.txt is the file being added.
+
+This moves the file into staging, which is like a waiting area before saving.
+
+.DIV "EXAMPLE"
+git commit -m "save work"
+
+.DIV "EXPLANATION"
+**git commit** saves the staged changes.
+
+Here, __git__ is the tool.
+__commit__ records the changes.
+__-m__ is a flag used to add a message.
+
+This creates a checkpoint you can come back to later.
+
+.DIV "SUMMARY"
+Git tracks changes and keeps your project history organized.
+Always check your work with git status before committing.
