@@ -1,46 +1,41 @@
 .TITLE "git"
 
 .DIV "DESCRIPTION"
-Git is a version control system used to track changes in code.
+A distributed version control system designed to handle everything from small to very large projects with speed and efficiency. It tracks __changes__ in source code and manages __collaborative workflows__.
 
-It was created by __Linus Torvalds__ in __2005__.
-You can think of it like a timeline for your project, where each change is saved.
+.DIV "TLDR"
+**git init**
+__Creates__ an empty Git __repository__ or reinitializes an existing one.
+> 
 
-.DIV "EXAMPLE"
-git status
+**git add .**
+__Adds__ all modified and new files in the current directory to the __staging area__.
+> __.__ current directory reference
 
-.DIV "EXPLANATION"
-**git status** shows the current state of your project.
+**git commit -m "message"**
+__Records__ changes to the __repository__ with a descriptive message.
+> __-m__ message flag | __"message"__ the commit description
 
-Here, __git__ is the tool you're using.
-__status__ is the subcommand that checks changes.
+**git branch name**
+__Creates__ a new __branch__ with the specified name to isolate features.
+> __name__ the new branch name
 
-This helps you see what files are modified before doing anything else.
+**git checkout branch**
+__Switches__ the current working environment to a different __branch__.
+> __branch__ the target branch name
 
-.DIV "EXAMPLE"
-git add file.txt
-
-.DIV "EXPLANATION"
-**git add** prepares a file to be saved.
-
-Here, __git__ is the tool.
-__add__ is the subcommand that includes the file.
-file.txt is the file being added.
-
-This moves the file into staging, which is like a waiting area before saving.
-
-.DIV "EXAMPLE"
-git commit -m "save work"
-
-.DIV "EXPLANATION"
-**git commit** saves the staged changes.
-
-Here, __git__ is the tool.
-__commit__ records the changes.
-__-m__ is a flag used to add a message.
-
-This creates a checkpoint you can come back to later.
+**git log --oneline**
+__Displays__ a compact __history__ of commits showing only the hash and message.
+> __--oneline__ condensed format flag
 
 .DIV "SUMMARY"
-Git tracks changes and keeps your project history organized.
-Always check your work with git status before committing.
+Regularly using __git status__ alongside __git log --oneline__ provides a clear overview of your project's state. When using __git add .__, ensure your __.gitignore__ file is properly configured to avoid staging unnecessary files.
+
+.DIV "SEE ALSO"
+
+documentation: __https://git-scm.com/doc__
+license: GPL-2.0
+
+.DIV "AUTHOR"
+written by mnu contributors
+

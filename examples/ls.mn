@@ -1,0 +1,42 @@
+.TITLE "ls"
+
+.DIV "DESCRIPTION"
+Lists directory contents. It displays information about files and directories within the current or specified path and is a fundamental tool for __filesystem navigation__.
+
+.DIV "TLDR"
+**ls**
+__Lists__ the names of files and directories in the current path.
+> 
+
+**ls -a**
+__Includes__ hidden files that start with a dot in the output.
+> __-a__ all flag
+
+**ls -l**
+__Displays__ detailed information including permissions, owner, size, and modification date.
+> __-l__ long format flag
+
+**ls -l -h**
+__Shows__ file sizes in human-readable formats such as KB, MB, or GB.
+> __-l__ long format | __-h__ human-readable flag
+
+**ls -t**
+__Sorts__ the list by modification time, showing the newest files first.
+> __-t__ time sort flag
+
+**ls -R**
+__Lists__ directory trees recursively.
+> __-R__ recursive flag
+
+.DIV "SUMMARY"
+Always use the __-h__ flag in combination with __-l__ to make file sizes easier to interpret. Using __ls -l -a__ is a common habit for a complete view of a directory's state.
+
+.DIV "SEE ALSO"
+**cli:cd** **cli:pwd** **cli:stat**
+
+documentation: __https://www.gnu.org/software/coreutils/ls__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributors
+

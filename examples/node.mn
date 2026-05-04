@@ -1,0 +1,38 @@
+.TITLE "node"
+
+.DIV "DESCRIPTION"
+An open-source, cross-platform JavaScript runtime environment that executes code outside a web browser. It is built on Chrome's __V8 engine__ and is primarily used for building scalable __network applications__.
+
+.DIV "TLDR"
+**node file.js**
+__Executes__ a specific JavaScript __file__.
+> __file.js__ the script to run
+
+**node -v**
+__Displays__ the current version of the installed environment.
+> __-v__ version flag
+
+**node -e "code"**
+__Evaluates__ and __runs__ a string of JavaScript __code__ directly from the terminal.
+> __-e__ eval flag | __"code"__ the javascript string
+
+**node --watch file.js**
+__Starts__ a process that __restarts__ automatically when the __file__ changes.
+> __--watch__ restart on change flag | __file.js__ target script
+
+**node --check file.js**
+__Checks__ the __syntax__ of a script without executing it.
+> __--check__ syntax check flag | __file.js__ target script
+
+.DIV "SUMMARY"
+Using the __--watch__ flag during development significantly improves productivity by removing the need to manually restart the process. Always ensure your __node modules__ are up to date to avoid runtime compatibility issues.
+
+.DIV "SEE ALSO"
+**cli:npm** **cli:npx** **cli:corepack**
+
+documentation: __https://nodejs.org/docs__
+license: Custom License (__https://github.com/nodejs/node/blob/main/LICENSE__)
+
+.DIV "AUTHOR"
+written by mnu contributors
+

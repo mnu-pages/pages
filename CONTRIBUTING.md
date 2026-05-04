@@ -1,276 +1,165 @@
-Contributing to MNU Pages
+# Contributing to the pages repository
 
-«Our job is not to make things complex, but to make them simple and understandable.»
+Welcome to the official pages repository of the mnu-pages organization. We are thrilled to have you contribute!
 
-Hey — if you're here, you're helping make CLI tools easier to understand.
-That matters more than you think.
+To ensure every page remains clean, parses at lightning speed in our C-based renderer, and is equally helpful for a beginner as it is for an expert, we enforce a strict formatting layout called the **mnu standard**.
 
-The goal is simple:
-Someone with zero knowledge should read a page once and go,
-“Oh… I get it now.”
+This guide breaks down every minor detail. Please follow it carefully to ensure your Pull Request is merged without friction.
 
----
 
-The idea behind everything here
+## 1. Global Formatting & Syntax Rules
 
-We’re not trying to be:
+Our renderer is designed to be extremely lightweight. Because of this, the parser only understands a specific set of syntax rules.
 
-- encyclopedic
-- overly technical
-- or “funny docs”
+**Valid Formatting Tokens:**
+ * **text** : Double asterisks trigger **bold** styling.
+ * __text__ : Double underscores trigger **underline** styling.
 
-We’re trying to be:
+**Critical Formatting Rules:**
+ * **Renderer Automations:** The renderer automatically styles .TITLE (centers and underlines) and .DIV (bolds). **Do not** add manual formatting tokens to these tags.
+ * **No Nesting or Combining:** You must never combine formatting tokens inside standard text.
+   * **Bad:** **__text__** (Will break the parser)
+   * **Good:** **bold text** and __underlined text__
+ * **Encoding:** All files must be UTF-8.
+ * **File Extension:** Every file must end in .mn (e.g., tar.mn).
 
-- clear
-- calm
-- and actually helpful
 
-If a page is easy to follow and makes sense quickly, it’s doing its job.
+## 2. General Writing Style
 
----
+ * **Keep it active and factual:** Use the present indicative tense. Think of it like a technical dictionary.
+ * **Skip the fluff:** We want to get straight to the point. Eliminate filler words like "simply," "just," or "actually."
 
-Write like you're teaching someone (not documenting)
+**Example 1 (Voice and Tense):**
+ * **Bad:** Create a directory. (Imperative)
+ * **Good:** Creates a directory. (Present Indicative)
 
-Don’t write like:
+**Example 2 (Filler Words):**
+ * **Bad:** Simply lists the actual files easily.
+ * **Good:** Lists the files in the current directory.
 
-«“commit records changes”»
 
-Write like:
+## 3. The Structure of a .mn File
 
-«“commit records the changes you’ve prepared.”»
+Every file is built using specific Divisions (.DIV). They must appear in the exact order listed below.
 
-You’re guiding someone, not labeling things.
+### 3.1. The Title
 
----
+ * Start your file with .TITLE "command"
+ * The command name must be fully lowercase, wrapped in double quotes, and match the actual CLI tool exactly.
+ * *Note:* The renderer automatically places this at the top middle of the screen and applies an underline. Do not format this string manually.
 
-Always assume the reader knows nothing
+**Example:**
+ * **Bad:** **.TITLE "ls"**
+ * **Good:** .TITLE "ls"
 
-Explain everything simply:
+### 3.2. The Description Division
 
-- what the tool is
-- what each part does
+ * Start with .DIV "DESCRIPTION" (The renderer automatically applies bold to the division header).
+ * Explain what the tool does in a formal way. Keep it brief (maximum 5 wrapped lines) and do not use blank lines inside the division.
+ * **Formatting Rules:** * Use the underline highlighter (__text__) strictly for variables, flags, or command names.
+   * Use the bold highlighter (**text**) strictly when a detail is important, critical, or constitutes a warning.
 
-If it feels “too basic”, it’s probably right.
+**Example (Demonstrating __ and **):**
+ * **Bad:** It manages **containers** and is very DANGEROUS.
+ * **Good:** Manages lightweight **containers**. Using the **-f** flag skips all prompts. Use with **extreme caution**.
 
----
+### 3.3. The TLDR Division (The Core Architecture)
 
-What the reader should get
+ * Start with .DIV "TLDR"
+ * Add enough commands to cover 80-90% of the most common use cases.
+ * **Spacing:** Leave exactly one blank line between each command entry.
+ * **The 3-Line Rule:** Every command entry must be exactly 3 lines long.
 
-The reader does NOT need to master the tool.
+**Line 1 (The Action):** The entire command must be wrapped in **bold**. You must decouple flags.
+ * **Bad:** tar -xvf archive.tar
+ * **Good:** **tar -x -v -f archive.tar**
 
-They should:
+**Line 2 (The Intent):** Write a complete sentence explaining the command. You must use __keyword__ (double underscores) to wrap words that directly map to the action, flags, or variables from Line 1. No other formatting is allowed.
+ * **Bad:** Extracts a file.
+ * **Good:** **Extracts** a specific **file**.
 
-- understand what it does
-- know how to use the main commands
-- feel confident trying it
+**Line 3 (The Legend):** Start with >  and define your variables and flags, separated by a |. You must **always** underline the argument or flag itself using double underscores. If your command has no variables, leave a blank > .
+ * **Bad:** > -x extract flag | file the target archive
+ * **Good:** > **-x** extract flag | **file** the target archive
 
-If they can use it after reading → success.
+### 3.4. The Summary Division
 
----
+ * Start with .DIV "SUMMARY"
+ * Provide a helpful tip, a best practice, or a good habit. Maximum 5 wrapped lines, no blank lines inside.
+ * **Formatting Rules:** Same as the Description Division.
+   * Use __text__ to highlight variables, flags, or commands.
+   * Use **text** to highlight important tips, critical concepts, or warnings.
 
-Keep it simple, but not empty
+**Example (Demonstrating __ and **):**
+ * **Good:** Always run **git status** before committing. Deleting files with **rm** is permanent on most systems; proceed with **caution** to avoid losing **critical production data**.
 
-“Short and to the point” means:
+### 3.5. The See Also Division
 
-- no filler
-- no repetition
-- no useless lines
+ * Start with .DIV "SEE ALSO"
+ * Link up to 3 related pages. Every link must be formatted as **cli:command**. Skip this division if there are no related tools.
 
-But still:
+**Example:**
+ * **Bad:** cli:ls cli:pwd
+ * **Good:** **cli:ls** **cli:pwd**
 
-- clear explanation
-- enough context to understand
+### 3.6. External Links (The Spacer)
 
----
+ * Leave exactly one blank line after your SEE ALSO division (or Summary, if skipped).
+ * Documentation URL must use double underscores.
+ * License must use the standard plain text short-name (e.g., MIT, GPL-3.0). If the tool uses a custom license, write Custom License and include the URL to the license if possible.
 
-What “enjoyable” means
+**Example:**
+ * **Good Documentation:** documentation: __https://example.com__
+ * **Good License:** license: MIT
+ * **Good Custom License:** license: Custom License (**https://example.com/license**)
 
-Not jokes or hype.
+### 3.7. The Author Division
 
-It means:
+ * Start with .DIV "AUTHOR" at the very bottom of the file.
+ * Plain text only. No formatting.
+ * **When to use your GitHub Username:** Use this if you want public attribution for your contribution and have an active GitHub account (e.g., written by nstarkdev).
+ * **When to use mnu contributor:** Use this fallback if you prefer to remain anonymous, do not have a GitHub account, or are submitting code on behalf of a larger anonymous group.
 
-- smooth to read
-- easy to follow
-- no confusion
+**Example:**
+ * **GitHub User:** written by nstarkdev
+ * **Anonymous Fallback:** written by mnu contributor
 
----
 
-Where your page should go
+## 4. Local Testing
 
-- "cli/" → general CLI tools (git, tar, grep, docker)
-- "linux/" → Linux-specific commands
-- "windows/" → Windows-specific tools
-- "mac/" → macOS-specific tools
+Before submitting a Pull Request, you should verify how your page renders. You can test your .mn files locally using the official mnu client.
 
-If it works everywhere → use "cli/".
+Run the following command in your terminal:
 
----
+```bash
+mnu run file.mn
+# or
+mnu run path/to/file.mn
+```
 
-How to write a page
+Ensure there are no parsing errors and that the visual output perfectly matches the layout expectations.
 
-We use git as a reference example here to show structure.
-Your actual page should follow the same pattern.
 
----
+## 5. Reference Examples
 
-1. Start with DESCRIPTION
+For complete, real-world examples of files written entirely in the mnu standard, please redirect to the examples/ folder in this repository. We highly recommend copying a file from examples/ to use as a baseline template for your new command.
 
-Explain:
 
-- what it is
-- what it does
-- optional: creator or mental model
+## 6. How to Contribute
 
-Example idea:
+Ready to submit a page? Follow these industry-standard steps:
 
-«“Git is a version control system used to track changes in code.”
-“You can think of it like a timeline for your project.”»
+ 1. **Fork the Repository:** Click the 'Fork' button at the top right of this repository to create your own copy.
+ 2. **Clone your Fork:** Clone the repo to your local machine using git clone.
+ 3. **Create a Branch:** Create a new branch for your command. Use a descriptive name: git checkout -b add-command-name.
+ 4. **Write the Page:** Create command-name.mn in the correct directory, test it locally with mnu run, and follow all rules in this guide.
+ 5. **Commit your Changes:** Commit with a clear, concise message: git commit -m "feat: add mnu page for command-name".
+ 6. **Push and PR:** Push to your fork and open a Pull Request against our main repository.
 
----
 
-2. Choose the right commands
+## 7. AI-Generated Code Policy
 
-Include only fundamental commands:
+AI-generated content is welcome and respectfully accepted in this project. If you use Large Language Models to help draft your .mn pages, we only ask two things:
 
-- 3 to 5 total
-- beginner-focused
-- part of real workflow
-
-Do NOT:
-
-- add advanced commands
-- skip basics
-
----
-
-3. Show real EXAMPLES
-
-Keep them raw:
-
-git commit -m "save work"
-
-No formatting. No fake placeholders.
-
----
-
-4. Explain clearly (like a human)
-
-Start with what it does:
-
-«git commit saves the staged changes.»
-
-Then explain parts:
-
-«Here, git is the tool you're using.
-commit is the action that records changes.
--m lets you add a message.»
-
-Then give insight:
-
-«This creates a checkpoint you can return to later.»
-
----
-
-5. Always include best practices
-
-Commands should not just be explained — they should be used correctly.
-
-Add small practical guidance:
-
-- when to run it
-- why it matters
-- what to do before/after
-
-Example:
-
-- “Run this before committing to check your changes.”
-- “Use this after making changes.”
-
-Avoid:
-
-- random tips
-- unrelated advice
-
----
-
-6. End with SUMMARY
-
-Keep it short:
-
-- restate idea
-- give one useful habit
-
-Example:
-
-«Git tracks changes and manages project history.
-Always check your work with git status before committing.»
-
----
-
-Formatting (minimal)
-
-- "**bold**" → commands, important actions
-- "__underline__" → flags, arguments, key terms
-
-Rules:
-
-- don’t mix formatting
-- don’t overuse it
-- don’t format everything
-- never format examples
-
----
-
-Spacing
-
-- keep it tight
-- no extra blank lines
-- no clutter
-
----
-
-Before submitting
-
-Ask:
-
-- Can a beginner understand this?
-- Can they use the command now?
-- Did I include best practices?
-- Does it read smoothly?
-
----
-
-How to submit your work
-
-We use Pull Requests (PRs) to add new pages.
-If you've never done this before, here is the simple path:
-
-1. **Fork** this project to your own account.
-2. **Create a branch** for your new page (e.g., `git checkout -b add-grep-page`).
-3. **Write your page** in the correct folder using the rules above.
-4. **Commit your work** using our specific format: `<title>(scope): <description>`.
-
-**Allowed Titles:**
-- `add`: for new pages.
-- `fix`: for correcting errors.
-- `refine`: for improving tone or clarity.
-- `meta`: for changes to project files or guidelines.
-
-**Allowed Scopes:**
-- Use the folder name: `cli`, `linux`, `windows`, `mac`.
-- Use `core` for project-wide files (like README or this file).
-
-*Example:* `add(cli): add grep page`
-
-5. **Push your changes** and open a **Pull Request**.
-
-We will review your page, maybe suggest some tweaks to the tone, and then merge it in.
-
----
-
-Final note
-
-You don’t need to teach everything.
-You need to make the basics clear enough to use — and use correctly.
-
-That’s it.
+ 1. Ensure the output strictly adheres to the **mnu standard** detailed above.
+ 2. Provide a thorough human review of the generated content to verify technical accuracy and grammar before submitting your Pull Request.

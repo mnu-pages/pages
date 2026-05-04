@@ -1,43 +1,42 @@
 .TITLE "wsl"
 
 .DIV "DESCRIPTION"
-WSL stands for __Windows Subsystem for Linux__.
+Windows Subsystem for Linux allows developers to run a GNU/Linux environment directly on Windows. It provides a seamless experience for running __command line tools__ and __applications__ without the overhead of a traditional virtual machine.
 
-It lets you run a Linux environment on Windows without needing a full virtual machine.
-You can think of it as a way to use Linux tools from inside Windows.
+.DIV "TLDR"
+**wsl**
+__Starts__ the default Linux distribution in the current terminal.
+> 
 
-.DIV "EXAMPLE"
-wsl
+**wsl --install**
+__Installs__ the default Ubuntu distribution and the necessary __subsystem components__.
+> __--install__ install flag
 
-.DIV "EXPLANATION"
-**wsl** opens your default Linux environment from Windows.
+**wsl --list --online**
+__Displays__ a list of all available Linux __distributions__ that can be installed.
+> __--list__ list flag | __--online__ remote source flag
 
-Here, __wsl__ is the tool.
-It starts the Linux shell that is installed on your system.
+**wsl --distribution name**
+__Runs__ a specific Linux __distribution__ by its name.
+> __--distribution__ distribution flag | __name__ the name of the distro
 
-This is useful when you want to use Linux commands on a Windows machine.
+**wsl --update**
+__Checks__ for and __installs__ updates to the WSL kernel.
+> __--update__ update flag
 
-.DIV "EXAMPLE"
-wsl ls
-
-.DIV "EXPLANATION"
-**wsl ls** runs the __ls__ command inside Linux from Windows.
-
-Here, __ls__ is the Linux command being run through WSL.
-
-This is helpful when you want to work with Linux tools without leaving Windows.
-
-.DIV "EXAMPLE"
-wsl --version
-
-.DIV "EXPLANATION"
-**wsl --version** shows the version of WSL installed on your system.
-
-Here, __--version__ is a flag that asks the program to print version details.
-
-Use this when you want to check what WSL you are using.
+**wsl --shutdown**
+__Terminates__ all running distributions and the WSL 2 __lightweight utility VM__.
+> __--shutdown__ power off flag
 
 .DIV "SUMMARY"
-WSL lets Windows users run Linux tools and commands.
+Always use __wsl --shutdown__ if you notice high memory usage from the Vmmem process. For the best performance and compatibility, ensure you are using __WSL 2__ instead of the legacy version 1.
 
-It is useful when you need Linux access without switching systems.
+.DIV "SEE ALSO"
+**cli:powershell** **cli:ssh** **cli:bash**
+
+documentation: __https://learn.microsoft.com/windows/wsl__
+license: Custom License (__https://github.com/microsoft/WSL/blob/master/LICENSE__)
+
+.DIV "AUTHOR"
+written by mnu contributors
+
