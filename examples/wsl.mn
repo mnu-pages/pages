@@ -1,7 +1,7 @@
 .TITLE "wsl"
 
 .DIV "DESCRIPTION"
-WSL stands for Windows Subsystem for Linux.
+WSL stands for __Windows Subsystem for Linux__.
 
 It lets you run a Linux environment on Windows without needing a full virtual machine.
 You can think of it as a way to use Linux tools from inside Windows.
