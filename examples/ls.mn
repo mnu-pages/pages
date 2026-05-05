@@ -32,7 +32,7 @@ Lists directory trees recursively.
 Always use the __-h__ flag in combination with __-l__ to make file sizes easier to interpret. Using __ls -l -a__ is a common habit for a complete view of a directory's state.
 
 .DIV "SEE ALSO"
-**cli:cd** **cli:pwd** **cli:stat**
+**linux:cd** **linux:pwd** **linux:stat**
 
 documentation: __https://www.gnu.org/software/coreutils/ls__
 license: GPL-3.0
