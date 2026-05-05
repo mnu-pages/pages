@@ -28,7 +28,7 @@ Lists the contents of an archive without extracting them.
 Always decouple your flags (e.g., use __-x -v -f__ instead of __-xvf__) to ensure compatibility with all parsers. Compressing archives with __-z__ (gzip) or __-j__ (bzip2) is a great way to save disk space when sharing large sets of files.
 
 .DIV "SEE ALSO"
-**cli:gzip** **cli:zip** **cli:unzip**
+
 
 documentation: __https://www.gnu.org/software/tar__
 license: GPL-3.0

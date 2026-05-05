@@ -24,7 +24,7 @@ Executes a single command on the remote server and then closes the connection.
 For a more convenient experience, you can use __ssh-copy-id__ to transfer your public key to a server, allowing you to log in without a password. Always protect your private keys and never share them with anyone.
 
 .DIV "SEE ALSO"
-**cli:scp** **cli:ssh-keygen** **cli:ssh-agent**
+**cli:scp**
 
 documentation: __https://www.openssh.com/manual.html__
 license: BSD-3-Clause

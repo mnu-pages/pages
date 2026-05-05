@@ -24,7 +24,7 @@ Uses a specific port to connect to the remote server.
 Note that __scp__ uses an uppercase __-P__ for the port, unlike __ssh__ which uses lowercase. For large or complex transfers that might be interrupted, consider using __rsync__ instead for its ability to resume transfers.
 
 .DIV "SEE ALSO"
-**cli:ssh** **cli:rsync** **cli:sftp**
+**cli:ssh**
 
 documentation: __https://man.openbsd.org/scp.1__
 license: BSD-3-Clause
