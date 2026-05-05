@@ -18,10 +18,10 @@ The **mnu standard** is a combination of three core pillars. Before you start, p
 
 ## 2. Choosing the Right Directory
 
-Place your new `.mn` page in the directory that best fits the tool:
+We follow the **"Source vs. System"** rule to keep the database organized. For a detailed breakdown, see the [**Directory Selection Guide**](contributors/directory_selection.md).
 
-*   `cli/`: General-purpose tools available across multiple systems (e.g., `git`, `docker`, `ffmpeg`).
-*   `linux/`: Commands specific to Linux distributions (e.g., `apt`, `systemctl`).
+*   `cli/`: Universal tools, protocols, and third-party apps (e.g., `git`, `ssh`, `docker`).
+*   `linux/`: Linux-specific tools and core POSIX utilities (e.g., `apt`, `ls`, `sudo`).
 *   `mac/`: Utilities specific to macOS (e.g., `brew`, `pbcopy`).
 *   `windows/`: Tools specific to the Windows environment (e.g., `powershell`, `wsl`).
 *   `examples/`: **Do not add new pages here.** This folder is strictly for reference templates.
