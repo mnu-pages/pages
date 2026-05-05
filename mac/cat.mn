@@ -1,0 +1,42 @@
+.TITLE "cat"
+
+.DIV "DESCRIPTION"
+Concatenates and displays file contents on macOS. This command reads one or
+more files sequentially and writes their contents to standard output. It is
+commonly used to display the contents of small files, concatenate multiple
+files into one, or create new files from standard input.
+
+.DIV "ALIAS"
+**type**
+
+.DIV "TLDR"
+**cat __file.txt__**
+Displays the content of a single __file.txt__ to standard output.
+> __file.txt__: The path to the file to display.
+
+**cat __file1.txt__ __file2.txt__**
+Concatenates and displays the contents of __file1.txt__ and __file2.txt__.
+> __file1.txt__: The path to the first file. | __file2.txt__: The path to the second file.
+
+**cat __file1.txt__ >> __output.txt__**
+Appends the content of __file1.txt__ to __output.txt__.
+> __file1.txt__: The path to the input file. | __output.txt__: The path to the output file.
+
+**cat -n __file.txt__**
+Displays the content of __file.txt__ with line numbers.
+> __-n__: number lines flag | __file.txt__: The path to the file to display.
+
+.DIV "SUMMARY"
+While `cat` is useful for quickly viewing file contents, for larger files,
+`less` or `more` are often preferred as they allow pagination. `cat` is
+frequently used in combination with pipes (`|`) to feed file contents
+as input to other commands.
+
+.DIV "SEE ALSO"
+**mac:less** **mac:grep**
+
+documentation: https://ss64.com/osx/cat.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

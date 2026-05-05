@@ -1,0 +1,41 @@
+.TITLE "df"
+
+.DIV "DESCRIPTION"
+Reports disk space usage on macOS filesystems. This command displays the amount
+of available and used disk space for mounted filesystems. It provides an
+overview of storage utilization, which is essential for __system monitoring__
+and managing disk resources.
+
+.DIV "ALIAS"
+**diskfree**
+
+.DIV "TLDR"
+**df -h**
+Displays disk space usage in human-readable format (e.g., GB, MB).
+> __-h__: human-readable flag
+
+**df -i**
+Displays inode usage (number of used and free inodes) for filesystems.
+> __-i__: inodes flag
+
+**df __/path/to/volume__**
+Displays disk space usage for the filesystem containing __/path/to/volume__.
+> __/path/to/volume__: A path within the target filesystem.
+
+**df -T**
+Includes the filesystem type in the output.
+> __-T__: filesystem type flag
+
+.DIV "SUMMARY"
+`df` is crucial for quickly assessing disk space availability. On macOS,
+you'll typically see filesystems like `APFS` or `devfs`. Combine with `-h`
+for easy-to-read output. For more detailed per-directory usage, use `du`.
+
+.DIV "SEE ALSO"
+**mac:du** **mac:diskutil**
+
+documentation: https://ss64.com/osx/df.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

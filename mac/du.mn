@@ -1,0 +1,41 @@
+.TITLE "du"
+
+.DIV "DESCRIPTION"
+Estimates file space usage on macOS. This command displays the disk usage of
+files and directories within a specified path. It helps in identifying which
+files or folders are consuming the most disk space, making it valuable for
+__disk space management__ and cleanup.
+
+.DIV "ALIAS"
+**diskusage**
+
+.DIV "TLDR"
+**du -h __/path/to/directory__**
+Displays the disk usage of a __/path/to/directory__ in human-readable format.
+> __-h__: human-readable flag | __/path/to/directory__: The path to the directory to inspect.
+
+**du -sh __/path/to/directory__**
+Displays the total size of a __/path/to/directory__ in human-readable format.
+> __-s__: summarize total size flag | __-h__: human-readable flag | __/path/to/directory__: The path to the directory.
+
+**du -a -h**
+Displays disk usage for all files and directories in the current path in human-readable format.
+> __-a__: all files and directories flag | __-h__: human-readable flag
+
+**du -d 1 -h __/path/to/directory__**
+Displays disk usage for __/path/to/directory__ and its immediate subdirectories (depth 1).
+> __-d 1__: depth level 1 flag | __-h__: human-readable flag | __/path/to/directory__: The path to the directory.
+
+.DIV "SUMMARY"
+`du` is particularly useful for tracking down large files or directories
+that are consuming excessive disk space. Combining it with `sort -rh` and
+`head` can help quickly identify the largest offenders (e.g., `du -sh * | sort -rh | head`).
+
+.DIV "SEE ALSO"
+**mac:df** **mac:ls**
+
+documentation: https://ss64.com/osx/du.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

@@ -1,0 +1,45 @@
+.TITLE "rm"
+
+.DIV "DESCRIPTION"
+Removes (deletes) files and directories on macOS. This command permanently
+deletes specified files or directories from the filesystem. It is a powerful
+utility for __filesystem management__, but caution is advised as deleted
+items are not moved to the Trash and cannot be easily recovered.
+
+.DIV "ALIAS"
+**delete**
+
+.DIV "TLDR"
+**rm __file.txt__**
+Removes a specific __file.txt__.
+> __file.txt__: The path to the file to remove.
+
+**rm -i __file.txt__**
+Removes a __file.txt__ with an interactive prompt before deletion.
+> __-i__: interactive flag | __file.txt__: The path to the file to remove.
+
+**rm -f __file.txt__**
+Removes a __file.txt__ forcefully, without prompting for confirmation.
+> __-f__: force flag | __file.txt__: The path to the file to remove.
+
+**rm -r __directory__**
+Recursively removes a __directory__ and all its contents.
+> __-r__: recursive flag | __directory__: The path to the directory to remove.
+
+**rm -rf __directory__**
+Recursively removes a __directory__ and its contents forcefully.
+> __-r__: recursive flag | __-f__: force flag | __directory__: The path to the directory to remove.
+
+.DIV "SUMMARY"
+The `rm -rf` command is extremely dangerous and should be used with extreme
+caution, especially with root privileges, as it can quickly delete critical
+system files. Always double-check your path before executing `rm -rf`.
+
+.DIV "SEE ALSO"
+**mac:mv** **mac:cp**
+
+documentation: https://ss64.com/osx/rm.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

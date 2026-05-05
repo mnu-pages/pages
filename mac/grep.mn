@@ -1,0 +1,46 @@
+.TITLE "grep"
+
+.DIV "DESCRIPTION"
+Searches for patterns in text using regular expressions on macOS. This command
+filters lines from input (files or standard input) that match a specified
+pattern. It is a powerful utility for __text processing__ and finding
+specific information within log files, code, or other text-based data.
+
+.DIV "ALIAS"
+**search**
+
+.DIV "TLDR"
+**grep "__pattern__" __file.txt__**
+Searches for lines containing "__pattern__" in __file.txt__.
+> __pattern__: The regular expression pattern to search for. | __file.txt__: The path to the file to search.
+
+**grep -i "__pattern__" __file.txt__**
+Performs a case-insensitive search for "__pattern__" in __file.txt__.
+> __-i__: ignore case flag | __pattern__: The regular expression pattern. | __file.txt__: The path to the file.
+
+**grep -r "__pattern__" __directory__**
+Recursively searches for "__pattern__" in all files within a __directory__.
+> __-r__: recursive flag | __pattern__: The regular expression pattern. | __directory__: The path to the directory.
+
+**grep -v "__pattern__" __file.txt__**
+Inverts the search, showing lines that do NOT contain "__pattern__" in __file.txt__.
+> __-v__: invert match flag | __pattern__: The regular expression pattern. | __file.txt__: The path to the file.
+
+**grep -c "__pattern__" __file.txt__**
+Counts the number of lines containing "__pattern__" in __file.txt__.
+> __-c__: count flag | __pattern__: The regular expression pattern. | __file.txt__: The path to the file.
+
+.DIV "SUMMARY"
+`grep` is incredibly versatile and often combined with other commands using
+pipes (`|`) to refine search results. Learning basic regular expressions
+significantly enhances its utility. For more advanced text manipulation,
+consider `sed` or `awk`.
+
+.DIV "SEE ALSO"
+**mac:cat** **mac:find**
+
+documentation: https://ss64.com/osx/grep.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

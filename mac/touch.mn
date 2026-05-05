@@ -1,0 +1,41 @@
+.TITLE "touch"
+
+.DIV "DESCRIPTION"
+Updates the access and modification times of files on macOS. If a specified file
+does not exist, `touch` creates an empty new file. This command is commonly
+used to create empty files, or to simply update timestamps without modifying
+file content.
+
+.DIV "ALIAS"
+**createfile**
+
+.DIV "TLDR"
+**touch __file.txt__**
+Creates a new empty __file.txt__ if it does not exist, or updates its timestamps if it does.
+> __file.txt__: The path to the file to create or update.
+
+**touch __file1.txt__ __file2.txt__**
+Creates or updates multiple files (__file1.txt__, __file2.txt__) simultaneously.
+> __file1.txt__: The path to the first file. | __file2.txt__: The path to the second file.
+
+**touch -a __file.txt__**
+Updates only the access time of __file.txt__.
+> __-a__: access time only flag | __file.txt__: The path to the file.
+
+**touch -m __file.txt__**
+Updates only the modification time of __file.txt__.
+> __-m__: modification time only flag | __file.txt__: The path to the file.
+
+.DIV "SUMMARY"
+`touch` is a simple yet effective command for file management. It is often
+used in scripting to trigger build processes that rely on file modification
+times, or to quickly create placeholder files.
+
+.DIV "SEE ALSO"
+**mac:ls** **mac:mkdir**
+
+documentation: https://ss64.com/osx/touch.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

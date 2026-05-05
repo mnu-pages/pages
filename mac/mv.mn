@@ -1,0 +1,41 @@
+.TITLE "mv"
+
+.DIV "DESCRIPTION"
+Moves or renames files and directories on macOS. This command relocates one or
+more files or directories from a source to a destination. It can also be used
+to rename a file or directory within the same location. It is a fundamental
+utility for __filesystem management__.
+
+.DIV "ALIAS"
+**move**
+
+.DIV "TLDR"
+**mv __source_file__ __destination_file__**
+Moves a __source_file__ to a __destination_file__. If the destination exists, it renames the file.
+> __source_file__: The path to the file to move. | __destination_file__: The new path or name for the file.
+
+**mv __old_name__ __new_name__**
+Renames a file or directory from __old_name__ to __new_name__ within the same location.
+> __old_name__: The current name of the file or directory. | __new_name__: The new name for the file or directory.
+
+**mv __file1__ __file2__ __directory__**
+Moves multiple files (__file1__, __file2__) into a specified __directory__.
+> __file1__: First file to move. | __file2__: Second file to move. | __directory__: The destination directory.
+
+**mv -v __source__ __destination__**
+Moves a __source__ to a __destination__, showing verbose output.
+> __-v__: verbose flag | __source__: The path to the file or directory to move. | __destination__: The new path or name for the file or directory.
+
+.DIV "SUMMARY"
+`mv` is a powerful command that can be destructive if used carelessly, as it
+overwrites existing files at the destination without warning by default.
+Use `mv -i` for interactive prompts before overwriting.
+
+.DIV "SEE ALSO"
+**mac:cp** **mac:rm**
+
+documentation: https://ss64.com/osx/mv.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

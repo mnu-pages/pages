@@ -1,0 +1,48 @@
+.TITLE "ls"
+
+.DIV "DESCRIPTION"
+Lists directory contents on macOS. It displays information about files and directories
+within the current or specified path, and is a fundamental tool for __filesystem navigation__.
+On macOS, it has specific display options related to HFS+ (now APFS) and Finder attributes.
+
+.DIV "ALIAS"
+**dir**
+
+.DIV "TLDR"
+**ls**
+Lists the names of files and directories in the current path.
+> 
+
+**ls -a**
+Includes hidden files that start with a dot in the output.
+> __-a__: all flag, includes entries starting with '.'
+
+**ls -l**
+Displays detailed information including permissions, owner, size, and modification date.
+> __-l__: long format flag
+
+**ls -l -h**
+Shows file sizes in human-readable formats such as KB, MB, or GB.
+> __-l__: long format | __-h__: human-readable flag
+
+**ls -G**
+Enables colorized output on macOS, making it easier to distinguish file types.
+> __-G__: colorized output flag
+
+**ls -O**
+Displays file flags (e.g., hidden, compressed, archived).
+> __-O__: display file flags
+
+.DIV "SUMMARY"
+On macOS, `ls -G` is commonly aliased to `ls` for better readability. Using
+`ls -l -h` provides a clear overview of file details. Be aware that Finder's
+view settings might differ from `ls` output, especially concerning hidden files.
+
+.DIV "SEE ALSO"
+**mac:open** **mac:find**
+
+documentation: https://ss64.com/osx/ls.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

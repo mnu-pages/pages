@@ -1,0 +1,41 @@
+.TITLE "cp"
+
+.DIV "DESCRIPTION"
+Copies files and directories on macOS. This command creates duplicates of files or
+directories from a source to a destination. It is a fundamental utility for
+__filesystem management__ and has options for preserving attributes,
+recursive copying, and handling symbolic links.
+
+.DIV "ALIAS"
+**copy**
+
+.DIV "TLDR"
+**cp __source_file__ __destination_file__**
+Copies a __source_file__ to a __destination_file__.
+> __source_file__: The path to the file to copy. | __destination_file__: The path for the new copied file.
+
+**cp -R __source_directory__ __destination_directory__**
+Recursively copies a __source_directory__ and its contents to a __destination_directory__.
+> __-R__: recursive flag | __source_directory__: The path to the directory to copy. | __destination_directory__: The path for the new copied directory.
+
+**cp -v __source_file__ __destination_directory__**
+Copies a __source_file__ to a __destination_directory__, showing verbose output.
+> __-v__: verbose flag | __source_file__: The path to the file to copy. | __destination_directory__: The path to the destination directory.
+
+**cp -p __source_file__ __destination_file__**
+Copies a __source_file__ to a __destination_file__, preserving attributes (modes, ownership, timestamps).
+> __-p__: preserve attributes flag | __source_file__: The path to the file to copy. | __destination_file__: The path for the new copied file.
+
+.DIV "SUMMARY"
+`cp` is a core command for managing files. When copying directories, always use the
+`-R` (recursive) option. Be cautious when specifying destinations to avoid overwriting
+files unexpectedly. Use `cp -i` for interactive prompts before overwriting.
+
+.DIV "SEE ALSO"
+**mac:mv** **mac:rm**
+
+documentation: https://ss64.com/osx/cp.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor
