@@ -24,7 +24,7 @@ Displays the current IP routing table for the system.
 The __ip__ command is part of the __iproute2__ package. It is highly recommended to use __ip__ instead of __ifconfig__, as it provides a more consistent interface and supports advanced networking features like policy routing.
 
 .DIV "SEE ALSO"
-**linux:ping** **linux:netstat** **linux:ss**
+
 
 documentation: __https://man7.org/linux/man-pages/man8/ip.8.html__
 license: GPL-2.0
