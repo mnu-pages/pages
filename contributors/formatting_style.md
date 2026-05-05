@@ -98,11 +98,17 @@ Every `.mn` file must follow this exact order of sections, built using specific 
 ### F. The See Also Division (`.DIV "SEE ALSO"`)
 
 -   Start with `.DIV "SEE ALSO"`.
--   Link up to 3 related pages. Every link must be formatted as `**cli:command**`. Skip this division if there are no related tools.
+-   **Link Guidelines:**
+    -   **Category Homogeneity:** You must only link to pages within the same category (e.g., a `linux:` page should only link to other `linux:` pages).
+    -   **Reciprocity:** If you link to a page, ensure that the target page also links back to yours when relevant, creating a helpful loop for the user.
+    -   **Limit:** Maximum of 3 links allowed.
+    -   **Relevance:** Only link to tools that are directly related to the current command's workflow.
+    -   **Formatting:** Every link must be formatted as `**category:command**`.
+    -   **Skip:** If no relevant tools exist within the same category, omit this division entirely.
 
     **Example:**
-     * **Bad:** `cli:ls cli:pwd`
-     * **Good:** `**cli:ls** **cli:pwd**`
+     * **Bad (Mixed categories):** `**linux:ls** **cli:git**`
+     * **Good (Homogeneous):** `**linux:ls** **linux:pwd** **linux:cd**`
 
 ### G. Metadata (External Links and License)
 
