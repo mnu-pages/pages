@@ -16,7 +16,7 @@ Clears the screen but preserves the scrollback buffer on some terminals.
 Using __clear__ does not delete your command history; it simply scrolls the visible area down or resets the display. Many users prefer the keyboard shortcut __Ctrl+L__ as a faster alternative to typing the command.
 
 .DIV "SEE ALSO"
-**linux:reset** **linux:tput** **linux:history**
+
 
 documentation: __https://man7.org/linux/man-pages/man1/clear.1.html__
 license: MIT

@@ -16,7 +16,7 @@ Displays the group memberships for a specific user.
 Group memberships determine what files and devices you can access. If you have recently been added to a new group, you may need to __log out and back in__ for the changes to take effect in your current session.
 
 .DIV "SEE ALSO"
-**linux:id** **linux:usermod** **linux:chgrp**
+
 
 documentation: __https://www.gnu.org/software/coreutils/groups__
 license: GPL-3.0
