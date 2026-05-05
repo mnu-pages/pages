@@ -20,7 +20,7 @@ Continuously displays memory usage every few seconds.
 Using __free -h__ is the standard way to check if your system is running low on RAM. Note that the "available" column is usually a better indicator of free memory than the "free" column, as it includes memory currently used for caching that can be reclaimed.
 
 .DIV "SEE ALSO"
-**linux:top** **linux:vmstat** **linux:lsblk**
+**linux:top** **linux:lsblk**
 
 documentation: __https://man7.org/linux/man-pages/man1/free.1.html__
 license: GPL-2.0
