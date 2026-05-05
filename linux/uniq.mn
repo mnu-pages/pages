@@ -24,7 +24,7 @@ Displays only the lines that are unique and do not have any duplicates.
 The __uniq__ command only detects duplicate lines that are __adjacent__. therefore, you must almost always run __sort__ on your data before piping it into __uniq__ to ensure all duplicates are correctly identified.
 
 .DIV "SEE ALSO"
-**linux:sort** **linux:grep** **linux:comm**
+**linux:sort** **linux:grep**
 
 documentation: __https://www.gnu.org/software/coreutils/uniq__
 license: GPL-3.0

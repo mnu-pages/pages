@@ -28,7 +28,7 @@ Displays the line numbers along with the matching text.
 Using __grep__ in combination with other commands via pipes (|) allows for powerful data processing. For more complex searches, consider using the __-E__ flag to enable extended regular expressions.
 
 .DIV "SEE ALSO"
-**linux:find**
+**linux:find** **linux:sort** **linux:uniq**
 
 documentation: __https://www.gnu.org/software/grep__
 license: GPL-3.0
