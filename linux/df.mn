@@ -1,0 +1,33 @@
+.TITLE "df"
+
+.DIV "DESCRIPTION"
+Reports the amount of disk space used and available on filesystems. It provides a high-level overview of __storage consumption__ across all mounted drives.
+
+.DIV "TLDR"
+**df**
+Displays the disk usage for all currently mounted filesystems.
+> 
+
+**df -h**
+Displays disk usage in human-readable formats like GB or MB.
+> __-h__ human-readable flag
+
+**df -T**
+Includes the filesystem type (e.g., ext4, xfs) in the output.
+> __-T__ type flag
+
+**df path**
+Displays the disk usage for the filesystem containing a specific path.
+> __path__ a file or directory location
+
+.DIV "SUMMARY"
+Using __df -h__ is the most common way to quickly check if a disk is becoming full. It is important to remember that __df__ shows filesystem-level usage, which may differ slightly from individual directory measurements.
+
+.DIV "SEE ALSO"
+**cli:du** **cli:lsblk** **cli:mount**
+
+documentation: __https://www.gnu.org/software/coreutils/df__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

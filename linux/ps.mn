@@ -1,0 +1,37 @@
+.TITLE "ps"
+
+.DIV "DESCRIPTION"
+Displays information about the currently running processes. It provides a __snapshot__ of system activity, showing which programs are active and how many __resources__ they are using.
+
+.DIV "TLDR"
+**ps**
+Displays a list of processes running in the current terminal session.
+> 
+
+**ps -e**
+Displays every process currently running on the entire system.
+> __-e__ every process flag
+
+**ps -f**
+Displays a full-format listing, including the parent process ID and start time.
+> __-f__ full format flag
+
+**ps -u user**
+Displays all processes owned by a specific user.
+> __-u__ user flag | __user__ the target username
+
+**ps -e --forest**
+Displays processes in a tree-like hierarchy to show parent-child relationships.
+> __-e__ every process | __--forest__ tree display flag
+
+.DIV "SUMMARY"
+Combining flags like __ps -e -f__ is the most common way to get a comprehensive view of all system activity. If you need to find a specific process, pipe the output to grep (e.g., __ps -e -f | grep "name"__).
+
+.DIV "SEE ALSO"
+**cli:top** **cli:htop** **cli:kill**
+
+documentation: __https://man7.org/linux/man-pages/man1/ps.1.html__
+license: GPL-2.0
+
+.DIV "AUTHOR"
+written by mnu contributor

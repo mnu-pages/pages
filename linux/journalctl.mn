@@ -1,0 +1,37 @@
+.TITLE "journalctl"
+
+.DIV "DESCRIPTION"
+Queries and displays logs from the systemd journal. It is the centralized tool for __inspecting system logs__, service errors, and kernel messages in modern Linux.
+
+.DIV "TLDR"
+**journalctl**
+Displays the entire system journal, starting from the oldest entry.
+> 
+
+**journalctl -u service**
+Displays logs only for a specific systemd service.
+> __-u__ unit flag | __service__ the name of the service
+
+**journalctl -f**
+Displays new log entries in real-time as they are added to the journal.
+> __-f__ follow flag
+
+**journalctl -b**
+Displays only the logs from the current system boot.
+> __-b__ boot flag
+
+**journalctl -p err**
+Filters the logs to show only entries with a priority of error or higher.
+> __-p__ priority flag | __err__ error level
+
+.DIV "SUMMARY"
+The journal is stored in a binary format, so you must use __journalctl__ to read it. Combining __-u__ with __-f__ is the most effective way to debug a service that is currently failing or behaving unexpectedly.
+
+.DIV "SEE ALSO"
+**cli:systemctl** **cli:dmesg** **cli:tail**
+
+documentation: __https://www.freedesktop.org/software/systemd/man/journalctl.html__
+license: LGPL-2.1
+
+.DIV "AUTHOR"
+written by mnu contributor

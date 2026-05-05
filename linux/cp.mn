@@ -1,0 +1,37 @@
+.TITLE "cp"
+
+.DIV "DESCRIPTION"
+Copies files and directories from one location to another. It is used to create __backups__ or move data across the __filesystem__.
+
+.DIV "TLDR"
+**cp source destination**
+Copies a specific file to a new location or with a new name.
+> __source__ the original file | __destination__ the target path
+
+**cp -r folder destination**
+Copies an entire directory and all of its contents recursively.
+> __-r__ recursive flag | __folder__ source directory | __destination__ target path
+
+**cp -i source destination**
+Prompts for confirmation before overwriting an existing file.
+> __-i__ interactive flag | __source__ the original file | __destination__ target path
+
+**cp -p source destination**
+Preserves the original file attributes such as permissions and timestamps.
+> __-p__ preserve flag | __source__ original file | __destination__ target path
+
+**cp -u source destination**
+Only copies the file if the source is newer than the destination.
+> __-u__ update flag | __source__ original file | __destination__ target path
+
+.DIV "SUMMARY"
+Using the __-p__ flag is a best practice when creating backups to ensure metadata is kept intact. For large transfers, the __-v__ flag helps you monitor the progress of the copy operation.
+
+.DIV "SEE ALSO"
+**cli:mv** **cli:rm** **cli:rsync**
+
+documentation: __https://www.gnu.org/software/coreutils/cp__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

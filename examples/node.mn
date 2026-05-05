@@ -5,23 +5,23 @@ An open-source, cross-platform JavaScript runtime environment that executes code
 
 .DIV "TLDR"
 **node file.js**
-__Executes__ a specific JavaScript __file__.
+Executes a specific JavaScript file.
 > __file.js__ the script to run
 
 **node -v**
-__Displays__ the current version of the installed environment.
+Displays the current version of the installed environment.
 > __-v__ version flag
 
 **node -e "code"**
-__Evaluates__ and __runs__ a string of JavaScript __code__ directly from the terminal.
+Evaluates and runs a string of JavaScript code directly from the terminal.
 > __-e__ eval flag | __"code"__ the javascript string
 
 **node --watch file.js**
-__Starts__ a process that __restarts__ automatically when the __file__ changes.
+Starts a process that restarts automatically when the file changes.
 > __--watch__ restart on change flag | __file.js__ target script
 
 **node --check file.js**
-__Checks__ the __syntax__ of a script without executing it.
+Checks the syntax of a script without executing it.
 > __--check__ syntax check flag | __file.js__ target script
 
 .DIV "SUMMARY"

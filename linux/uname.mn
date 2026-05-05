@@ -1,0 +1,33 @@
+.TITLE "uname"
+
+.DIV "DESCRIPTION"
+Prints detailed information about the system and the Linux kernel. it helps you identify the __architecture__, __kernel version__, and __operating system__ type.
+
+.DIV "TLDR"
+**uname**
+Displays the name of the operating system kernel (e.g., Linux).
+> 
+
+**uname -a**
+Displays all available system information in a single line.
+> __-a__ all information flag
+
+**uname -r**
+Displays the current kernel release version.
+> __-r__ kernel release flag
+
+**uname -m**
+Displays the machine hardware architecture (e.g., x86_64).
+> __-m__ machine architecture flag
+
+.DIV "SUMMARY"
+Using __uname -a__ is a standard first step when troubleshooting system compatibility issues. It provides the essential context needed to download the correct drivers or software packages for your specific hardware and kernel.
+
+.DIV "SEE ALSO"
+**cli:hostnamectl** **cli:lsb_release** **cli:uptime**
+
+documentation: __https://www.gnu.org/software/coreutils/uname__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

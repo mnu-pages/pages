@@ -1,0 +1,29 @@
+.TITLE "head"
+
+.DIV "DESCRIPTION"
+Displays the beginning of a file or piped data. By default, it shows the __first 10 lines__, making it useful for quickly inspecting the structure or headers of a file.
+
+.DIV "TLDR"
+**head file**
+Displays the first 10 lines of the specified file.
+> __file__ the target file
+
+**head -n number file**
+Displays a custom number of lines from the start of the file.
+> __-n__ line count flag | __number__ how many lines to show | __file__ target file
+
+**head -c bytes file**
+Displays the first specific number of bytes from the file.
+> __-c__ byte count flag | __bytes__ how many bytes to show | __file__ target file
+
+.DIV "SUMMARY"
+Using __head__ is a fast way to verify you are working with the correct file without loading its entire content. Combining it with __grep__ or __sort__ can help you isolate the most relevant data at the top of a list.
+
+.DIV "SEE ALSO"
+**cli:tail** **cli:cat** **cli:sed**
+
+documentation: __https://www.gnu.org/software/coreutils/head__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

@@ -1,0 +1,37 @@
+.TITLE "rm"
+
+.DIV "DESCRIPTION"
+Removes files or directories from the filesystem. It is a powerful tool that should be used with __caution__ as deletions are typically __permanent__.
+
+.DIV "TLDR"
+**rm file**
+Removes a specific file from the current directory.
+> __file__ the name of the file
+
+**rm -r folder**
+Removes a directory and all of its contents recursively.
+> __-r__ recursive flag | __folder__ the target directory
+
+**rm -f file**
+Forcefully removes a file without prompting for confirmation.
+> __-f__ force flag | __file__ the name of the file
+
+**rm -i file**
+Prompts for confirmation before removing each file.
+> __-i__ interactive flag | __file__ the name of the file
+
+**rm -v file**
+Displays a message for every file that is removed.
+> __-v__ verbose flag | __file__ the name of the file
+
+.DIV "SUMMARY"
+Always double-check your path before using __rm -r -f__, as it can delete large amounts of data without warning. Using the __-i__ flag is a good habit when working with critical production files.
+
+.DIV "SEE ALSO"
+**cli:rmdir** **cli:mv** **cli:shred**
+
+documentation: __https://www.gnu.org/software/coreutils/rm__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

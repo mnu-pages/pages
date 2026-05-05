@@ -1,0 +1,33 @@
+.TITLE "chown"
+
+.DIV "DESCRIPTION"
+Changes the user and group ownership of files and directories. It is a critical tool for __system administration__ and managing file access security.
+
+.DIV "TLDR"
+**chown user file**
+Changes the owner of a file to the specified user.
+> __user__ the new owner | __file__ the target file
+
+**chown user:group file**
+Changes both the owner and the group of a file simultaneously.
+> __user:group__ new owner and group | __file__ the target file
+
+**chown :group file**
+Changes only the group ownership of a file.
+> __:group__ the new group | __file__ the target file
+
+**chown -R user folder**
+Recursively changes the ownership of a directory and all its contents.
+> __-R__ recursive flag | __user__ the new owner | __folder__ target directory
+
+.DIV "SUMMARY"
+You typically need __root privileges__ (using __sudo__) to change file ownership. The __user:group__ syntax is the most efficient way to fully reassign a file's security context in a single command.
+
+.DIV "SEE ALSO"
+**cli:chmod** **cli:chgrp** **cli:ls**
+
+documentation: __https://www.gnu.org/software/coreutils/chown__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

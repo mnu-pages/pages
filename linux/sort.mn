@@ -1,0 +1,33 @@
+.TITLE "sort"
+
+.DIV "DESCRIPTION"
+Sorts lines of text in files or piped data. It can arrange data __alphabetically__, __numerically__, or in __reverse order__, making it easier to analyze large lists.
+
+.DIV "TLDR"
+**sort file**
+Sorts the lines of a file alphabetically and displays the result.
+> __file__ the target file
+
+**sort -r file**
+Sorts the lines in reverse (descending) order.
+> __-r__ reverse flag | __file__ the target file
+
+**sort -n file**
+Sorts the lines numerically instead of alphabetically.
+> __-n__ numeric sort flag | __file__ the target file
+
+**sort -u file**
+Sorts the lines and removes any duplicate entries from the output.
+> __-u__ unique flag | __file__ the target file
+
+.DIV "SUMMARY"
+Combining __sort__ with __uniq__ is a powerful way to process data logs. For files with multiple columns, you can use the __-k__ flag to specify which column should be used as the primary sorting key.
+
+.DIV "SEE ALSO"
+**cli:uniq** **cli:grep** **cli:comm**
+
+documentation: __https://www.gnu.org/software/coreutils/sort__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

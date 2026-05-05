@@ -1,0 +1,33 @@
+.TITLE "chmod"
+
+.DIV "DESCRIPTION"
+Changes the access permissions of files and directories. It manages who can __read__, __write__, or __execute__ a file using either symbolic or octal modes.
+
+.DIV "TLDR"
+**chmod mode file**
+Applies specific permissions to a file using numeric or symbolic modes.
+> __mode__ numeric (e.g., 755) or symbolic (e.g., +x) | __file__ target file
+
+**chmod +x file**
+Makes a file executable for the current user, group, and others.
+> __+x__ execute permission
+
+**chmod 644 file**
+Sets permissions so the owner can read/write, while others can only read.
+> __644__ octal mode (rw-r--r--) | __file__ target file
+
+**chmod -R mode folder**
+Changes permissions for a directory and all its contents recursively.
+> __-R__ recursive flag | __mode__ permission mode | __folder__ target directory
+
+.DIV "SUMMARY"
+Using octal modes (like __755__) is often faster for setting exact permissions, while symbolic modes (like __+x__) are better for making quick adjustments. Always use __-R__ with caution to avoid accidentally locking yourself out of critical directories.
+
+.DIV "SEE ALSO"
+**cli:chown** **cli:ls** **cli:umask**
+
+documentation: __https://www.gnu.org/software/coreutils/chmod__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

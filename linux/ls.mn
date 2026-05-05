@@ -1,42 +1,37 @@
 .TITLE "ls"
 
 .DIV "DESCRIPTION"
-ls is a tool used to **see the contents** of a folder.
+Lists directory contents. It is the primary tool for __orienting__ yourself within the filesystem by displaying the files and folders available in a given path.
 
-You can think of it like turning on the lights in a room to see what is on the shelves. 
-It helps you **know where you are** and what files you can work with.
+.DIV "TLDR"
+**ls**
+Displays the names of files and directories in the current path.
+> 
 
-.DIV "EXAMPLE"
-ls
+**ls -l**
+Displays files in a detailed list format.
+> __-l__ long format flag
 
-.DIV "EXPLANATION"
-**ls** lists the names of files and folders in your current location.
+**ls -a**
+Shows all files, including hidden ones that start with a dot.
+> __-a__ all flag
 
-Here, __ls__ is the tool. 
-It gives you a quick overview of what is in the folder so you can **decide what to do next**.
+**ls -h -l**
+Displays file sizes in human-readable formats like KB or MB.
+> __-h__ human-readable flag | __-l__ long format flag
 
-.DIV "EXAMPLE"
-ls -l
-
-.DIV "EXPLANATION"
-**ls -l** displays your files in a **detailed list**.
-
-Here, __-l__ is a flag for __long format__. 
-It shows you more than just names, like __how big a file is__ or __who owns it__.
-
-This is useful when you need to **inspect file details** or check permissions.
-
-.DIV "EXAMPLE"
-ls -a
-
-.DIV "EXPLANATION"
-**ls -a** shows **every file** in the folder, even hidden ones.
-
-Here, __-a__ stands for __all__. 
-In Linux, some files start with a __.__ and are usually kept out of sight.
-
-This is useful when you need to **find settings** or configuration files that are normally hidden.
+**ls -t -l**
+Sorts the list of files by their last modification time.
+> __-t__ time sort flag | __-l__ long format flag
 
 .DIV "SUMMARY"
-ls is your primary way to **look around** your system.
-Always **use ls** when you enter a new folder to **orient yourself** and see what is available.
+Using __ls -l -h__ is often the best way to quickly check file sizes and permissions. For a clean overview of large directories, use __ls__ without flags to minimize terminal clutter.
+
+.DIV "SEE ALSO"
+**cli:cd** **cli:pwd** **cli:stat**
+
+documentation: __https://www.gnu.org/software/coreutils/ls__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

@@ -1,0 +1,33 @@
+.TITLE "mkdir"
+
+.DIV "DESCRIPTION"
+Creates one or more directories. It allows for the creation of __folder structures__ and can set specific __permissions__ during the creation process.
+
+.DIV "TLDR"
+**mkdir name**
+Creates a new directory with the specified name in the current path.
+> __name__ the new directory name
+
+**mkdir -p path/to/folder**
+Creates a directory along with any missing parent directories.
+> __-p__ parents flag | __path/to/folder__ the nested directory path
+
+**mkdir -m mode name**
+Creates a directory with specific octal permissions.
+> __-m__ mode flag | __mode__ numeric permissions | __name__ directory name
+
+**mkdir -v name**
+Displays a message for every directory created.
+> __-v__ verbose flag | __name__ directory name
+
+.DIV "SUMMARY"
+The __-p__ flag is highly recommended for scripts to avoid errors if a directory already exists. Using __mkdir -m__ ensures a directory is created with the correct security context from the start.
+
+.DIV "SEE ALSO"
+**cli:rmdir** **cli:ls** **cli:chmod**
+
+documentation: __https://www.gnu.org/software/coreutils/mkdir__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

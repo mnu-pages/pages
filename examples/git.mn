@@ -5,27 +5,27 @@ A distributed version control system designed to handle everything from small to
 
 .DIV "TLDR"
 **git init**
-__Creates__ an empty Git __repository__ or reinitializes an existing one.
+Creates an empty Git repository or reinitializes an existing one.
 > 
 
 **git add .**
-__Adds__ all modified and new files in the current directory to the __staging area__.
+Adds all modified and new files in the current directory to the staging area.
 > __.__ current directory reference
 
 **git commit -m "message"**
-__Records__ changes to the __repository__ with a descriptive message.
+Records changes to the repository with a descriptive message.
 > __-m__ message flag | __"message"__ the commit description
 
 **git branch name**
-__Creates__ a new __branch__ with the specified name to isolate features.
+Creates a new branch with the specified name to isolate features.
 > __name__ the new branch name
 
 **git checkout branch**
-__Switches__ the current working environment to a different __branch__.
+Switches the current working environment to a different branch.
 > __branch__ the target branch name
 
 **git log --oneline**
-__Displays__ a compact __history__ of commits showing only the hash and message.
+Displays a compact history of commits showing only the hash and message.
 > __--oneline__ condensed format flag
 
 .DIV "SUMMARY"

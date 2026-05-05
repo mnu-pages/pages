@@ -5,27 +5,27 @@ Windows Subsystem for Linux allows developers to run a GNU/Linux environment dir
 
 .DIV "TLDR"
 **wsl**
-__Starts__ the default Linux distribution in the current terminal.
+Starts the default Linux distribution in the current terminal.
 > 
 
 **wsl --install**
-__Installs__ the default Ubuntu distribution and the necessary __subsystem components__.
+Installs the default Ubuntu distribution and the necessary subsystem components.
 > __--install__ install flag
 
 **wsl --list --online**
-__Displays__ a list of all available Linux __distributions__ that can be installed.
+Displays a list of all available Linux distributions that can be installed.
 > __--list__ list flag | __--online__ remote source flag
 
 **wsl --distribution name**
-__Runs__ a specific Linux __distribution__ by its name.
+Runs a specific Linux distribution by its name.
 > __--distribution__ distribution flag | __name__ the name of the distro
 
 **wsl --update**
-__Checks__ for and __installs__ updates to the WSL kernel.
+Checks for and installs updates to the WSL kernel.
 > __--update__ update flag
 
 **wsl --shutdown**
-__Terminates__ all running distributions and the WSL 2 __lightweight utility VM__.
+Terminates all running distributions and the WSL 2 lightweight utility VM.
 > __--shutdown__ power off flag
 
 .DIV "SUMMARY"

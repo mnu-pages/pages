@@ -1,0 +1,33 @@
+.TITLE "mount"
+
+.DIV "DESCRIPTION"
+Attaches a filesystem found on a device to the main filesystem tree. It allows you to __access storage__ from external drives, partitions, or network locations.
+
+.DIV "TLDR"
+**mount**
+Displays a list of all currently mounted filesystems and their locations.
+> 
+
+**mount device destination**
+Attaches a specific device or partition to a directory in the filesystem.
+> __device__ source (e.g., /dev/sdb1) | __destination__ target directory
+
+**mount -t type device destination**
+Mounts a filesystem while explicitly specifying its type (e.g., ext4, ntfs).
+> __-t__ type flag | __type__ filesystem type | __device__ source | __destination__ target
+
+**mount -a**
+Mounts all filesystems listed in the configuration file (/etc/fstab).
+> __-a__ all flag
+
+.DIV "SUMMARY"
+You typically need __root privileges__ to mount devices. After you are finished with an external drive, always use __umount__ to safely detach it and prevent data corruption.
+
+.DIV "SEE ALSO"
+**cli:umount** **cli:lsblk** **cli:fdisk**
+
+documentation: __https://man7.org/linux/man-pages/man8/mount.8.html__
+license: GPL-2.0
+
+.DIV "AUTHOR"
+written by mnu contributor

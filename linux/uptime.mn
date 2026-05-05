@@ -1,0 +1,29 @@
+.TITLE "uptime"
+
+.DIV "DESCRIPTION"
+Shows how long the system has been running. it also provides the __current time__, the number of logged-in users, and the __system load averages__.
+
+.DIV "TLDR"
+**uptime**
+Displays the current time, uptime duration, user count, and load averages.
+> 
+
+**uptime -p**
+Displays the uptime in a pretty, easy-to-read format (e.g., "up 2 hours, 30 minutes").
+> __-p__ pretty flag
+
+**uptime -s**
+Displays the exact date and time when the system was last started.
+> __-s__ since flag
+
+.DIV "SUMMARY"
+The load averages show the system demand over the last 1, 5, and 15 minutes. High load averages relative to the number of CPU cores in your system may indicate that the machine is overloaded and experiencing performance bottlenecks.
+
+.DIV "SEE ALSO"
+**cli:top** **cli:w** **cli:who**
+
+documentation: __https://man7.org/linux/man-pages/man1/uptime.1.html__
+license: GPL-2.0
+
+.DIV "AUTHOR"
+written by mnu contributor

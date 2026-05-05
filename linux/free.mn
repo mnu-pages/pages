@@ -1,0 +1,29 @@
+.TITLE "free"
+
+.DIV "DESCRIPTION"
+Displays the amount of free and used physical and swap memory in the system. It provides a quick __overview of RAM__ consumption and available resources.
+
+.DIV "TLDR"
+**free**
+Displays memory usage in kilobytes by default.
+> 
+
+**free -h**
+Displays memory usage in human-readable formats like GB or MB.
+> __-h__ human-readable flag
+
+**free -s number**
+Continuously displays memory usage every few seconds.
+> __-s__ seconds flag | __number__ the interval duration
+
+.DIV "SUMMARY"
+Using __free -h__ is the standard way to check if your system is running low on RAM. Note that the "available" column is usually a better indicator of free memory than the "free" column, as it includes memory currently used for caching that can be reclaimed.
+
+.DIV "SEE ALSO"
+**cli:top** **cli:vmstat** **cli:lsblk**
+
+documentation: __https://man7.org/linux/man-pages/man1/free.1.html__
+license: GPL-2.0
+
+.DIV "AUTHOR"
+written by mnu contributor

@@ -1,0 +1,33 @@
+.TITLE "kill"
+
+.DIV "DESCRIPTION"
+Sends a signal to a process, usually to __terminate__ it. It is used to stop unresponsive programs or manage background tasks by their __Process ID (PID)__.
+
+.DIV "TLDR"
+**kill pid**
+Sends the default termination signal (TERM) to a process.
+> __pid__ the Process ID of the target
+
+**kill -9 pid**
+Forcefully kills a process immediately, preventing it from performing any cleanup.
+> __-9__ kill signal flag | __pid__ the Process ID
+
+**kill -l**
+Lists all available signals that can be sent to a process.
+> __-l__ list signals flag
+
+**killall name**
+Kills all processes that match a specific program name instead of using a PID.
+> __name__ the name of the program to stop
+
+.DIV "SUMMARY"
+Always try a standard __kill__ first, as it allows the program to save data and close correctly. Use __kill -9__ only as a last resort for programs that are completely frozen and unresponsive to normal signals.
+
+.DIV "SEE ALSO"
+**cli:ps** **cli:top** **cli:pkill**
+
+documentation: __https://man7.org/linux/man-pages/man1/kill.1.html__
+license: GPL-2.0
+
+.DIV "AUTHOR"
+written by mnu contributor

@@ -1,0 +1,37 @@
+.TITLE "du"
+
+.DIV "DESCRIPTION"
+Estimates file and directory space usage. It is used to identify which __folders__ or __files__ are consuming the most space on your disk.
+
+.DIV "TLDR"
+**du path**
+Displays the space usage for a directory and all its subdirectories.
+> __path__ the target directory
+
+**du -h path**
+Displays the space usage in human-readable formats like GB or MB.
+> __-h__ human-readable flag | __path__ the target directory
+
+**du -s -h path**
+Displays only a summary of the total size for a specific path.
+> __-s__ summary flag | __-h__ human-readable flag | __path__ target path
+
+**du -a -h path**
+Includes individual files in the output instead of just directories.
+> __-a__ all files flag | __-h__ human-readable flag | __path__ target path
+
+**du -h --max-depth=1 path**
+Shows the size of immediate subdirectories without showing every nested folder.
+> __-h__ human-readable flag | __--max-depth=1__ depth limit | __path__ target
+
+.DIV "SUMMARY"
+Combining __du -s -h__ with a wildcard (e.g., __du -s -h *__) is an excellent way to see the size of everything in your current folder. This tool is essential for cleaning up storage and finding "space hogs."
+
+.DIV "SEE ALSO"
+**cli:df** **cli:ls** **cli:ncdu**
+
+documentation: __https://www.gnu.org/software/coreutils/du__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

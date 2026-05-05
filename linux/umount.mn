@@ -1,0 +1,29 @@
+.TITLE "umount"
+
+.DIV "DESCRIPTION"
+Detaches a mounted filesystem from the directory hierarchy. it ensures that all __pending data__ is written to the disk before the device is safely removed.
+
+.DIV "TLDR"
+**umount path**
+Unmounts the filesystem attached to a specific directory or device.
+> __path__ the mount point or device name
+
+**umount -l path**
+Performs a lazy unmount, detaching the filesystem as soon as it is no longer busy.
+> __-l__ lazy flag | __path__ the mount point
+
+**umount -f path**
+Forcefully unmounts a filesystem, which is useful for unreachable network drives.
+> __-f__ force flag | __path__ the mount point
+
+.DIV "SUMMARY"
+If you receive a "device is busy" error, it means a program or shell is currently using a file on that drive. You must close those programs or navigate out of the directory before you can successfully run __umount__.
+
+.DIV "SEE ALSO"
+**cli:mount** **cli:lsof** **cli:fuser**
+
+documentation: __https://man7.org/linux/man-pages/man8/umount.8.html__
+license: GPL-2.0
+
+.DIV "AUTHOR"
+written by mnu contributor

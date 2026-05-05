@@ -5,34 +5,34 @@ The missing package manager for macOS. It installs the __packages__ you need tha
 
 .DIV "TLDR"
 **brew install formula**
-__Installs__ a specific package or __formula__.
+Installs a specific package or formula.
 > __install__ installation command | __formula__ name of the package
 
 **brew uninstall formula**
-__Removes__ an installed __formula__ from the system.
+Removes an installed formula from the system.
 > __uninstall__ removal command | __formula__ name of the package
 
 **brew update**
-__Fetches__ the newest version of __Homebrew__ and all formulae from GitHub.
+Fetches the newest version of Homebrew and all formulae from GitHub.
 > __update__ sync command
 
 **brew upgrade**
-__Installs__ newer versions of all currently installed __packages__.
+Installs newer versions of all currently installed packages.
 > __upgrade__ version update command
 
 **brew list**
-__Lists__ all the formulae that are currently __installed__ on the system.
+Lists all the formulae that are currently installed on the system.
 > __list__ display command
 
 **brew doctor**
-__Checks__ your system for potential __issues__ and provides suggestions for fixes.
+Checks your system for potential issues and provides suggestions for fixes.
 > __doctor__ diagnostic command
 
 .DIV "SUMMARY"
 Regularly running __brew cleanup__ is a good habit to remove old versions of installed formulae and free up disk space. Always run __brew doctor__ if you encounter unexpected errors during installation.
 
 .DIV "SEE ALSO"
-**cli:brew-cask** **cli:git** **cli:ruby**
+**cli:git** **cli:ruby**
 
 documentation: __https://docs.brew.sh__
 license: BSD 2-Clause

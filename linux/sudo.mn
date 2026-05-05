@@ -1,0 +1,33 @@
+.TITLE "sudo"
+
+.DIV "DESCRIPTION"
+Allows a permitted user to execute a command as the __superuser__ or another user. It is the standard way to perform __administrative tasks__ securely.
+
+.DIV "TLDR"
+**sudo command**
+Executes a specific command with administrative (root) privileges.
+> __command__ the tool to run
+
+**sudo -u user command**
+Runs a command as a specific user instead of the root user.
+> __-u__ user flag | __user__ the target username | __command__ tool to run
+
+**sudo -i**
+Opens an interactive login shell with root privileges.
+> __-i__ interactive login flag
+
+**sudo -l**
+Lists the permissions and commands allowed for the current user.
+> __-l__ list permissions flag
+
+.DIV "SUMMARY"
+Using __sudo__ is safer than logging in as root because it maintains an audit trail of administrative actions. Always verify the command you are running, as mistakes made with __sudo__ can have system-wide consequences.
+
+.DIV "SEE ALSO"
+**cli:su** **cli:visudo** **cli:whoami**
+
+documentation: __https://www.sudo.ws/man/1.8.15/sudo.man.html__
+license: ISC
+
+.DIV "AUTHOR"
+written by mnu contributor

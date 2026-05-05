@@ -5,27 +5,27 @@ Lists directory contents. It displays information about files and directories wi
 
 .DIV "TLDR"
 **ls**
-__Lists__ the names of files and directories in the current path.
+Lists the names of files and directories in the current path.
 > 
 
 **ls -a**
-__Includes__ hidden files that start with a dot in the output.
+Includes hidden files that start with a dot in the output.
 > __-a__ all flag
 
 **ls -l**
-__Displays__ detailed information including permissions, owner, size, and modification date.
+Displays detailed information including permissions, owner, size, and modification date.
 > __-l__ long format flag
 
 **ls -l -h**
-__Shows__ file sizes in human-readable formats such as KB, MB, or GB.
+Shows file sizes in human-readable formats such as KB, MB, or GB.
 > __-l__ long format | __-h__ human-readable flag
 
 **ls -t**
-__Sorts__ the list by modification time, showing the newest files first.
+Sorts the list by modification time, showing the newest files first.
 > __-t__ time sort flag
 
 **ls -R**
-__Lists__ directory trees recursively.
+Lists directory trees recursively.
 > __-R__ recursive flag
 
 .DIV "SUMMARY"

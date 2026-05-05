@@ -1,0 +1,29 @@
+.TITLE "ln"
+
+.DIV "DESCRIPTION"
+Creates links between files. It allows you to create __symbolic links__ (shortcuts) or __hard links__ that point to the same data on the disk.
+
+.DIV "TLDR"
+**ln -s target link_name**
+Creates a symbolic link that points to a target file or directory.
+> __-s__ symbolic flag | __target__ original item | __link_name__ the shortcut
+
+**ln target link_name**
+Creates a hard link to a file, sharing the same inode on the filesystem.
+> __target__ original file | __link_name__ the new link
+
+**ln -s -f target link_name**
+Forcefully creates or updates a symbolic link, overwriting existing files.
+> __-s__ symbolic flag | __-f__ force flag | __target__ original | __link_name__ link
+
+.DIV "SUMMARY"
+Symbolic links are the most common type of link and can span across different filesystems. Hard links are more restrictive as they can only point to files within the same filesystem and cannot point to directories.
+
+.DIV "SEE ALSO"
+**cli:ls** **cli:rm** **cli:readlink**
+
+documentation: __https://www.gnu.org/software/coreutils/ln__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

@@ -1,0 +1,37 @@
+.TITLE "grep"
+
+.DIV "DESCRIPTION"
+Searches for specific __patterns__ within files using regular expressions. It is an essential tool for __filtering__ data and finding information in large text files.
+
+.DIV "TLDR"
+**grep "pattern" file**
+Searches for a specific string or pattern inside a file.
+> __"pattern"__ the search term | __file__ the target file
+
+**grep -i "pattern" file**
+Performs a search while ignoring whether characters are uppercase or lowercase.
+> __-i__ ignore case flag | __"pattern"__ the search term
+
+**grep -v "pattern" file**
+Displays only the lines that do not match the specified pattern.
+> __-v__ invert match flag | __"pattern"__ the search term
+
+**grep -r "pattern" folder**
+Searches for a pattern recursively within all files in a directory.
+> __-r__ recursive flag | __"pattern"__ search term | __folder__ directory path
+
+**grep -n "pattern" file**
+Displays the line numbers along with the matching text.
+> __-n__ line number flag | __"pattern"__ search term
+
+.DIV "SUMMARY"
+Using __grep__ in combination with other commands via pipes (|) allows for powerful data processing. For more complex searches, consider using the __-E__ flag to enable extended regular expressions.
+
+.DIV "SEE ALSO"
+**cli:sed** **cli:awk** **cli:find**
+
+documentation: __https://www.gnu.org/software/grep__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

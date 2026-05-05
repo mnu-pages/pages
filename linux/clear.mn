@@ -1,0 +1,25 @@
+.TITLE "clear"
+
+.DIV "DESCRIPTION"
+Clears the terminal screen. it is used to __remove clutter__ and reset the visual state of your terminal window for a clean workspace.
+
+.DIV "TLDR"
+**clear**
+Clears all previous output from the terminal display.
+> 
+
+**clear -x**
+Clears the screen but preserves the scrollback buffer on some terminals.
+> __-x__ exclude scrollback flag
+
+.DIV "SUMMARY"
+Using __clear__ does not delete your command history; it simply scrolls the visible area down or resets the display. Many users prefer the keyboard shortcut __Ctrl+L__ as a faster alternative to typing the command.
+
+.DIV "SEE ALSO"
+**cli:reset** **cli:tput** **cli:history**
+
+documentation: __https://man7.org/linux/man-pages/man1/clear.1.html__
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

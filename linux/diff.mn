@@ -1,0 +1,33 @@
+.TITLE "diff"
+
+.DIV "DESCRIPTION"
+Compares two files line by line and displays the __differences__ between them. It is an essential tool for __code review__ and tracking changes in configuration files.
+
+.DIV "TLDR"
+**diff file1 file2**
+Displays the lines that are different between two files.
+> __file1__ first file | __file2__ second file
+
+**diff -u file1 file2**
+Displays the differences in a unified format, which is easier for humans to read.
+> __-u__ unified format flag | __file1__ first file | __file2__ second file
+
+**diff -r folder1 folder2**
+Recursively compares the contents of two directories.
+> __-r__ recursive flag | __folder1__ first directory | __folder2__ second directory
+
+**diff -i file1 file2**
+Ignores case differences when comparing the contents of the files.
+> __-i__ ignore case flag | __file1__ first file | __file2__ second file
+
+.DIV "SUMMARY"
+The unified format (__-u__) is the standard format used for creating patches. Using __diff__ helps you quickly identify exactly what has changed between two versions of a file before committing or applying updates.
+
+.DIV "SEE ALSO"
+**cli:patch** **cli:cmp** **cli:comm**
+
+documentation: __https://www.gnu.org/software/diffutils/diff__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

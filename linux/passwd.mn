@@ -1,0 +1,33 @@
+.TITLE "passwd"
+
+.DIV "DESCRIPTION"
+Changes the password for a user account. It is the standard tool for __managing authentication__ and maintaining system security.
+
+.DIV "TLDR"
+**passwd**
+Prompts the current user to change their own login password.
+> 
+
+**sudo passwd user**
+Allows a superuser to change the password for a specific user account.
+> __user__ the target username
+
+**passwd -d user**
+Removes the password for a user, effectively disabling the password requirement.
+> __-d__ delete password flag | __user__ the target username
+
+**passwd -l user**
+Locks a user account, preventing them from logging in.
+> __-l__ lock account flag | __user__ the target username
+
+.DIV "SUMMARY"
+For security reasons, the characters you type while entering a password will not be displayed on the screen. Always choose a __strong password__ with a mix of letters, numbers, and symbols to protect your account.
+
+.DIV "SEE ALSO"
+**cli:useradd** **cli:usermod** **cli:shadow**
+
+documentation: __https://man7.org/linux/man-pages/man1/passwd.1.html__
+license: BSD-3-Clause
+
+.DIV "AUTHOR"
+written by mnu contributor

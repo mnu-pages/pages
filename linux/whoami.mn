@@ -1,0 +1,21 @@
+.TITLE "whoami"
+
+.DIV "DESCRIPTION"
+Displays the username associated with the current effective user ID. It is used to __verify your identity__ within the shell environment.
+
+.DIV "TLDR"
+**whoami**
+Prints the name of the user currently logged into the terminal.
+> 
+
+.DIV "SUMMARY"
+This command is particularly useful when you have switched users using __su__ or __sudo__ and need to confirm which account is active. It is a simpler alternative to running __id -u -n__.
+
+.DIV "SEE ALSO"
+**cli:id** **cli:who** **cli:w**
+
+documentation: __https://www.gnu.org/software/coreutils/whoami__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

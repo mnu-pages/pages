@@ -1,0 +1,33 @@
+.TITLE "tail"
+
+.DIV "DESCRIPTION"
+Displays the end of a file or piped data. By default, it shows the __last 10 lines__, which is ideal for monitoring logs or checking the most recent entries in a file.
+
+.DIV "TLDR"
+**tail file**
+Displays the last 10 lines of the specified file.
+> __file__ the target file
+
+**tail -n number file**
+Displays a specific number of lines from the end of the file.
+> __-n__ line count flag | __number__ how many lines to show | __file__ target file
+
+**tail -f file**
+Keeps the file open and displays new lines as they are added in real-time.
+> __-f__ follow flag | __file__ the target file
+
+**tail -c bytes file**
+Displays the last specific number of bytes from the file.
+> __-c__ byte count flag | __bytes__ how many bytes to show | __file__ target file
+
+.DIV "SUMMARY"
+The __tail -f__ command is an essential tool for system administrators to monitor live log files. Combining __tail__ with __grep__ allows you to filter for specific events as they occur in a log.
+
+.DIV "SEE ALSO"
+**cli:head** **cli:cat** **cli:less**
+
+documentation: __https://www.gnu.org/software/coreutils/tail__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

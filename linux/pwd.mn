@@ -1,0 +1,25 @@
+.TITLE "pwd"
+
+.DIV "DESCRIPTION"
+Prints the full absolute path of the current working directory. It helps users __orient__ themselves within the filesystem.
+
+.DIV "TLDR"
+**pwd**
+Displays the full path of the directory you are currently in.
+> 
+
+**pwd -P**
+Displays the physical directory path, resolving any symbolic links.
+> __-P__ physical flag
+
+.DIV "SUMMARY"
+While __pwd__ usually shows the logical path, using __pwd -P__ is essential when you need to know the actual location of a symlinked directory on the disk.
+
+.DIV "SEE ALSO"
+**cli:cd** **cli:ls** **cli:stat**
+
+documentation: __https://www.gnu.org/software/coreutils/pwd__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

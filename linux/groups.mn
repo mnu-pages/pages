@@ -1,0 +1,25 @@
+.TITLE "groups"
+
+.DIV "DESCRIPTION"
+Displays the names of the groups that a user belongs to. It is used to __verify permissions__ and access rights associated with different group memberships.
+
+.DIV "TLDR"
+**groups**
+Displays the group memberships for the current user.
+> 
+
+**groups user**
+Displays the group memberships for a specific user.
+> __user__ the target username
+
+.DIV "SUMMARY"
+Group memberships determine what files and devices you can access. If you have recently been added to a new group, you may need to __log out and back in__ for the changes to take effect in your current session.
+
+.DIV "SEE ALSO"
+**cli:id** **cli:usermod** **cli:chgrp**
+
+documentation: __https://www.gnu.org/software/coreutils/groups__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

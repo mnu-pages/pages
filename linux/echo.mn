@@ -1,0 +1,33 @@
+.TITLE "echo"
+
+.DIV "DESCRIPTION"
+Displays a line of text or the value of a variable in the terminal. It is commonly used in __shell scripts__ to provide feedback or create simple files.
+
+.DIV "TLDR"
+**echo "message"**
+Displays a specific string of text in the terminal window.
+> __"message"__ the text to display
+
+**echo $variable**
+Displays the current value of an environment or shell variable.
+> __$variable__ the name of the variable
+
+**echo -e "line1\nline2"**
+Enables the interpretation of backslash escapes like newlines (\n) or tabs (\t).
+> __-e__ enable escapes flag | __"line1\nline2"__ text with escapes
+
+**echo -n "message"**
+Displays text without appending a newline character at the end.
+> __-n__ no newline flag
+
+.DIV "SUMMARY"
+Using __echo__ with redirection (e.g., __echo "text" > file__) is a quick way to write content to a file. It is a fundamental tool for debugging scripts and verifying that variables are correctly set.
+
+.DIV "SEE ALSO"
+**cli:printf** **cli:cat** **cli:read**
+
+documentation: __https://www.gnu.org/software/coreutils/echo__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

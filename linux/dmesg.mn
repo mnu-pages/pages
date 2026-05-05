@@ -1,0 +1,33 @@
+.TITLE "dmesg"
+
+.DIV "DESCRIPTION"
+Prints the message buffer of the Linux kernel. It is primarily used to __diagnose hardware__ issues, driver problems, and boot sequence messages.
+
+.DIV "TLDR"
+**dmesg**
+Displays all messages currently stored in the kernel ring buffer.
+> 
+
+**dmesg -H**
+Displays kernel messages in a human-friendly format with colors and a pager.
+> __-H__ human-friendly flag
+
+**dmesg -w**
+Waits for new kernel messages and displays them as they appear in real-time.
+> __-w__ follow flag
+
+**dmesg -l level**
+Filters the output to show only messages with a specific log level (e.g., err, warn).
+> __-l__ level flag | __level__ message priority level
+
+.DIV "SUMMARY"
+If you plug in a new USB device or experience a hardware failure, __dmesg__ is the first place you should look for error messages. It provides a direct window into how the kernel is interacting with your physical hardware.
+
+.DIV "SEE ALSO"
+**cli:journalctl** **cli:lsblk** **cli:lspci**
+
+documentation: __https://man7.org/linux/man-pages/man1/dmesg.1.html__
+license: GPL-2.0
+
+.DIV "AUTHOR"
+written by mnu contributor

@@ -1,0 +1,37 @@
+.TITLE "find"
+
+.DIV "DESCRIPTION"
+Searches for files and directories in a directory hierarchy based on various __criteria__. It can find items by __name__, __size__, __type__, or __time__.
+
+.DIV "TLDR"
+**find path -name "pattern"**
+Searches for files matching a specific name pattern within a path.
+> __path__ search location | __-name__ name flag | __"pattern"__ search term
+
+**find path -type type**
+Filters the search results by file type, such as directories or regular files.
+> __path__ location | __-type__ type flag | __type__ f (file) or d (directory)
+
+**find path -size +value**
+Finds files that are larger than a specific size.
+> __path__ location | __-size__ size flag | __+value__ size (e.g., +100M)
+
+**find path -mtime -days**
+Searches for files modified within a specific number of days.
+> __path__ location | __-mtime__ modification time flag | __-days__ day count
+
+**find path -name "pattern" -delete**
+Finds and immediately removes files that match the criteria.
+> __path__ location | __-delete__ deletion flag | __"pattern"__ search term
+
+.DIV "SUMMARY"
+The __find__ command is extremely versatile; you can chain multiple criteria together to perform complex searches. Always run your search without __-delete__ first to verify the results before performing a mass deletion.
+
+.DIV "SEE ALSO"
+**cli:grep** **cli:locate** **cli:xargs**
+
+documentation: __https://www.gnu.org/software/findutils/find__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

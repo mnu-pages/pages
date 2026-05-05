@@ -1,0 +1,41 @@
+.TITLE "systemctl"
+
+.DIV "DESCRIPTION"
+Controls the systemd system and service manager. It is the modern way to __start__, __stop__, and __manage__ background services on most Linux distributions.
+
+.DIV "TLDR"
+**systemctl start service**
+Starts a specific background service immediately.
+> __start__ subcommand | __service__ the name of the service
+
+**systemctl stop service**
+Stops a currently running background service.
+> __stop__ subcommand | __service__ the name of the service
+
+**systemctl restart service**
+Stops and then immediately starts a service, often used to apply configuration changes.
+> __restart__ subcommand | __service__ the name of the service
+
+**systemctl status service**
+Displays the current state and recent log entries for a specific service.
+> __status__ subcommand | __service__ the name of the service
+
+**systemctl enable service**
+Configures a service to start automatically whenever the system boots up.
+> __enable__ subcommand | __service__ the name of the service
+
+**systemctl disable service**
+Prevents a service from starting automatically during the boot process.
+> __disable__ subcommand | __service__ the name of the service
+
+.DIV "SUMMARY"
+Managing services usually requires __root privileges__ via __sudo__. If a service fails to start, use __systemctl status__ or __journalctl -u service__ to inspect the error messages and diagnose the issue.
+
+.DIV "SEE ALSO"
+**cli:journalctl** **cli:service** **cli:chkconfig**
+
+documentation: __https://www.freedesktop.org/software/systemd/man/systemctl.html__
+license: LGPL-2.1
+
+.DIV "AUTHOR"
+written by mnu contributor

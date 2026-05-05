@@ -1,0 +1,33 @@
+.TITLE "cat"
+
+.DIV "DESCRIPTION"
+Concatenates and displays the content of files. It is primarily used to __read__ small files or __combine__ multiple files into one.
+
+.DIV "TLDR"
+**cat file**
+Displays the entire content of a file in the terminal.
+> __file__ the target file
+
+**cat file1 file2**
+Combines and displays the contents of multiple files in sequence.
+> __file1__ first file | __file2__ second file
+
+**cat -n file**
+Displays the content of a file with line numbers.
+> __-n__ number lines flag | __file__ the target file
+
+**cat -s file**
+Suppresses multiple consecutive blank lines into a single blank line.
+> __-s__ squeeze flag | __file__ the target file
+
+.DIV "SUMMARY"
+While __cat__ is convenient for reading files, for larger files, consider using __less__ to avoid cluttering your terminal. You can also use __cat__ with redirection (>) to quickly create or overwrite files with new content.
+
+.DIV "SEE ALSO"
+**cli:less** **cli:tail** **cli:head**
+
+documentation: __https://www.gnu.org/software/coreutils/cat__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

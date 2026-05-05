@@ -1,0 +1,33 @@
+.TITLE "wc"
+
+.DIV "DESCRIPTION"
+Counts the number of __lines__, __words__, and __bytes__ in a file or piped input. It is a simple but effective tool for analyzing the size and complexity of text data.
+
+.DIV "TLDR"
+**wc file**
+Displays the count of lines, words, and bytes for a specific file.
+> __file__ the target file
+
+**wc -l file**
+Displays only the total number of lines in a file.
+> __-l__ line count flag | __file__ the target file
+
+**wc -w file**
+Displays only the total number of words in a file.
+> __-w__ word count flag | __file__ the target file
+
+**wc -c file**
+Displays only the total number of bytes (size) of a file.
+> __-c__ byte count flag | __file__ the target file
+
+.DIV "SUMMARY"
+Using __wc -l__ is a popular way to count the number of items in a list by piping the output of another command (e.g., __ls | wc -l__). It provides a quick numeric summary without needing to read the entire file.
+
+.DIV "SEE ALSO"
+**cli:du** **cli:ls** **cli:grep**
+
+documentation: __https://www.gnu.org/software/coreutils/wc__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

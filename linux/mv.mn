@@ -1,0 +1,37 @@
+.TITLE "mv"
+
+.DIV "DESCRIPTION"
+Moves or renames files and directories. It is the standard way to reorganize __files__ and change their __names__ within the filesystem.
+
+.DIV "TLDR"
+**mv source destination**
+Moves a file or directory to a new location or renames it.
+> __source__ the original file | __destination__ the target path
+
+**mv -i source destination**
+Prompts for confirmation before overwriting an existing file.
+> __-i__ interactive flag | __source__ the original file | __destination__ target path
+
+**mv -n source destination**
+Prevents overwriting an existing file at the destination.
+> __-n__ no clobber flag | __source__ original file | __destination__ target path
+
+**mv -u source destination**
+Only moves the file if the source is newer than the destination.
+> __-u__ update flag | __source__ original file | __destination__ target path
+
+**mv -v source destination**
+Displays a message for every file that is moved or renamed.
+> __-v__ verbose flag | __source__ original file | __destination__ target path
+
+.DIV "SUMMARY"
+Renaming a file is simply a __move__ operation within the same directory. To protect against accidental data loss, consider using the __-n__ flag when moving files into a folder that may already contain files with the same name.
+
+.DIV "SEE ALSO"
+**cli:cp** **cli:rm** **cli:rename**
+
+documentation: __https://www.gnu.org/software/coreutils/mv__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

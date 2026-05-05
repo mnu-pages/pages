@@ -1,0 +1,33 @@
+.TITLE "touch"
+
+.DIV "DESCRIPTION"
+Creates an empty file or updates the access and modification times of an existing file. It is the quickest way to __initialize__ a new file in the filesystem.
+
+.DIV "TLDR"
+**touch file**
+Creates a new empty file if it does not already exist.
+> __file__ the target filename
+
+**touch -a file**
+Changes only the access time of an existing file to the current time.
+> __-a__ access time flag | __file__ the target file
+
+**touch -m file**
+Changes only the modification time of an existing file.
+> __-m__ modification time flag | __file__ the target file
+
+**touch -t timestamp file**
+Sets the access and modification times to a specific date and time.
+> __-t__ timestamp flag | __timestamp__ format (CCYYMMDDhhmm)
+
+.DIV "SUMMARY"
+While __touch__ is often used to create files, its primary purpose is managing timestamps. This is useful for scripts or build systems that rely on file modification times to determine which actions to take.
+
+.DIV "SEE ALSO"
+**cli:mkdir** **cli:rm** **cli:stat**
+
+documentation: __https://www.gnu.org/software/coreutils/touch__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

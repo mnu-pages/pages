@@ -1,0 +1,33 @@
+.TITLE "cd"
+
+.DIV "DESCRIPTION"
+Changes the current shell working directory. It is the primary tool for __navigating__ through the filesystem hierarchy and switching between folders.
+
+.DIV "TLDR"
+**cd path**
+Changes the current directory to the specified path.
+> __path__ the target directory
+
+**cd ..**
+Moves up one level in the directory tree to the parent folder.
+> 
+
+**cd**
+Returns to the home directory of the current user.
+> 
+
+**cd -**
+Returns to the previously occupied directory.
+> 
+
+.DIV "SUMMARY"
+Using __cd -__ is an efficient way to toggle between two deeply nested folders. If you encounter permissions issues, ensure you have __execute__ permissions for the target directory.
+
+.DIV "SEE ALSO"
+**cli:pwd** **cli:ls** **cli:pushd**
+
+documentation: __https://www.gnu.org/software/bash/manual/html_node/Bourne-Shell-Builtins.html__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

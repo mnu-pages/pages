@@ -1,0 +1,41 @@
+.TITLE "apt"
+
+.DIV "DESCRIPTION"
+Manages software packages on Debian-based Linux distributions. It is the primary tool for __installing__, __updating__, and __removing__ applications from the system.
+
+.DIV "TLDR"
+**apt update**
+Updates the local list of available packages from the repositories.
+> __update__ the update subcommand
+
+**apt upgrade**
+Installs the newest versions of all packages currently installed on the system.
+> __upgrade__ the upgrade subcommand
+
+**apt install package**
+Downloads and installs a specific software package and its dependencies.
+> __install__ subcommand | __package__ the name of the software
+
+**apt remove package**
+Removes an installed software package while keeping its configuration files.
+> __remove__ subcommand | __package__ the name of the software
+
+**apt purge package**
+Removes a package and deletes all of its configuration files.
+> __purge__ subcommand | __package__ the name of the software
+
+**apt search keyword**
+Searches for a specific keyword in the names and descriptions of available packages.
+> __search__ subcommand | __keyword__ the term to search for
+
+.DIV "SUMMARY"
+You must run most __apt__ commands with __sudo__ to have the necessary permissions for system-wide changes. It is a good habit to run __apt update__ before performing any installations or upgrades to ensure you are getting the latest versions.
+
+.DIV "SEE ALSO"
+**cli:dpkg** **cli:apt-cache** **cli:apt-get**
+
+documentation: __https://manpages.debian.org/stable/apt/apt.8.en.html__
+license: GPL-2.0
+
+.DIV "AUTHOR"
+written by mnu contributor

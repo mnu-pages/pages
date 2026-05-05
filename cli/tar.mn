@@ -1,0 +1,37 @@
+.TITLE "tar"
+
+.DIV "DESCRIPTION"
+Creates and manipulates file archives. It is primarily used to __compress__ files for storage or __bundle__ multiple items together for easy distribution.
+
+.DIV "TLDR"
+**tar -c -f archive.tar files**
+Creates a new uncompressed archive from the specified files.
+> __-c__ create flag | __-f__ file flag | __archive.tar__ target name
+
+**tar -x -f archive.tar**
+Extracts the contents of an archive into the current directory.
+> __-x__ extract flag | __-f__ file flag | __archive.tar__ source archive
+
+**tar -c -z -f archive.tar.gz files**
+Creates a compressed archive using the gzip algorithm.
+> __-c__ create | __-z__ gzip flag | __-f__ file | __archive.tar.gz__ target
+
+**tar -x -z -f archive.tar.gz**
+Extracts a gzip-compressed archive.
+> __-x__ extract | __-z__ gzip flag | __-f__ file | __archive.tar.gz__ source
+
+**tar -t -f archive.tar**
+Lists the contents of an archive without extracting them.
+> __-t__ list flag | __-f__ file flag | __archive.tar__ source archive
+
+.DIV "SUMMARY"
+Always decouple your flags (e.g., use __-x -v -f__ instead of __-xvf__) to ensure compatibility with all parsers. Compressing archives with __-z__ (gzip) or __-j__ (bzip2) is a great way to save disk space when sharing large sets of files.
+
+.DIV "SEE ALSO"
+**cli:gzip** **cli:zip** **cli:unzip**
+
+documentation: __https://www.gnu.org/software/tar__
+license: GPL-3.0
+
+.DIV "AUTHOR"
+written by mnu contributor

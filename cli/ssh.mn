@@ -1,0 +1,33 @@
+.TITLE "ssh"
+
+.DIV "DESCRIPTION"
+Securely logs into a remote machine and executes commands. It is the industry standard for __remote administration__ and encrypted communication over unsecured networks.
+
+.DIV "TLDR"
+**ssh user@host**
+Connects to a remote server using the specified username and hostname or IP address.
+> __user@host__ remote identity
+
+**ssh -p port user@host**
+Connects to a remote server using a non-standard port.
+> __-p__ port flag | __port__ the numeric port | __user@host__ remote identity
+
+**ssh -i key_file user@host**
+Uses a specific private key file for authentication instead of a password.
+> __-i__ identity file flag | __key_file__ path to the private key
+
+**ssh user@host "command"**
+Executes a single command on the remote server and then closes the connection.
+> __user@host__ identity | __"command"__ the remote command to run
+
+.DIV "SUMMARY"
+For a more convenient experience, you can use __ssh-copy-id__ to transfer your public key to a server, allowing you to log in without a password. Always protect your private keys and never share them with anyone.
+
+.DIV "SEE ALSO"
+**cli:scp** **cli:ssh-keygen** **cli:ssh-agent**
+
+documentation: __https://www.openssh.com/manual.html__
+license: BSD-3-Clause
+
+.DIV "AUTHOR"
+written by mnu contributor
