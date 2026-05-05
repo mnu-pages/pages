@@ -36,7 +36,7 @@ Before submitting your page, you must verify that it renders correctly. We recom
 You can find the C client repository here: [https://github.com/mnu-pages/mnu-client](https://github.com/mnu-pages/mnu-client). Follow the instructions in that repository to build and run it against your `.mn` file.
 
 ### Using the Node.js Client
-1.  **Install the client:** `npm i -g mnu-pages`
+1.  **Install the client:** `npm i -g mnu-client`
 2.  **Run your page:** `mnu run path/to/your-file.mn`
 
 ### What to check for:

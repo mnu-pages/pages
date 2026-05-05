@@ -10,7 +10,7 @@ Someone with basic knowledge should be able to read an MNU page once and say, "O
 ## Available clients
 - **Nodejs client**:
   ```bash
-  npm i -g mnu-pages
+  npm i -g mnu-client
   ```
 - **C Client (recommended)**:
   ```
