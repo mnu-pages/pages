@@ -28,7 +28,7 @@ Sorts the list of files by their last modification time.
 Using __ls -l -h__ is often the best way to quickly check file sizes and permissions. For a clean overview of large directories, use __ls__ without flags to minimize terminal clutter.
 
 .DIV "SEE ALSO"
-**linux:cd** **linux:pwd**
+**linux:cd** **linux:pwd** **linux:mkdir**
 
 documentation: __https://www.gnu.org/software/coreutils/ls__
 license: GPL-3.0

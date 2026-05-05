@@ -24,7 +24,7 @@ Changes permissions for a directory and all its contents recursively.
 Using octal modes (like __755__) is often faster for setting exact permissions, while symbolic modes (like __+x__) are better for making quick adjustments. Always use __-R__ with caution to avoid accidentally locking yourself out of critical directories.
 
 .DIV "SEE ALSO"
-**linux:chown** **linux:ls** **linux:umask**
+**linux:chown** **linux:ls** **linux:mkdir**
 
 documentation: __https://www.gnu.org/software/coreutils/chmod__
 license: GPL-3.0
