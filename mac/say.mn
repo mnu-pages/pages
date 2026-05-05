@@ -1,41 +1,32 @@
 .TITLE "say"
 
 .DIV "DESCRIPTION"
-Converts text to spoken audio using the built-in macOS text-to-speech engine.
-This command allows users to make their Mac speak any provided text, either from
-standard input, a file, or directly from the command-line arguments. It supports
-various voices and speaking rates.
-
-.DIV "ALIAS"
-**speak**
+Converts text to audible speech using the system synthesizer. It can be used for accessibility, notifications, or simple fun in the terminal.
 
 .DIV "TLDR"
-**say "__Hello World__"**
-Speaks the phrase "__Hello World__" using the default system voice.
-> __"Hello World"__: The text string to be spoken.
+**say "message"**
+Speaks a specific string of text using the default system voice.
+> __"message"__ the text to speak
 
-**say -v __"Samantha"__ "__Good morning__"**
-Speaks the phrase "__Good morning__" using the specified voice, e.g., "__Samantha__".
-> __"Samantha"__: The name of the voice to use. | __"Good morning"__: The text to be spoken.
+**say -f file.txt**
+Reads the contents of a text file aloud.
+> __-f__ file input flag | __file.txt__ the source file
 
-**say -f __file.txt__**
-Reads and speaks the content of a specified __file.txt__.
-> __file.txt__: The path to the text file to be spoken.
+**say -v voice "message"**
+Speaks the text using a specific voice name.
+> __-v__ voice flag | __voice__ the name of the voice | __"message"__ text to speak
 
-**say -o __output.aiff__ "__Hello__"**
-Saves the spoken audio of "__Hello__" to an __output.aiff__ file instead of speaking aloud.
-> __output.aiff__: The path to the output audio file. | __"Hello"__: The text to be spoken.
+**say -o output.aiff "message"**
+Saves the spoken text into an audio file instead of playing it.
+> __-o__ output flag | __output.aiff__ the audio file name | __"message"__ text to record
 
 .DIV "SUMMARY"
-The `say` command is useful for accessibility, creating audio notifications,
-or simply having your Mac read out documents. You can customize voices and
-their properties in System Settings under Accessibility > Spoken Content.
+You can use the __say__ command at the end of a long-running script (e.g., `**./build.sh ; say "Finished"**`) to get an audible notification when the task is complete.
 
 .DIV "SEE ALSO"
-**mac:afplay**
 
-documentation: https://ss64.com/osx/say.html
-license: MIT
+documentation: __https://ss64.com/osx/say.html__
+license: Apple Public Source License
 
 .DIV "AUTHOR"
 written by mnu contributor

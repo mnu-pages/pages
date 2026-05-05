@@ -1,41 +1,36 @@
 .TITLE "open"
 
 .DIV "DESCRIPTION"
-Opens files, directories, and applications using their default macOS applications.
-It can also open URLs in the default web browser and execute scripts or commands.
-This command is a versatile utility for interacting with the graphical environment
-from the command line.
-
-.DIV "ALIAS"
-**start**
+Opens files, directories, or applications using their default handlers. It mimics the behavior of double-clicking an icon in the __Finder__ and can launch URLs, applications, and documents.
 
 .DIV "TLDR"
+**open file.txt**
+Opens a file with the default associated application defined by the system.
+> __file.txt__ the file to open
+
+**open -a "Application"**
+Launches a specific application by its name.
+> __-a__ application flag | __"Application"__ the app name
+
 **open .**
-Opens the current directory in Finder.
-> 
+Opens the current working directory in a new Finder window.
+> __.__ current directory reference
 
-**open __file.txt__**
-Opens a __file.txt__ with its default application.
-> __file.txt__: The path to the file to open.
+**open -e file.txt**
+Opens a specific file using the TextEdit application.
+> __-e__ editor flag | __file.txt__ the file to open
 
-**open -a "__Application Name__" __file.txt__**
-Opens a __file.txt__ with a specific "__Application Name__".
-> __Application Name__: The name of the application to use. | __file.txt__: The path to the file to open.
-
-**open __https://www.example.com__**
-Opens a URL in the default web browser.
-> __https://www.example.com__: The URL to open.
+**open -R file.txt**
+Reveals the specified file in a Finder window instead of opening it.
+> __-R__ reveal flag | __file.txt__ the target file
 
 .DIV "SUMMARY"
-The `open` command simplifies launching applications and viewing files from
-the terminal. It respects the macOS association of file types with specific
-applications, providing a seamless bridge between the command line and GUI.
+The __-g__ flag allows you to open an application in the background without bringing it to the front. You can also use __open__ to launch URLs directly in your default web browser.
 
 .DIV "SEE ALSO"
-**mac:mdfind**
 
-documentation: https://ss64.com/osx/open.html
-license: MIT
+documentation: __https://ss64.com/osx/open.html__
+license: Apple Public Source License
 
 .DIV "AUTHOR"
 written by mnu contributor

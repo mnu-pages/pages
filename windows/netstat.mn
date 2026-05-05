@@ -1,0 +1,43 @@
+.TITLE "netstat"
+
+.DIV "DESCRIPTION"
+Displays active TCP connections, ports on which the computer is listening, Ethernet statistics, and the IP routing table. It is an essential tool for __network monitoring__.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**netstat**
+Displays active TCP connections for the local machine.
+> 
+
+**netstat -a**
+Displays all active TCP connections and the TCP and UDP ports on which the computer is listening.
+> __-a__ all flag
+
+**netstat -n**
+Displays active TCP connections but shows addresses and port numbers in numerical form.
+> __-n__ numerical flag
+
+**netstat -o**
+Displays active TCP connections and includes the process ID (PID) for each connection.
+> __-o__ owner flag
+
+**netstat -e**
+Displays Ethernet statistics, such as the number of bytes and packets sent and received.
+> __-e__ ethernet flag
+
+**netstat -r**
+Displays the contents of the IP routing table.
+> __-r__ routing table flag
+
+.DIV "SUMMARY"
+Combine flags like __netstat -a -n -o__ to see all active connections with their PIDs in a numerical format. This is particularly useful for identifying which application is using a specific port.
+
+.DIV "SEE ALSO"
+**windows:ipconfig** **windows:tracert**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/netstat__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

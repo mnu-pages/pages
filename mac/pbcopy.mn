@@ -1,37 +1,25 @@
 .TITLE "pbcopy"
 
 .DIV "DESCRIPTION"
-Takes standard input and copies it to the macOS pasteboard (clipboard).
-This command is useful for scripting and piping output from other commands
-directly into the clipboard, making content available for pasting into
-applications.
-
-.DIV "ALIAS"
-**copy**
+Copies data from standard input to the clipboard. It allows you to programmatically capture command output and store it in the system __pasteboard__ for use in other applications.
 
 .DIV "TLDR"
-**pbcopy**
-Copies the content of standard input to the clipboard.
-> 
+**echo "text" | pbcopy**
+Copies the output of a command or a string to the clipboard.
+> __"text"__ the input data
 
-**echo "__text__" | pbcopy**
-Copies a specific string of __text__ to the clipboard.
-> __text__: The string to be copied.
-
-**cat __file.txt__ | pbcopy**
-Copies the content of a __file.txt__ to the clipboard.
-> __file.txt__: The path to the file whose content will be copied.
+**pbcopy < file.txt**
+Copies the entire contents of a text file to the clipboard.
+> __<__ input redirection | __file.txt__ the source file
 
 .DIV "SUMMARY"
-`pbcopy` operates on standard input, so it is often used with pipes (`|`)
-to capture the output of other commands. The clipboard content can then be
-pasted using `pbpaste`.
+Using __pbcopy__ is a highly efficient way to handle long strings like __SSH keys__ or __UUIDs__ without manual selection. Combine it with __pbpaste__ to complete the workflow.
 
 .DIV "SEE ALSO"
 **mac:pbpaste**
 
-documentation: https://ss64.com/osx/pbcopy.html
-license: MIT
+documentation: __https://ss64.com/osx/pbcopy.html__
+license: BSD
 
 .DIV "AUTHOR"
 written by mnu contributor

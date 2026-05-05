@@ -1,42 +1,32 @@
 .TITLE "defaults"
 
 .DIV "DESCRIPTION"
-Manages the macOS user defaults system, which stores application and system preferences
-in property list (plist) files. This command allows reading, writing, and deleting
-default settings for applications and system services from the command line.
-It is a powerful tool for configuring macOS behavior.
-
-.DIV "ALIAS"
-**pref**
+Accesses the macOS user defaults system. It allows you to read, write, and delete preferences for applications and system services from the command line.
 
 .DIV "TLDR"
-**defaults read __com.apple.finder__**
-Reads all preferences for a specific application domain, e.g., __com.apple.finder__.
-> __com.apple.finder__: The domain identifier for the application or service.
+**defaults read domain**
+Reads all the preferences for a specific application domain.
+> __read__ read command | __domain__ application identifier
 
-**defaults read __com.apple.finder__ __key__**
-Reads the value of a specific __key__ within an application domain.
-> __com.apple.finder__: The domain identifier. | __key__: The preference key to read.
+**defaults write domain key value**
+Writes a new preference setting for a specific application.
+> __write__ write command | __domain__ application identifier | __key__ preference name | __value__ setting value
 
-**defaults write __com.apple.finder__ __key__ __"value"__**
-Writes a __"value"__ to a specific __key__ within an application domain.
-> __com.apple.finder__: The domain identifier. | __key__: The preference key to write. | __"value"__: The value to set for the key.
+**defaults delete domain key**
+Removes a specific preference setting from a domain.
+> __delete__ removal command | __domain__ application identifier | __key__ preference name
 
-**defaults delete __com.apple.finder__ __key__**
-Deletes a specific __key__ from an application domain.
-> __com.apple.finder__: The domain identifier. | __key__: The preference key to delete.
+**defaults find query**
+Searches through all preference domains for a specific string.
+> __find__ search command | __query__ search term
 
 .DIV "SUMMARY"
-The `defaults` command provides granular control over macOS preferences.
-Changes made with `defaults write` often require the affected application
-to be restarted or the user to log out and back in for them to take effect.
-It is an essential tool for system administrators and power users.
+Many system changes made with __defaults write__ require a restart of the affected application or service (like the __Finder__ or __Dock__) to take effect.
 
 .DIV "SEE ALSO"
-**mac:open**
 
-documentation: https://ss64.com/osx/defaults.html
-license: MIT
+documentation: __https://ss64.com/osx/defaults.html__
+license: BSD
 
 .DIV "AUTHOR"
 written by mnu contributor

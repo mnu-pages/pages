@@ -1,0 +1,28 @@
+.TITLE "mkdir"
+
+.DIV "DESCRIPTION"
+Creates a new directory. It generates a folder at the specified path, allowing for better __organization__ of files.
+
+.DIV "ALIAS"
+**md**
+
+.DIV "TLDR"
+**mkdir name**
+Creates a new directory with the specified name in the current path.
+> __name__ the new directory name
+
+**mkdir path\to\directory**
+Creates a new directory at the specified path.
+> __path\to\directory__ the target path
+
+.DIV "SUMMARY"
+Using __mkdir__ automatically creates any necessary parent directories in the path if they do not already exist. This is a common and efficient way to build deep directory structures in one command.
+
+.DIV "SEE ALSO"
+**windows:dir** **windows:rmdir**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/mkdir__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

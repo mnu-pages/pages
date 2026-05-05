@@ -1,0 +1,25 @@
+.TITLE "sw_vers"
+
+.DIV "DESCRIPTION"
+Displays the macOS version information. It provides the product name, version number, and build version of the currently running operating system.
+
+.DIV "TLDR"
+**sw_vers**
+Displays the full version information including Product Name, Product Version, and Build Version.
+> 
+
+**sw_vers -productVersion**
+Prints only the macOS version number (e.g., 14.2.1).
+> __-productVersion__ version only flag
+
+.DIV "SUMMARY"
+The __sw_vers__ command is often used in scripts to verify OS compatibility before executing platform-specific commands.
+
+.DIV "SEE ALSO"
+**linux:uname**
+
+documentation: __https://ss64.com/osx/sw_vers.html__
+license: Apple Public Source License
+
+.DIV "AUTHOR"
+written by mnu contributor

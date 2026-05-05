@@ -1,0 +1,35 @@
+.TITLE "tail"
+
+.DIV "DESCRIPTION"
+Displays the last part of a file. It outputs the __ending lines__ of text files, making it essential for monitoring log files.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**tail file**
+Displays the last ten lines of a file.
+> __file__ the target path
+
+**tail -n 20 file**
+Displays a specific number of lines from the end of a file.
+> __-n__ line count flag | __20__ number of lines
+
+**tail -f file**
+Monitors a file in real-time and outputs new lines as they are appended.
+> __-f__ follow flag
+
+**tail -c 100 file**
+Displays the last specified number of bytes from a file.
+> __-c__ byte count flag | __100__ number of bytes
+
+.DIV "SUMMARY"
+The __tail -f__ command is one of the most useful tools for developers and system administrators to watch log files live. If a file is rotated or replaced, use the __-F__ flag to continue following the new file by name.
+
+.DIV "SEE ALSO"
+**mac:head** **mac:cat**
+
+documentation: __https://ss64.com/osx/tail.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

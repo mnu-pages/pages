@@ -1,0 +1,23 @@
+.TITLE "whoami"
+
+.DIV "DESCRIPTION"
+Displays the current username. It reports the __effective user ID__ of the user currently logged into the terminal session.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**whoami**
+Displays the username associated with the current terminal session.
+> 
+
+.DIV "SUMMARY"
+Using __whoami__ is a quick way to verify which account you are using, especially after switching users with __su__ or __sudo__. It is functionally equivalent to running __id -u -n__.
+
+.DIV "SEE ALSO"
+**mac:who** **mac:id**
+
+documentation: __https://ss64.com/osx/whoami.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

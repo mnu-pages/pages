@@ -1,0 +1,39 @@
+.TITLE "ps"
+
+.DIV "DESCRIPTION"
+Reports a snapshot of current processes. It displays information about __active programs__ including their process ID, terminal, and execution time.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**ps**
+Displays processes associated with the current terminal session.
+> 
+
+**ps -A**
+Lists all currently running processes on the system.
+> __-A__ all processes flag
+
+**ps -u user**
+Displays processes owned by a specific user.
+> __-u__ user flag | __user__ target username
+
+**ps -e -f**
+Shows a full-format listing of every process running on the system.
+> __-e__ every process flag | __-f__ full format flag
+
+**ps -m**
+Displays the threads associated with each process.
+> __-m__ threads flag
+
+.DIV "SUMMARY"
+The BSD version of __ps__ on macOS uses different flags than the GNU version found on Linux. For example, __ps -A__ is the standard way to see all processes, whereas Linux users often use __ps -e__.
+
+.DIV "SEE ALSO"
+**mac:top** **mac:kill**
+
+documentation: __https://ss64.com/osx/ps.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

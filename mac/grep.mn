@@ -1,46 +1,40 @@
 .TITLE "grep"
 
 .DIV "DESCRIPTION"
-Searches for patterns in text using regular expressions on macOS. This command
-filters lines from input (files or standard input) that match a specified
-pattern. It is a powerful utility for __text processing__ and finding
-specific information within log files, code, or other text-based data.
+Searches for patterns in text files using regular expressions. It filters __input data__ and displays lines that match specified criteria.
 
 .DIV "ALIAS"
-**search**
+**egrep** **fgrep**
 
 .DIV "TLDR"
-**grep "__pattern__" __file.txt__**
-Searches for lines containing "__pattern__" in __file.txt__.
-> __pattern__: The regular expression pattern to search for. | __file.txt__: The path to the file to search.
+**grep "pattern" file**
+Searches for a specific pattern within a file.
+> __"pattern"__ search term | __file__ target path
 
-**grep -i "__pattern__" __file.txt__**
-Performs a case-insensitive search for "__pattern__" in __file.txt__.
-> __-i__: ignore case flag | __pattern__: The regular expression pattern. | __file.txt__: The path to the file.
+**grep -i "pattern" file**
+Performs a case-insensitive search.
+> __-i__ ignore case flag
 
-**grep -r "__pattern__" __directory__**
-Recursively searches for "__pattern__" in all files within a __directory__.
-> __-r__: recursive flag | __pattern__: The regular expression pattern. | __directory__: The path to the directory.
+**grep -v "pattern" file**
+Displays only the lines that do not match the pattern.
+> __-v__ invert match flag
 
-**grep -v "__pattern__" __file.txt__**
-Inverts the search, showing lines that do NOT contain "__pattern__" in __file.txt__.
-> __-v__: invert match flag | __pattern__: The regular expression pattern. | __file.txt__: The path to the file.
+**grep -r "pattern" directory**
+Searches for a pattern recursively within all files in a directory.
+> __-r__ recursive flag
 
-**grep -c "__pattern__" __file.txt__**
-Counts the number of lines containing "__pattern__" in __file.txt__.
-> __-c__: count flag | __pattern__: The regular expression pattern. | __file.txt__: The path to the file.
+**grep -E "pattern" file**
+Uses extended regular expressions for more complex search patterns.
+> __-E__ extended regex flag
 
 .DIV "SUMMARY"
-`grep` is incredibly versatile and often combined with other commands using
-pipes (`|`) to refine search results. Learning basic regular expressions
-significantly enhances its utility. For more advanced text manipulation,
-consider `sed` or `awk`.
+On macOS, __grep__ follows BSD conventions. Using __grep -E__ is functionally equivalent to using the __egrep__ alias and is often preferred for modern scripts.
 
 .DIV "SEE ALSO"
-**mac:cat** **mac:find**
+**mac:find** **mac:sed**
 
-documentation: https://ss64.com/osx/grep.html
-license: MIT
+documentation: __https://ss64.com/osx/grep.html__
+license: BSD
 
 .DIV "AUTHOR"
 written by mnu contributor

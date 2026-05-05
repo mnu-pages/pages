@@ -1,0 +1,39 @@
+.TITLE "echo"
+
+.DIV "DESCRIPTION"
+Displays messages or turns command echoing on or off. it is primarily used in __batch scripts__ to provide feedback to the user or to output text to a file.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**echo message**
+Displays the specified text message in the console.
+> __message__ the text to display
+
+**echo off**
+Prevents commands from being displayed as they are executed in a batch file.
+> 
+
+**echo %variable%**
+Displays the value of a specific environment variable.
+> __%variable%__ the target variable
+
+**echo text > file.txt**
+Writes the specified text to a file, overwriting its current contents.
+> __>__ redirection operator | __file.txt__ the target file
+
+**echo text >> file.txt**
+Appends the specified text to the end of an existing file.
+> __>>__ append operator
+
+.DIV "SUMMARY"
+Start your batch files with **@echo off** to prevent the script from displaying every command it runs, resulting in a cleaner output for the user. Using __echo.__ prints a blank line.
+
+.DIV "SEE ALSO"
+**windows:set** **windows:type**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/echo__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

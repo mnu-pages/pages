@@ -1,0 +1,35 @@
+.TITLE "format"
+
+.DIV "DESCRIPTION"
+Formats a disk for use with Windows. It prepares a storage medium by creating a new file system and is a critical tool for __disk initialization__.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**format D:**
+Formats the specified drive using the default file system.
+> __D:__ the target drive letter
+
+**format D: /fs:NTFS**
+Formats the drive with a specific file system like NTFS or FAT32.
+> __/fs:NTFS__ file system flag
+
+**format D: /v:label**
+Specifies the volume label for the formatted disk.
+> __/v:label__ volume label flag
+
+**format D: /q**
+Performs a quick format by deleting the file table and root directory.
+> __/q__ quick format flag
+
+.DIV "SUMMARY"
+Using the __/q__ flag is much faster than a standard format but does not scan for bad sectors. Always double-check the drive letter before formatting to avoid accidental __permanent data loss__.
+
+.DIV "SEE ALSO"
+**windows:chkdsk** **windows:dir**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/format__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

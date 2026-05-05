@@ -1,0 +1,23 @@
+.TITLE "cls"
+
+.DIV "DESCRIPTION"
+Clears the command prompt window. It removes all text from the screen and positions the cursor at the top-left corner of the __console buffer__.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**cls**
+Clears the entire screen of the active command prompt window.
+> 
+
+.DIV "SUMMARY"
+Running __cls__ is a simple way to reset your visual workspace after executing commands with high-volume output. It only clears the visible screen and does not affect the command history or environment variables.
+
+.DIV "SEE ALSO"
+**windows:echo** **windows:dir**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/cls__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

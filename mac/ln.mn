@@ -1,0 +1,31 @@
+.TITLE "ln"
+
+.DIV "DESCRIPTION"
+Creates links between files. It generates __hard links__ or __symbolic links__ that allow multiple paths to point to the same file data on the disk.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**ln source_file link_name**
+Creates a hard link pointing to an existing file.
+> __source_file__ existing file | __link_name__ new link path
+
+**ln -s source_file link_name**
+Creates a symbolic (soft) link to a file or directory.
+> __-s__ symbolic link flag
+
+**ln -s -f source_file link_name**
+Forces the creation of a link by removing an existing destination file.
+> __-f__ force flag
+
+.DIV "SUMMARY"
+Symbolic links created with __-s__ are the most common type of link as they can cross filesystem boundaries and point to directories. Hard links are limited to the same filesystem and cannot point to directories.
+
+.DIV "SEE ALSO"
+**mac:cp** **mac:mv**
+
+documentation: __https://ss64.com/osx/ln.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

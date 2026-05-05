@@ -1,0 +1,40 @@
+.TITLE "del"
+
+.DIV "DESCRIPTION"
+Deletes one or more files. It permanently removes specified files from the disk and is a standard tool for __cleanup__ and __file management__.
+
+.DIV "ALIAS"
+**erase**
+
+.DIV "TLDR"
+**del file**
+Deletes the specified file from the current directory.
+> __file__ the target file name
+
+**del *.txt**
+Deletes all files with the .txt extension in the current directory.
+> __*.txt__ wildcard for text files
+
+**del /p file**
+Prompts for confirmation before deleting each file.
+> __/p__ prompt flag
+
+**del /f file**
+Forces the deletion of read-only files.
+> __/f__ force flag
+
+**del /s *.log**
+Deletes specified files from all subdirectories.
+> __/s__ subdirectory flag
+
+.DIV "SUMMARY"
+Use the __/p__ flag when using wildcards to avoid accidental deletion of important data. Files deleted with __del__ are not sent to the Recycle Bin and cannot be easily recovered.
+
+.DIV "SEE ALSO"
+**windows:rmdir** **windows:copy**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/del__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

@@ -1,45 +1,37 @@
 .TITLE "rm"
 
 .DIV "DESCRIPTION"
-Removes (deletes) files and directories on macOS. This command permanently
-deletes specified files or directories from the filesystem. It is a powerful
-utility for __filesystem management__, but caution is advised as deleted
-items are not moved to the Trash and cannot be easily recovered.
-
-.DIV "ALIAS"
-**delete**
+Removes files or directories. it permanently deletes __filesystem objects__ and must be used with caution as there is no built-in undo for this operation.
 
 .DIV "TLDR"
-**rm __file.txt__**
-Removes a specific __file.txt__.
-> __file.txt__: The path to the file to remove.
+**rm file.txt**
+Deletes a specific file from the system.
+> __file.txt__ the file to remove
 
-**rm -i __file.txt__**
-Removes a __file.txt__ with an interactive prompt before deletion.
-> __-i__: interactive flag | __file.txt__: The path to the file to remove.
+**rm -r directory/**
+Deletes a directory and all of its contents recursively.
+> __-r__ recursive flag | __directory/__ the target folder
 
-**rm -f __file.txt__**
-Removes a __file.txt__ forcefully, without prompting for confirmation.
-> __-f__: force flag | __file.txt__: The path to the file to remove.
+**rm -f file.txt**
+Forces the removal of a file without prompting for confirmation, even if it is write-protected.
+> __-f__ force flag
 
-**rm -r __directory__**
-Recursively removes a __directory__ and all its contents.
-> __-r__: recursive flag | __directory__: The path to the directory to remove.
+**rm -v file.txt**
+Displays the name of each file as it is being deleted.
+> __-v__ verbose flag
 
-**rm -rf __directory__**
-Recursively removes a __directory__ and its contents forcefully.
-> __-r__: recursive flag | __-f__: force flag | __directory__: The path to the directory to remove.
+**rm -i file.txt**
+Prompts for confirmation before each file is deleted.
+> __-i__ interactive flag
 
 .DIV "SUMMARY"
-The `rm -rf` command is extremely dangerous and should be used with extreme
-caution, especially with root privileges, as it can quickly delete critical
-system files. Always double-check your path before executing `rm -rf`.
+Deleting files with __rm__ bypasses the macOS **Trash**. For critical system cleanup, combine __-r__ and __-f__ with extreme care to avoid accidental deletion of important data.
 
 .DIV "SEE ALSO"
-**mac:mv** **mac:cp**
+**mac:cp** **mac:mv**
 
-documentation: https://ss64.com/osx/rm.html
-license: MIT
+documentation: __https://ss64.com/osx/rm.html__
+license: BSD
 
 .DIV "AUTHOR"
 written by mnu contributor

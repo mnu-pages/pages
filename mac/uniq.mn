@@ -1,0 +1,35 @@
+.TITLE "uniq"
+
+.DIV "DESCRIPTION"
+Reports or filters out repeated lines in a file. It identifies __duplicate entries__ and is typically used on sorted input to clean or analyze data.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**uniq file**
+Removes adjacent duplicate lines from a file and displays the unique output.
+> __file__ the target path
+
+**uniq -c file**
+Prefixes each line with the number of times it occurred in the input.
+> __-c__ count flag
+
+**uniq -d file**
+Displays only the lines that were repeated in the original input.
+> __-d__ duplicate flag
+
+**uniq -u file**
+Displays only the lines that were completely unique in the original input.
+> __-u__ unique flag
+
+.DIV "SUMMARY"
+The __uniq__ command only identifies duplicates that are adjacent. For this reason, it is almost always preceded by the __sort__ command in a pipeline to ensure all identical lines are grouped together.
+
+.DIV "SEE ALSO"
+**mac:sort** **mac:grep**
+
+documentation: __https://ss64.com/osx/uniq.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

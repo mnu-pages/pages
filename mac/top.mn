@@ -1,0 +1,39 @@
+.TITLE "top"
+
+.DIV "DESCRIPTION"
+Displays real-time system statistics. It provides a dynamic view of __process activity__, CPU usage, memory consumption, and system load.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**top**
+Displays a live list of system processes and resource usage.
+> 
+
+**top -o cpu**
+Sorts the process list by CPU usage in descending order.
+> __-o__ order flag | __cpu__ sort criteria
+
+**top -o mem**
+Sorts the process list by memory usage.
+> __-o__ order flag | __mem__ sort criteria
+
+**top -u**
+Sorts the display by the actual CPU time used by each process.
+> __-u__ CPU time flag
+
+**top -s 5**
+Updates the display every five seconds instead of the default interval.
+> __-s__ samples flag | __5__ seconds
+
+.DIV "SUMMARY"
+The macOS version of __top__ is unique and uses different flags than the Linux version. While __top__ is useful for a quick glance, many macOS users prefer the __Activity Monitor__ application for a more detailed graphical interface.
+
+.DIV "SEE ALSO"
+**mac:ps** **mac:kill**
+
+documentation: __https://ss64.com/osx/top.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

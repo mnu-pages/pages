@@ -1,0 +1,30 @@
+.TITLE "echo"
+
+.DIV "DESCRIPTION"
+Writes arguments to the standard output. It is primarily used to display __text strings__ or variables in shell scripts and terminal sessions.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**echo "text"**
+Displays the specified string of text.
+> __"text"__ the string to display
+
+**echo -n "text"**
+Displays text without appending a trailing newline character.
+> __-n__ no newline flag
+
+**echo $VARIABLE**
+Displays the value of an environment variable.
+> __$VARIABLE__ the variable name
+
+.DIV "SUMMARY"
+While __echo__ is simple and widely used, the __printf__ command is often recommended for more complex formatting tasks. Use the __-n__ flag when you need to construct a line of output across multiple command calls.
+
+.DIV "SEE ALSO"
+
+documentation: __https://ss64.com/osx/echo.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

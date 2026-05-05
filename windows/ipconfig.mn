@@ -1,0 +1,39 @@
+.TITLE "ipconfig"
+
+.DIV "DESCRIPTION"
+Displays all current TCP/IP network configuration values and refreshes Dynamic Host Configuration Protocol (DHCP) and Domain Name System (DNS) settings.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**ipconfig**
+Displays basic IP address, subnet mask, and default gateway for all adapters.
+> 
+
+**ipconfig /all**
+Displays full TCP/IP configuration for all adapters.
+> __/all__ detailed info flag
+
+**ipconfig /release**
+Releases the IPv4 address for the specified adapter.
+> __/release__ DHCP release flag
+
+**ipconfig /renew**
+Renews the IPv4 address for the specified adapter.
+> __/renew__ DHCP renew flag
+
+**ipconfig /flushdns**
+Purges the DNS Resolver cache.
+> __/flushdns__ DNS flush flag
+
+.DIV "SUMMARY"
+Using __ipconfig /flushdns__ is a common troubleshooting step when a website fails to load despite having an active internet connection. Combine __/release__ and __/renew__ to resolve IP address conflicts.
+
+.DIV "SEE ALSO"
+**windows:ping** **windows:netstat**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/ipconfig__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

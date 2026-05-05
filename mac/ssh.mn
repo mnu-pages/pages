@@ -1,0 +1,35 @@
+.TITLE "ssh"
+
+.DIV "DESCRIPTION"
+Connects to a remote host securely. It uses the __Secure Shell protocol__ to provide an encrypted communication channel for logging into and executing commands on a remote machine.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**ssh user@host**
+Connects to a remote machine using the specified username and hostname.
+> __user__ remote username | __host__ remote IP or domain
+
+**ssh -i path/to/key user@host**
+Connects using a specific private key for authentication.
+> __-i__ identity file flag | __path/to/key__ private key path
+
+**ssh -p 2222 user@host**
+Connects to a remote host using a non-standard port number.
+> __-p__ port flag | __2222__ port number
+
+**ssh -L 8080:localhost:80 user@host**
+Sets up local port forwarding to tunnel traffic through the SSH connection.
+> __-L__ local forward flag | __8080:localhost:80__ forwarding rule
+
+.DIV "SUMMARY"
+Securing your __ssh__ access with public key authentication instead of passwords is a critical security best practice. You can manage your keys using the __ssh-agent__ to avoid entering your passphrase for every connection.
+
+.DIV "SEE ALSO"
+**mac:scp** **mac:ssh-keygen**
+
+documentation: __https://ss64.com/osx/ssh.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

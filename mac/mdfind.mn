@@ -1,41 +1,29 @@
 .TITLE "mdfind"
 
 .DIV "DESCRIPTION"
-Finds files and directories on macOS using the Spotlight metadata index.
-This command is significantly faster than traditional file system searches
-(like `find` or `locate`) because it queries a pre-built index of file attributes.
-It supports complex queries based on file names, content, creation dates, and more.
-
-.DIV "ALIAS"
-**findspotlight**
+Searches for files using the Spotlight metadata indexing system. It provides high-speed search capabilities by querying the __metadata__ stored on the filesystem instead of scanning directories.
 
 .DIV "TLDR"
-**mdfind "__query__"**
-Finds files matching a simple __query__ string.
-> __query__: The search string.
+**mdfind query**
+Searches for files and directories matching a specific text string.
+> __query__ the search term
 
-**mdfind -name "__filename__"**
-Finds files with a specific __filename__.
-> __filename__: The name of the file to search for.
+**mdfind -name filename**
+Searches for files with a specific name regardless of their content.
+> __-name__ name search flag | __filename__ the name to match
 
-**mdfind -onlyin "__/path/to/directory__" "__query__"**
-Searches for files matching __query__ only within a specified __/path/to/directory__.
-> __/path/to/directory__: The directory to search within. | __query__: The search string.
-
-**mdfind "kMDItemDisplayName == '*__pattern__*'"**
-Finds files where the display name matches a __pattern__ using Spotlight query syntax.
-> __pattern__: The glob pattern to match against the display name.
+**mdfind -onlyin directory query**
+Limits the search results to a specific directory path.
+> __-onlyin__ scope flag | __directory__ the target path | __query__ search term
 
 .DIV "SUMMARY"
-`mdfind` leverages the power of Spotlight, offering quick and efficient searches
-across the entire system or specific locations. It's especially useful for
-locating files when you know some metadata but not the exact path.
+Because it utilizes the Spotlight index, __mdfind__ is significantly faster than the standard __find__ command for most common desktop searches.
 
 .DIV "SEE ALSO"
-**mac:open**
+**linux:find**
 
-documentation: https://ss64.com/osx/mdfind.html
-license: MIT
+documentation: __https://ss64.com/osx/mdfind.html__
+license: BSD
 
 .DIV "AUTHOR"
 written by mnu contributor

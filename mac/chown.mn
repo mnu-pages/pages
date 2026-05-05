@@ -1,0 +1,33 @@
+.TITLE "chown"
+
+.DIV "DESCRIPTION"
+Changes the owner and group of a file or directory. It is used to manage __administrative ownership__ of filesystem objects.
+
+.DIV "TLDR"
+**chown user file.txt**
+Changes the owner of a file to a specific user.
+> __user__ the new owner | __file.txt__ target file
+
+**chown user:group file.txt**
+Changes both the owner and the primary group of a file.
+> __user__ new owner | __group__ new group | __file.txt__ target file
+
+**chown -R user:group directory/**
+Changes the owner and group for a directory and all its contents recursively.
+> __-R__ recursive flag | __user:group__ new ownership | __directory/__ target folder
+
+**chown -v user file.txt**
+Displays a message for each file whose ownership is changed.
+> __-v__ verbose flag
+
+.DIV "SUMMARY"
+On macOS, you typically need to use `**sudo**` with __chown__ to change ownership of files that you do not already own.
+
+.DIV "SEE ALSO"
+**mac:chmod** **mac:ls**
+
+documentation: __https://ss64.com/osx/chown.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

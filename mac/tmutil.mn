@@ -1,45 +1,33 @@
 .TITLE "tmutil"
 
 .DIV "DESCRIPTION"
-Interacts with the Time Machine backup system on macOS. This command-line utility
-allows users to control Time Machine backups, including starting/stopping backups,
-listing snapshots, restoring items, and managing exclusions. It provides advanced
-control over Time Machine operations.
-
-.DIV "ALIAS"
-**timemachineutil**
+Controls Time Machine backups and snapshots. It allows you to manage local snapshots, initiate backups, and compare different backup sets.
 
 .DIV "TLDR"
-**tmutil status**
-Displays the current status of Time Machine, including if a backup is in progress.
-> 
-
 **tmutil startbackup**
-Initiates a Time Machine backup immediately.
-> 
+Initiates a manual Time Machine backup immediately.
+> __startbackup__ start command
 
-**tmutil stopbackup**
-Stops a currently running Time Machine backup.
-> 
+**tmutil listbackups**
+Displays a chronological list of all completed backups available to the system.
+> __listbackups__ list command
 
-**tmutil latestbackup**
-Prints the path to the latest completed Time Machine backup.
-> 
+**tmutil delete path/to/backup**
+Removes a specific backup directory to reclaim disk space.
+> __delete__ removal command | __path/to/backup__ target backup path
 
-**tmutil restore __/path/to/item__ __/destination__**
-Restores an item from a Time Machine backup to a specified __/destination__.
-> __/path/to/item__: The path to the item within the Time Machine backup. | __/destination__: The destination path for the restored item.
+**tmutil localsnapshot**
+Creates a local Time Machine snapshot on the internal drive.
+> __localsnapshot__ snapshot command
 
 .DIV "SUMMARY"
-`tmutil` offers powerful control over Time Machine. Be careful when using restore
-commands to avoid overwriting newer data. Regular backups are crucial, and `tmutil`
-can be integrated into scripts for automated backup management.
+You must use `**sudo**` for most __tmutil__ commands that modify or delete backup data. Managing __local snapshots__ is useful for freeing up disk space before major system updates.
 
 .DIV "SEE ALSO"
-**mac:diskutil**
+**linux:du** **mac:diskutil**
 
-documentation: https://ss64.com/osx/tmutil.html
-license: MIT
+documentation: __https://ss64.com/osx/tmutil.html__
+license: Apple Public Source License
 
 .DIV "AUTHOR"
 written by mnu contributor

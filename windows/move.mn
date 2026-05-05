@@ -1,0 +1,31 @@
+.TITLE "move"
+
+.DIV "DESCRIPTION"
+Moves or renames files and directories. It transfers files from one location to another or changes the name of a file or directory.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**move source destination**
+Moves a file or directory to a new location.
+> __source__ the target to move | __destination__ the new location
+
+**move old_name new_name**
+Renames a file or directory.
+> __old_name__ the current name | __new_name__ the target name
+
+**move /y source destination**
+Suppresses prompting to confirm you want to overwrite an existing destination file.
+> __/y__ overwrite flag
+
+.DIV "SUMMARY"
+Renaming a directory with __move__ is an efficient way to update project structures. Unlike __copy__, __move__ deletes the source file after a successful transfer to the destination.
+
+.DIV "SEE ALSO"
+**windows:copy** **windows:dir**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/move__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

@@ -1,0 +1,39 @@
+.TITLE "wc"
+
+.DIV "DESCRIPTION"
+Displays word, line, and byte counts. It analyzes __text files__ and provides statistical information about their contents.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**wc file**
+Displays the line, word, and byte counts for a file.
+> __file__ the target path
+
+**wc -l file**
+Displays only the total number of lines in a file.
+> __-l__ line count flag
+
+**wc -w file**
+Displays only the total number of words in a file.
+> __-w__ word count flag
+
+**wc -c file**
+Displays only the total number of bytes in a file.
+> __-c__ byte count flag
+
+**wc -m file**
+Displays the total number of characters in a file.
+> __-m__ character count flag
+
+.DIV "SUMMARY"
+The __wc -l__ command is frequently used in pipelines to count the number of results returned by other commands like __ls__ or __grep__. Always remember that the word count depends on the default whitespace delimiters.
+
+.DIV "SEE ALSO"
+**mac:ls** **mac:grep**
+
+documentation: __https://ss64.com/osx/wc.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

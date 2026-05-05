@@ -1,0 +1,26 @@
+.TITLE "clear"
+
+.DIV "DESCRIPTION"
+Clears the terminal screen. It removes all previous output from the __terminal buffer__ and positions the cursor at the top of the window.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**clear**
+Clears the entire terminal screen.
+> 
+
+**clear -x**
+Clears the screen but preserves the scrollback buffer.
+> __-x__ preserve scrollback flag
+
+.DIV "SUMMARY"
+Using __clear__ helps maintain a focused workspace by removing clutter from previous command outputs. On most terminal emulators, the keyboard shortcut __Control + L__ performs a similar action.
+
+.DIV "SEE ALSO"
+
+documentation: __https://ss64.com/osx/clear.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

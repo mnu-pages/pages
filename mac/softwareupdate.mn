@@ -1,41 +1,33 @@
 .TITLE "softwareupdate"
 
 .DIV "DESCRIPTION"
-Manages software updates on macOS, allowing users to check for, download,
-and install macOS system updates, as well as updates for Apple applications
-and command-line developer tools. It provides command-line control
-over the update process.
-
-.DIV "ALIAS"
-**updates**
+Manages system software updates. It provides a way to download and install macOS updates and security patches from Apple servers.
 
 .DIV "TLDR"
-**softwareupdate --list**
-Lists all available software updates.
-> 
+**softwareupdate -l**
+Lists all available software updates for the current system.
+> __-l__ list flag
 
-**softwareupdate --install --all**
+**softwareupdate -i -a**
 Downloads and installs all available software updates.
-> 
+> __-i__ install flag | __-a__ all flag
 
-**softwareupdate --install __"macOS Ventura 13.5-22G120"__**
-Installs a specific update by its full name or partial name.
-> __"macOS Ventura 13.5-22G120"__: The full name of the update to install.
+**softwareupdate -i -r**
+Installs only the updates that Apple marks as recommended.
+> __-i__ install flag | __-r__ recommended flag
 
-**softwareupdate --download --all**
-Downloads all available updates without installing them.
-> 
+**softwareupdate --fetch-full-installer**
+Downloads the complete macOS installer for the current version to the Applications folder.
+> __--fetch-full-installer__ download flag
 
 .DIV "SUMMARY"
-Running `softwareupdate` periodically helps keep your macOS system secure
-and up-to-date. Ensure you have a stable internet connection and sufficient
-disk space before initiating large updates. Always back up important data.
+Running `**softwareupdate -i -a**` requires __administrator__ privileges and often triggers a system restart once the installation is complete.
 
 .DIV "SEE ALSO"
-**mac:pmset**
+**linux:apt**
 
-documentation: https://ss64.com/osx/softwareupdate.html
-license: MIT
+documentation: __https://ss64.com/osx/softwareupdate.html__
+license: Apple Public Source License
 
 .DIV "AUTHOR"
 written by mnu contributor

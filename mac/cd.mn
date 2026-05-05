@@ -1,0 +1,36 @@
+.TITLE "cd"
+
+.DIV "DESCRIPTION"
+Changes the current working directory. It updates the shell environment to a new path, allowing you to navigate the filesystem.
+
+.DIV "ALIAS"
+**chdir**
+
+.DIV "TLDR"
+**cd path/to/directory**
+Changes the current working directory to the specified path.
+> __path/to/directory__ the target folder path
+
+**cd ..**
+Moves the current working directory up one level to the parent folder.
+> 
+
+**cd**
+Returns the user to their home directory.
+> 
+
+**cd -**
+Switches the current working directory back to the previous path.
+> 
+
+.DIV "SUMMARY"
+Running __cd__ without any arguments is the fastest way to return to your home directory. Use it frequently alongside __pwd__ to maintain awareness of your location in the filesystem.
+
+.DIV "SEE ALSO"
+**mac:ls** **mac:pwd**
+
+documentation: __https://ss64.com/osx/cd.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

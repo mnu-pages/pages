@@ -1,0 +1,31 @@
+.TITLE "type"
+
+.DIV "DESCRIPTION"
+Displays the contents of one or more text files. It outputs the raw text to the command prompt window without modification.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**type file.txt**
+Displays the content of the specified text file.
+> __file.txt__ the target file name
+
+**type file1.txt file2.txt**
+Displays the contents of multiple files sequentially.
+> 
+
+**type file.txt | more**
+Displays the content of a large file one screen at a time.
+> __| more__ pagination pipe
+
+.DIV "SUMMARY"
+Using __type__ is a quick way to inspect log files or configuration data without opening a full text editor. For very large files, always pipe the output to **windows:more** to avoid being overwhelmed by text.
+
+.DIV "SEE ALSO"
+**windows:echo** **windows:dir**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/type__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

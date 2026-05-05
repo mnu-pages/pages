@@ -1,0 +1,25 @@
+.TITLE "pwd"
+
+.DIV "DESCRIPTION"
+Prints the name of the current working directory. It displays the __absolute path__ from the root of the filesystem to your current location.
+
+.DIV "TLDR"
+**pwd**
+Displays the full path of the current directory.
+> 
+
+**pwd -P**
+Displays the physical path, resolving any symbolic links to their actual locations.
+> __-P__ physical path flag
+
+.DIV "SUMMARY"
+Knowing your exact location with __pwd__ is essential before running commands that modify or delete files, especially when working with scripts or symbolic links.
+
+.DIV "SEE ALSO"
+**mac:cd** **mac:ls**
+
+documentation: __https://ss64.com/osx/pwd.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

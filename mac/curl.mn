@@ -1,0 +1,38 @@
+.TITLE "curl"
+
+.DIV "DESCRIPTION"
+Transfers data from or to a server. It supports a wide range of __protocols__ including HTTP, HTTPS, FTP, and more, making it a versatile tool for web interactions.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**curl url**
+Displays the content of a URL in the terminal.
+> __url__ the target web address
+
+**curl -O url**
+Downloads the content of a URL and saves it to a file with the same name.
+> __-O__ remote name flag
+
+**curl -o filename url**
+Downloads the content of a URL and saves it to a specified filename.
+> __-o__ output file flag | __filename__ local file name
+
+**curl -L url**
+Follows any HTTP redirects encountered when requesting the URL.
+> __-L__ follow location flag
+
+**curl -I url**
+Fetches only the HTTP headers from the specified URL.
+> __-I__ head flag
+
+.DIV "SUMMARY"
+The __curl__ command is an essential tool for testing APIs and automating web requests. Use the __-v__ flag to see the full request and response headers, which is invaluable for debugging connection issues.
+
+.DIV "SEE ALSO"
+
+documentation: __https://ss64.com/osx/curl.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

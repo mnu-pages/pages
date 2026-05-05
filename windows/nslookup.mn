@@ -1,0 +1,35 @@
+.TITLE "nslookup"
+
+.DIV "DESCRIPTION"
+Displays information that you can use to diagnose Domain Name System (DNS) infrastructure. It allows for querying __name servers__ to find IP addresses or domain names.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**nslookup domain_name**
+Looks up the IP address for the specified domain name using the default DNS server.
+> __domain_name__ the target domain
+
+**nslookup ip_address**
+Performs a reverse DNS lookup to find the domain name associated with an IP address.
+> __ip_address__ the target IP
+
+**nslookup domain_name dns_server**
+Queries a specific DNS server for information about a domain name.
+> __dns_server__ the target name server
+
+**nslookup -type=mx domain_name**
+Looks up the Mail Exchanger (MX) records for a specific domain.
+> __-type=mx__ record type flag
+
+.DIV "SUMMARY"
+Using __nslookup__ in interactive mode allows you to perform multiple queries and change servers easily. It is an invaluable tool for verifying that DNS records have propagated correctly.
+
+.DIV "SEE ALSO"
+**windows:ping** **windows:ipconfig**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/nslookup__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

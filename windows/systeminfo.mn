@@ -1,0 +1,31 @@
+.TITLE "systeminfo"
+
+.DIV "DESCRIPTION"
+Displays detailed configuration information about a computer and its operating system. It includes hardware properties, OS version, and __network configuration__.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**systeminfo**
+Displays a comprehensive report of system information.
+> 
+
+**systeminfo /s computer**
+Displays system information for a remote computer.
+> __/s__ remote system flag
+
+**systeminfo /fo list**
+Displays the output in a list format for easier reading.
+> __/fo list__ format flag
+
+.DIV "SUMMARY"
+Using __systeminfo__ is an easy way to check the original install date of Windows and the current uptime of the machine. It is a valuable tool for system administrators performing audits.
+
+.DIV "SEE ALSO"
+**windows:tasklist** **windows:ipconfig**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/systeminfo__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

@@ -1,45 +1,32 @@
 .TITLE "security"
 
 .DIV "DESCRIPTION"
-Manages keychains, certificates, encryption, and other security-related operations
-on macOS. This command-line utility provides access to the macOS Keychain,
-allowing users to store and retrieve passwords, cryptographic keys, and digital
-certificates. It is a fundamental tool for system security.
-
-.DIV "ALIAS"
-**keychain**
+Manages keychains, certificates, and code signing. It provides a command-line interface to the macOS __Security framework__ and allows for the manipulation of sensitive credentials.
 
 .DIV "TLDR"
-**security find-generic-password -s "__Service Name__" -a "__Account__" -w**
-Finds and prints the password for a generic password item with a given __Service Name__ and __Account__.
-> __"Service Name"__: The service name of the password item. | __"Account"__: The account name associated with the password.
+**security find-generic-password -s "Name"**
+Searches for and displays a generic password entry in the keychain.
+> __find-generic-password__ search command | __-s__ service name flag | __"Name"__ the service identifier
 
-**security add-generic-password -s "__Service Name__" -a "__Account__" -w "__Password__"**
-Adds a generic password item to the default keychain.
-> __"Service Name"__: The service name for the new password item. | __"Account"__: The account name for the new password item. | __"Password"__: The password to store.
-
-**security delete-generic-password -s "__Service Name__" -a "__Account__"**
-Deletes a generic password item from the default keychain.
-> __"Service Name"__: The service name of the password item to delete. | __"Account"__: The account name associated with the password.
+**security unlock-keychain**
+Unlocks the login keychain so that applications and scripts can access stored items.
+> __unlock-keychain__ unlock command
 
 **security list-keychains**
-Lists the keychains in the current user's search list.
-> 
+Displays all available keychain files currently in the search list.
+> __list-keychains__ list command
 
-**security unlock-keychain __~/Library/Keychains/login.keychain-db__**
-Unlocks a specific keychain, allowing programmatic access to its items.
-> __~/Library/Keychains/login.keychain-db__: The path to the keychain file.
+**security add-trusted-cert -d -r trustRoot -k login.keychain cert.crt**
+Adds a certificate file to the keychain and marks it as trusted.
+> __add-trusted-cert__ add command | __-d__ admin flag | __cert.crt__ certificate file
 
 .DIV "SUMMARY"
-The `security` command is critical for managing sensitive information on macOS.
-Always handle passwords and keys with care. For complex operations, consider
-referencing the full `man security` page due to the depth of its functionality.
+Use the __security__ command with extreme caution. Automated scripts that use __unlock-keychain__ should be carefully protected to avoid exposing user credentials.
 
 .DIV "SEE ALSO"
-**mac:defaults**
 
-documentation: https://ss64.com/osx/security.html
-license: MIT
+documentation: __https://ss64.com/osx/security.html__
+license: Apple Public Source License
 
 .DIV "AUTHOR"
 written by mnu contributor

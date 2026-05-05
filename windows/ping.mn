@@ -1,0 +1,35 @@
+.TITLE "ping"
+
+.DIV "DESCRIPTION"
+Verifies IP-level connectivity to another TCP/IP computer by sending ICMP Echo Request messages. It measures the __round-trip time__ and reports packet loss.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**ping hostname**
+Sends echo requests to the specified hostname or IP address.
+> __hostname__ the target destination
+
+**ping -t hostname**
+Pings the specified host continuously until interrupted.
+> __-t__ continuous flag
+
+**ping -n 10 hostname**
+Sends a specific number of echo requests.
+> __-n 10__ count flag
+
+**ping -l 1000 hostname**
+Sends echo requests with a specific buffer size in bytes.
+> __-l 1000__ buffer size flag
+
+.DIV "SUMMARY"
+Using __ping__ is the first step in troubleshooting network connectivity issues. A successful ping indicates that the basic network path between the two devices is functional.
+
+.DIV "SEE ALSO"
+**windows:tracert** **windows:ipconfig**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/ping__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

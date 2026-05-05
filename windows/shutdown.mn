@@ -1,0 +1,39 @@
+.TITLE "shutdown"
+
+.DIV "DESCRIPTION"
+Enables you to shut down or restart local or remote computers. it is a critical tool for __system maintenance__ and __power management__.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**shutdown /s**
+Shuts down the local computer.
+> __/s__ shutdown flag
+
+**shutdown /r**
+Shuts down and then restarts the local computer.
+> __/r__ restart flag
+
+**shutdown /a**
+Aborts a system shutdown that has already been initiated.
+> __/a__ abort flag
+
+**shutdown /t 60**
+Sets the time-out period before shutdown to 60 seconds.
+> __/t 60__ timeout flag
+
+**shutdown /h**
+Puts the local computer into hibernation.
+> __/h__ hibernate flag
+
+.DIV "SUMMARY"
+Always warn other users on a multi-user system before initiating a shutdown. Using __shutdown /a__ is the only way to stop an accidental shutdown if a timeout was specified.
+
+.DIV "SEE ALSO"
+**windows:taskkill** **windows:systeminfo**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/shutdown__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

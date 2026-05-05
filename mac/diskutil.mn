@@ -1,45 +1,37 @@
 .TITLE "diskutil"
 
 .DIV "DESCRIPTION"
-Manages disks, volumes, partitions, and RAID sets on macOS. This command-line utility
-provides extensive control over storage devices, including formatting, partitioning,
-repairing, and mounting/unmounting volumes. It is the command-line equivalent
-of Disk Utility.
-
-.DIV "ALIAS"
-**disktool**
+Manages local disks and volumes. It allows you to repair, verify, erase, and partition storage devices directly from the command line.
 
 .DIV "TLDR"
 **diskutil list**
-Lists all attached disks and their partitions.
-> 
+Lists all currently available disks and their partitions.
+> __list__ display command
 
-**diskutil mount __/dev/diskNsN__**
-Mounts a specified volume, typically identified by its disk identifier (e.g., __/dev/disk1s2__).
-> __/dev/diskNsN__: The identifier of the disk or volume.
+**diskutil info device**
+Displays detailed information about a specific disk or partition.
+> __info__ information command | __device__ the disk identifier
 
-**diskutil unmount __/Volumes/VolumeName__**
-Unmounts a specified volume by its mount point.
-> __/Volumes/VolumeName__: The mount point of the volume.
+**diskutil mount device**
+Mounts a specific volume to the filesystem.
+> __mount__ mount command | __device__ the disk identifier
 
-**diskutil eraseDisk __APFS__ __"MyDisk"__ __/dev/diskN__**
-Erases and formats an entire physical disk with the __APFS__ filesystem and names it __"MyDisk"__.
-> __APFS__: The filesystem to use (e.g., HFS+, APFS). | __"MyDisk"__: The new name for the disk. | __/dev/diskN__: The identifier of the physical disk.
+**diskutil unmount device**
+Unmounts a specific volume from the filesystem.
+> __unmount__ unmount command | __device__ the disk identifier
 
-**diskutil repairVolume __/Volumes/VolumeName__**
-Repairs a specified volume, checking for and fixing errors in its filesystem.
-> __/Volumes/VolumeName__: The mount point of the volume to repair.
+**diskutil eraseDisk format name device**
+Erases a disk and initializes it with a specific format and name.
+> __eraseDisk__ formatting command | __format__ filesystem type | __name__ new volume name | __device__ target disk
 
 .DIV "SUMMARY"
-Always use `diskutil` with caution, especially commands like `eraseDisk` and `partitionDisk`,
-as they can lead to data loss if used incorrectly. It is highly recommended to
-backup important data before performing any destructive operations.
+Always verify the disk identifier using __diskutil list__ before performing destructive operations like __eraseDisk__. Misidentifying a disk can lead to permanent data loss.
 
 .DIV "SEE ALSO"
-**mac:open**
+**linux:df** **linux:mount**
 
-documentation: https://ss64.com/osx/diskutil.html
-license: MIT
+documentation: __https://ss64.com/osx/diskutil.html__
+license: BSD
 
 .DIV "AUTHOR"
 written by mnu contributor

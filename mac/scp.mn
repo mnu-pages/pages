@@ -1,0 +1,35 @@
+.TITLE "scp"
+
+.DIV "DESCRIPTION"
+Copies files securely between hosts. It uses __SSH__ for data transfer and authentication, providing a secure way to move files across a network.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**scp file user@host:path**
+Copies a local file to a specified path on a remote host.
+> __file__ local path | __user@host:path__ remote destination
+
+**scp user@host:path local_path**
+Copies a remote file to a specified local directory.
+> __user@host:path__ remote source | __local_path__ local destination
+
+**scp -r folder user@host:path**
+Copies an entire directory recursively to a remote host.
+> __-r__ recursive flag
+
+**scp -P 2222 file user@host:path**
+Uses a specific port to connect to the remote host.
+> __-P__ port flag | __2222__ port number
+
+.DIV "SUMMARY"
+While __scp__ is convenient for simple file transfers, the __rsync__ command is often preferred for large or complex transfers as it supports resuming interrupted tasks and delta-encoding.
+
+.DIV "SEE ALSO"
+**mac:ssh** **mac:rsync**
+
+documentation: __https://ss64.com/osx/scp.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

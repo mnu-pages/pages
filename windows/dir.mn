@@ -1,0 +1,43 @@
+.TITLE "dir"
+
+.DIV "DESCRIPTION"
+Lists directory contents. It displays information about files and directories within the current or specified path and is a fundamental tool for __filesystem navigation__ in Windows.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**dir**
+Lists the names of files and directories in the current path.
+> 
+
+**dir /p**
+Pauses after each screen of information.
+> __/p__ pause flag
+
+**dir /w**
+Displays the list in wide format, showing only names.
+> __/w__ wide format flag
+
+**dir /a**
+Displays files with specified attributes, including hidden files.
+> __/a__ attributes flag
+
+**dir /s**
+Displays files in the specified directory and all subdirectories.
+> __/s__ subdirectories flag
+
+**dir /o:n**
+Sorts the list alphabetically by name.
+> __/o:n__ sort by name flag
+
+.DIV "SUMMARY"
+Using __dir /s__ is helpful for finding files across multiple folders. Combine __/a__ with __/p__ to view hidden system files one screen at a time.
+
+.DIV "SEE ALSO"
+**windows:cd** **windows:mkdir** **windows:type**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/dir__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

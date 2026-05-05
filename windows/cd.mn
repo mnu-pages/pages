@@ -1,0 +1,36 @@
+.TITLE "cd"
+
+.DIV "DESCRIPTION"
+Changes the current working directory. It updates the shell environment to a new path, allowing you to navigate the filesystem.
+
+.DIV "ALIAS"
+**chdir**
+
+.DIV "TLDR"
+**cd path\to\directory**
+Changes the current working directory to the specified path.
+> __path\to\directory__ the target folder path
+
+**cd ..**
+Moves the current working directory up one level to the parent folder.
+> 
+
+**cd \**
+Changes the current working directory to the root of the current drive.
+> 
+
+**cd /d path\to\directory**
+Changes the current drive in addition to changing the directory.
+> __/d__ drive change flag | __path\to\directory__ the target path
+
+.DIV "SUMMARY"
+Use the __/d__ flag when you need to switch between different drives, such as from __C:__ to __D:__. Running __cd__ without arguments in Windows displays the current directory path instead of returning to home.
+
+.DIV "SEE ALSO"
+**windows:dir** **windows:mkdir**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/cd__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

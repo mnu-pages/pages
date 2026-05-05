@@ -1,0 +1,33 @@
+.TITLE "networksetup"
+
+.DIV "DESCRIPTION"
+Configures network settings and services. It provides a command-line interface for managing __Wi-Fi__, __Ethernet__, and other network interfaces as well as __DNS__ and __proxy__ settings.
+
+.DIV "TLDR"
+**networksetup -listallnetworkservices**
+Lists all network services configured on the system.
+> __-listallnetworkservices__ list command
+
+**networksetup -getinfo "Wi-Fi"**
+Displays IP address, subnet mask, and other details for a specific service.
+> __-getinfo__ info flag | __"Wi-Fi"__ service name
+
+**networksetup -setdnsservers "Wi-Fi" 8.8.8.8**
+Configures a specific DNS server for a network service.
+> __-setdnsservers__ DNS config flag | __"Wi-Fi"__ service name | __8.8.8.8__ DNS address
+
+**networksetup -setairportpower en0 on**
+Turns the Wi-Fi power on or off for a specific hardware interface.
+> __-setairportpower__ power flag | __en0__ interface identifier | __on__ state
+
+.DIV "SUMMARY"
+Using __networksetup__ is often more reliable than the GUI for fixing persistent connectivity issues. Most configuration changes require __administrator__ privileges.
+
+.DIV "SEE ALSO"
+**linux:ip** **mac:scutil**
+
+documentation: __https://ss64.com/osx/networksetup.html__
+license: Apple Public Source License
+
+.DIV "AUTHOR"
+written by mnu contributor

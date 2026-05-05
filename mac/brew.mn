@@ -1,45 +1,40 @@
 .TITLE "brew"
 
 .DIV "DESCRIPTION"
-The missing package manager for macOS. Homebrew installs the __packages__ you need
-that Apple did not include by default. It manages __binaries__, __libraries__,
-and __applications__ within their own sandboxed directories. It simplifies
-the installation and management of open-source software on macOS.
-
-.DIV "ALIAS"
-**homebrew**
+The missing package manager for macOS. It installs the __packages__ you need that Apple did not include by default. It manages __binaries__, __libraries__, and __applications__ within their own sandboxed directories.
 
 .DIV "TLDR"
-**brew install __formula__**
-Installs a specific package or formula (e.g., __node__, __git__).
-> __formula__: The name of the package to install.
+**brew install formula**
+Installs a specific package or formula.
+> __install__ installation command | __formula__ name of the package
 
-**brew uninstall __formula__**
+**brew uninstall formula**
 Removes an installed formula from the system.
-> __formula__: The name of the package to uninstall.
+> __uninstall__ removal command | __formula__ name of the package
 
 **brew update**
-Fetches the newest versions of Homebrew and all formulae from GitHub.
-> 
+Fetches the newest version of Homebrew and all formulae from GitHub.
+> __update__ sync command
 
 **brew upgrade**
 Installs newer versions of all currently installed packages.
-> 
+> __upgrade__ version update command
 
-**brew search __text__**
-Searches for available formulae matching the provided __text__.
-> __text__: The search term.
+**brew list**
+Lists all the formulae that are currently installed on the system.
+> __list__ display command
+
+**brew doctor**
+Checks your system for potential issues and provides suggestions for fixes.
+> __doctor__ diagnostic command
 
 .DIV "SUMMARY"
-`brew` is an essential tool for any macOS developer or power user. Regularly
-running `brew cleanup` helps remove old versions of installed formulae and
-free up disk space. Always run `brew doctor` if you encounter unexpected
-errors after an installation.
+Regularly running __brew cleanup__ is a good habit to remove old versions of installed formulae and free up disk space. Always run __brew doctor__ if you encounter unexpected errors during installation.
 
 .DIV "SEE ALSO"
-**mac:softwareupdate**
+**cli:git**
 
-documentation: https://brew.sh/
+documentation: __https://docs.brew.sh__
 license: BSD 2-Clause
 
 .DIV "AUTHOR"

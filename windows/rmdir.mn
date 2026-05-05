@@ -1,0 +1,32 @@
+.TITLE "rmdir"
+
+.DIV "DESCRIPTION"
+Removes a directory. It deletes a folder from the filesystem, provided that the directory is empty unless specific flags are used.
+
+.DIV "ALIAS"
+**rd**
+
+.DIV "TLDR"
+**rmdir name**
+Removes an empty directory with the specified name.
+> __name__ the target directory name
+
+**rmdir /s name**
+Removes a directory and all its subdirectories and files.
+> __/s__ recursive flag | __name__ the target directory name
+
+**rmdir /s /q name**
+Removes a directory tree silently without asking for confirmation.
+> __/s__ recursive flag | __/q__ quiet flag | __name__ the target directory name
+
+.DIV "SUMMARY"
+Use the __/s__ flag with caution, as it permanently deletes all contents within a folder. Adding the __/q__ flag is useful for batch scripts where user interaction is not desired.
+
+.DIV "SEE ALSO"
+**windows:mkdir** **windows:del**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/rmdir__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

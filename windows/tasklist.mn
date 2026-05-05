@@ -1,0 +1,35 @@
+.TITLE "tasklist"
+
+.DIV "DESCRIPTION"
+Displays a list of currently running processes on the local computer or on a remote computer. It provides details such as process name, PID, and __memory usage__.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**tasklist**
+Lists all currently running processes on the local machine.
+> 
+
+**tasklist /v**
+Displays verbose information for each process.
+> __/v__ verbose flag
+
+**tasklist /svc**
+Lists the services hosted in each process.
+> __/svc__ services flag
+
+**tasklist /fi "status eq running"**
+Filters the list to show only running processes.
+> __/fi__ filter flag | __"status eq running"__ the filter criteria
+
+.DIV "SUMMARY"
+Using __tasklist__ is the command-line equivalent of the Task Manager. It is useful for identifying background processes that may be consuming excessive system resources.
+
+.DIV "SEE ALSO"
+**windows:taskkill** **windows:systeminfo**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/tasklist__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

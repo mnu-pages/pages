@@ -1,0 +1,39 @@
+.TITLE "powershell"
+
+.DIV "DESCRIPTION"
+A cross-platform task automation solution made up of a command-line shell and a scripting language. It provides comprehensive control over the __Windows environment__.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**powershell**
+Starts a new PowerShell session in the current terminal.
+> 
+
+**powershell -Command "Get-Process"**
+Executes the specified command and then exits.
+> __-Command__ execution flag
+
+**powershell -File script.ps1**
+Runs the specified PowerShell script file.
+> __-File__ script flag
+
+**powershell -NoProfile**
+Starts a session without loading the user's profile scripts.
+> __-NoProfile__ clean session flag
+
+**powershell -ExecutionPolicy Bypass -File script.ps1**
+Runs a script while temporarily bypassing the execution policy.
+> __-ExecutionPolicy__ policy flag
+
+.DIV "SUMMARY"
+PowerShell is highly extensible and integrates deeply with the .NET framework. Use the __-NoProfile__ flag when running scripts in automated environments to ensure a consistent execution state.
+
+.DIV "SEE ALSO"
+**windows:wsl** **windows:cmd**
+
+documentation: __https://learn.microsoft.com/en-us/powershell/scripting/overview__
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

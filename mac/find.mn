@@ -1,46 +1,39 @@
 .TITLE "find"
 
 .DIV "DESCRIPTION"
-Searches for files and directories on macOS based on various criteria. This command
-traverses a directory hierarchy to locate files matching expressions such as
-name, type, size, modification time, and permissions. It is a powerful but
-complex utility for __filesystem navigation__ and management.
+Searches for files in a directory hierarchy. It finds files based on __attributes__ like name, type, size, and modification time.
 
 .DIV "ALIAS"
-**locate**
 
 .DIV "TLDR"
-**find __/path/to/search__ -name "__*.txt__"**
-Finds all files ending with "__.txt__" within the specified __/path/to/search__ directory.
-> __/path/to/search__: The starting directory for the search. | __"*.txt"__: The filename pattern to match.
+**find . -name "pattern"**
+Searches for files with a specific name or pattern in the current directory.
+> __.__ search path | __-name__ name flag | __"pattern"__ search term
 
-**find . -type d -name "__build__"**
-Finds all directories named "__build__" within the current directory and its subdirectories.
-> __.**: The current directory. | __-type d__: Specifies to search for directories. | __"build"__: The directory name to match.
+**find . -type f**
+Filters the search to only include regular files.
+> __-type__ type flag | __f__ file type
 
-**find __/path/to/search__ -mtime +7**
-Finds files modified more than 7 days ago within the specified __/path/to/search__.
-> __/path/to/search__: The starting directory for the search. | __-mtime +7__: Files modified more than 7 * 24 hours ago.
+**find . -type d**
+Filters the search to only include directories.
+> __-type__ type flag | __d__ directory type
 
-**find __/path/to/search__ -size +1G**
-Finds files larger than 1 Gigabyte within the specified __/path/to/search__.
-> __/path/to/search__: The starting directory for the search. | __-size +1G__: Files larger than 1 Gigabyte.
+**find . -mtime -7**
+Finds files that were modified within the last seven days.
+> __-mtime__ modification time flag | __-7__ number of days
 
-**find . -name "__*.log__" -delete**
-Finds all files ending with "__.log__" in the current directory and deletes them.
-> __.**: The current directory. | __"*.log"__: The filename pattern. | __-delete__: Deletes the found files.
+**find . -size +100M**
+Locates files that are larger than 100 megabytes.
+> __-size__ size flag | __+100M__ size threshold
 
 .DIV "SUMMARY"
-`find` is incredibly flexible but can be slow on large filesystems if not used
-efficiently. Always specify the starting directory clearly. Be very careful
-when using actions like `-delete` or `-exec` as they can lead to irreversible
-data loss. Consider using `mdfind` for faster metadata-based searches.
+The __find__ command is extremely powerful when combined with the __-exec__ flag to perform actions on discovered files. Always test your search patterns first without destructive actions to ensure accuracy.
 
 .DIV "SEE ALSO"
 **mac:mdfind** **mac:grep**
 
-documentation: https://ss64.com/osx/find.html
-license: MIT
+documentation: __https://ss64.com/osx/find.html__
+license: BSD
 
 .DIV "AUTHOR"
 written by mnu contributor

@@ -1,0 +1,31 @@
+.TITLE "umount"
+
+.DIV "DESCRIPTION"
+Unmounts filesystems. It detaches a __storage device__ or network share from the system hierarchy, ensuring all data is written before removal.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**umount mount_point**
+Unmounts a filesystem from a specific directory or volume.
+> __mount_point__ the target path or volume
+
+**umount /dev/disk2s1**
+Unmounts a filesystem by specifying its device path.
+> __/dev/disk2s1__ the device path
+
+**umount -f mount_point**
+Forcefully unmounts a filesystem even if it is currently in use.
+> __-f__ force flag
+
+.DIV "SUMMARY"
+Always attempt to unmount a drive normally before using the __-f__ flag. Forcefully unmounting a device that is still being written to can result in __data corruption__ and should be handled with care.
+
+.DIV "SEE ALSO"
+**mac:mount** **mac:diskutil**
+
+documentation: __https://ss64.com/osx/umount.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

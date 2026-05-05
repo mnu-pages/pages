@@ -1,48 +1,41 @@
 .TITLE "ls"
 
 .DIV "DESCRIPTION"
-Lists directory contents on macOS. It displays information about files and directories
-within the current or specified path, and is a fundamental tool for __filesystem navigation__.
-On macOS, it has specific display options related to HFS+ (now APFS) and Finder attributes.
-
-.DIV "ALIAS"
-**dir**
+Lists directory contents. It displays information about files and directories and is the primary tool for __navigating__ the macOS filesystem.
 
 .DIV "TLDR"
 **ls**
 Lists the names of files and directories in the current path.
 > 
 
+**ls -G**
+Enables colorized output to distinguish between file types and directories.
+> __-G__ color flag
+
 **ls -a**
 Includes hidden files that start with a dot in the output.
-> __-a__: all flag, includes entries starting with '.'
+> __-a__ all flag
 
 **ls -l**
 Displays detailed information including permissions, owner, size, and modification date.
-> __-l__: long format flag
+> __-l__ long format flag
 
 **ls -l -h**
-Shows file sizes in human-readable formats such as KB, MB, or GB.
-> __-l__: long format | __-h__: human-readable flag
+Shows file sizes in human-readable formats like KB, MB, or GB.
+> __-l__ long format | __-h__ human-readable flag
 
-**ls -G**
-Enables colorized output on macOS, making it easier to distinguish file types.
-> __-G__: colorized output flag
-
-**ls -O**
-Displays file flags (e.g., hidden, compressed, archived).
-> __-O__: display file flags
+**ls -R**
+Lists directory trees recursively.
+> __-R__ recursive flag
 
 .DIV "SUMMARY"
-On macOS, `ls -G` is commonly aliased to `ls` for better readability. Using
-`ls -l -h` provides a clear overview of file details. Be aware that Finder's
-view settings might differ from `ls` output, especially concerning hidden files.
+On macOS, the __-G__ flag is used for color, unlike the __--color__ flag used on Linux. Using __ls -l -a__ is a common habit for a complete view of a directory's state.
 
 .DIV "SEE ALSO"
-**mac:open** **mac:find**
+**mac:cd** **mac:pwd**
 
-documentation: https://ss64.com/osx/ls.html
-license: MIT
+documentation: __https://ss64.com/osx/ls.html__
+license: BSD
 
 .DIV "AUTHOR"
 written by mnu contributor

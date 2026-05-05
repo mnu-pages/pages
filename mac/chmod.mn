@@ -1,0 +1,33 @@
+.TITLE "chmod"
+
+.DIV "DESCRIPTION"
+Changes file modes or Access Control Lists (ACLs). It manages the __permissions__ of files and directories to control who can read, write, or execute them.
+
+.DIV "TLDR"
+**chmod 755 file.txt**
+Sets specific octal permissions for a file.
+> __755__ octal mode | __file.txt__ target file
+
+**chmod +x script.sh**
+Adds execute permission to a specific file.
+> __+x__ execute permission | __script.sh__ target script
+
+**chmod -R 777 directory/**
+Changes permissions for a directory and all its contents recursively.
+> __-R__ recursive flag | __777__ permissive mode | __directory/__ target folder
+
+**chmod u+w file.txt**
+Adds write permission for the owner of the file.
+> __u+w__ user write permission
+
+.DIV "SUMMARY"
+Properly managing permissions with __chmod__ is critical for system security. Always use the most restrictive permissions necessary for a file or application to function.
+
+.DIV "SEE ALSO"
+**mac:chown** **mac:ls**
+
+documentation: __https://ss64.com/osx/chmod.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

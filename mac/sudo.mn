@@ -1,0 +1,35 @@
+.TITLE "sudo"
+
+.DIV "DESCRIPTION"
+Executes a command as another user. It typically grants __administrative privileges__ to perform tasks that require root access while maintaining an audit trail.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**sudo command**
+Runs a specific command with root privileges.
+> __command__ the target tool
+
+**sudo -i**
+Opens an interactive login shell with root environment and permissions.
+> __-i__ interactive flag
+
+**sudo -u user command**
+Runs a command as a specified user instead of root.
+> __-u__ user flag | __user__ target username
+
+**sudo -k**
+Invalidates the user's cached credentials, requiring a password for the next call.
+> __-k__ kill cache flag
+
+.DIV "SUMMARY"
+Using __sudo__ allows for fine-grained control over administrative tasks without needing to log in as the root user. On macOS, the first user account created is automatically added to the __sudoers__ list with full privileges.
+
+.DIV "SEE ALSO"
+**mac:passwd** **mac:whoami**
+
+documentation: __https://ss64.com/osx/sudo.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

@@ -1,0 +1,39 @@
+.TITLE "chkdsk"
+
+.DIV "DESCRIPTION"
+Checks the file system and file system metadata of a volume for logical and physical errors. It provides a status report and can fix issues to ensure __disk integrity__.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**chkdsk**
+Checks the current drive and displays a status report.
+> 
+
+**chkdsk C:**
+Checks the specified drive for errors.
+> __C:__ the target drive letter
+
+**chkdsk /f**
+Fixes errors on the disk.
+> __/f__ fix flag
+
+**chkdsk /r**
+Locates bad sectors and recovers readable information.
+> __/r__ recover flag
+
+**chkdsk /x**
+Forces the volume to dismount first if necessary.
+> __/x__ dismount flag
+
+.DIV "SUMMARY"
+Running __chkdsk /f__ often requires a system restart if the target drive is currently in use. Regularly checking your disks helps prevent data loss caused by file system corruption.
+
+.DIV "SEE ALSO"
+**windows:format** **windows:dir**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/chkdsk__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

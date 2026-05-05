@@ -1,0 +1,35 @@
+.TITLE "tracert"
+
+.DIV "DESCRIPTION"
+Determines the path taken to a destination by sending ICMP Echo Request messages with varying Time to Live (TTL) values. It identifies each __hop__ in the network path.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**tracert hostname**
+Traces the path to the specified hostname or IP address.
+> __hostname__ the target destination
+
+**tracert -d hostname**
+Prevents tracert from resolving IP addresses to hostnames for faster results.
+> __-d__ no-resolution flag
+
+**tracert -h 20 hostname**
+Specifies the maximum number of hops to search for the target.
+> __-h 20__ max hops flag
+
+**tracert -w 500 hostname**
+Sets the timeout in milliseconds to wait for each reply.
+> __-w 500__ timeout flag
+
+.DIV "SUMMARY"
+Using __tracert__ helps identify where a network connection is failing or which router is causing latency. It provides a detailed view of the internet infrastructure between you and the host.
+
+.DIV "SEE ALSO"
+**windows:ping** **windows:netstat**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/tracert__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

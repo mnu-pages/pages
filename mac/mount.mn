@@ -1,0 +1,31 @@
+.TITLE "mount"
+
+.DIV "DESCRIPTION"
+Attaches a filesystem to the system hierarchy. It makes the contents of __storage devices__ or network shares accessible at a specific mount point.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**mount**
+Lists all currently mounted filesystems.
+> 
+
+**mount -u -o rw /**
+Remounts the root filesystem with read-write permissions.
+> __-u__ update flag | __-o__ options flag | __rw__ read-write option | __/__ root path
+
+**mount -t msdos /dev/disk2s1 /Volumes/USB**
+Mounts a specific device with a specified filesystem type.
+> __-t__ type flag | __/dev/disk2s1__ device path | __/Volumes/USB__ mount point
+
+.DIV "SUMMARY"
+On modern macOS, many mounting tasks are handled automatically by the Disk Management framework. The __mount__ command remains essential for low-level system administration and manual control over filesystem options.
+
+.DIV "SEE ALSO"
+**mac:umount** **mac:diskutil**
+
+documentation: __https://ss64.com/osx/mount.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

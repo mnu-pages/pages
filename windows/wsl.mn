@@ -1,0 +1,39 @@
+.TITLE "wsl"
+
+.DIV "DESCRIPTION"
+Enables developers to run a GNU/Linux environment directly on Windows without the overhead of a traditional virtual machine or dual-boot setup.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**wsl**
+Starts the default Linux distribution in the current terminal.
+> 
+
+**wsl --list --online**
+Lists the available Linux distributions that can be installed.
+> __--list__ list flag | __--online__ online source flag
+
+**wsl --install -d Ubuntu**
+Installs the specified Linux distribution.
+> __--install__ install flag | __-d__ distribution flag
+
+**wsl --update**
+Manages updates to the WSL kernel and components.
+> __--update__ update flag
+
+**wsl --shutdown**
+Immediately terminates all running distributions and the WSL 2 lightweight utility virtual machine.
+> __--shutdown__ termination flag
+
+.DIV "SUMMARY"
+WSL 2 provides full system call compatibility and increased file system performance. Use __wsl --shutdown__ to free up system resources if you are no longer using your Linux environments.
+
+.DIV "SEE ALSO"
+**windows:powershell** **windows:cmd**
+
+documentation: __https://learn.microsoft.com/en-us/windows/wsl/reference__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

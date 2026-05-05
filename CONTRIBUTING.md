@@ -18,13 +18,11 @@ The **mnu standard** is a combination of three core pillars. Before you start, p
 
 ## 2. Choosing the Right Directory
 
-We follow the **"Source vs. System"** rule to keep the database organized. For a detailed breakdown, see the [**Directory Selection Guide**](contributors/directory_selection.md).
+We follow the **"Core-Tool Split"** rule to keep the database organized. For a detailed breakdown, see the [**Directory Selection Guide**](contributors/directory_selection.md).
 
-*   `cli/`: Universal tools, protocols, and third-party apps (e.g., `git`, `ssh`, `docker`).
-*   `linux/`: Linux-specific tools and core POSIX utilities (e.g., `apt`, `ls`, `sudo`).
-*   `mac/`: Utilities specific to macOS (e.g., `brew`, `pbcopy`).
-*   `windows/`: Tools specific to the Windows environment (e.g., `powershell`, `wsl`).
-*   `examples/`: **Do not add new pages here.** This folder is strictly for reference templates.
+*   **OS-Specific Folders (`linux/`, `mac/`, `windows/`):** For the **System Backbone**. If a command is pre-installed on the OS, it **must** be here. **Basic utilities** (like `ls`, `cd`, `mkdir`) belong **exclusively** here and are forbidden in `cli/`.
+*   **`cli/`:** For the **Developer Toolbox**. Includes universal professional tools (like `git`, `ssh`, `docker`). If a tool is universal but also pre-installed (like `ssh`), it should be in both the OS folder and here.
+*   **`examples/`:** **Do not add new pages here.** This folder is strictly for reference templates.
 
 ---
 

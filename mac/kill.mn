@@ -1,0 +1,35 @@
+.TITLE "kill"
+
+.DIV "DESCRIPTION"
+Sends a signal to a process. It is primarily used to __terminate processes__ by sending the SIGTERM signal to a specified process ID.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**kill pid**
+Sends the default termination signal to a process.
+> __pid__ the process identification number
+
+**kill -l**
+Lists all available signal names and numbers.
+> __-l__ list signals flag
+
+**kill -9 pid**
+Forcefully terminates a process by sending the SIGKILL signal.
+> __-9__ SIGKILL signal flag
+
+**kill -s signal_name pid**
+Sends a specific signal to a process by name.
+> __-s__ signal flag | __signal_name__ the name of the signal
+
+.DIV "SUMMARY"
+Always try to use the default __kill__ (SIGTERM) first to allow a process to shut down gracefully. Use the __-9__ (SIGKILL) flag only as a last resort when a process is unresponsive and cannot be terminated otherwise.
+
+.DIV "SEE ALSO"
+**mac:ps** **mac:top**
+
+documentation: __https://ss64.com/osx/kill.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

@@ -1,0 +1,39 @@
+.TITLE "attrib"
+
+.DIV "DESCRIPTION"
+Displays, sets, or removes attributes assigned to files or directories. It allows for the control of __read-only__, __archive__, __system__, and __hidden__ attributes.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**attrib**
+Displays the attributes of all files in the current directory.
+> 
+
+**attrib +r file**
+Sets the read-only attribute for a specific file.
+> __+r__ add read-only flag
+
+**attrib -h file**
+Removes the hidden attribute from a specific file.
+> __-h__ remove hidden flag
+
+**attrib +s +h folder**
+Sets both the system and hidden attributes for a folder.
+> __+s__ add system flag | __+h__ add hidden flag
+
+**attrib /s /d**
+Processes files and directories in the current folder and all subdirectories.
+> __/s__ recursive flag | __/d__ process folders flag
+
+.DIV "SUMMARY"
+Using __attrib__ is essential for recovering files that have been hidden by malware or accidental system changes. Be careful when modifying system attributes, as it can affect OS stability.
+
+.DIV "SEE ALSO"
+**windows:dir** **windows:copy**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/attrib__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

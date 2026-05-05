@@ -1,0 +1,39 @@
+.TITLE "sort"
+
+.DIV "DESCRIPTION"
+Sorts lines of text files. It rearranges __input data__ into a specific order based on alphabetical, numerical, or other criteria.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**sort file**
+Sorts the lines of a file alphabetically.
+> __file__ the target path
+
+**sort -r file**
+Sorts the lines in reverse order.
+> __-r__ reverse flag
+
+**sort -n file**
+Sorts the lines numerically instead of alphabetically.
+> __-n__ numeric flag
+
+**sort -u file**
+Sorts the lines and removes duplicate entries from the output.
+> __-u__ unique flag
+
+**sort -k 2 file**
+Sorts based on a specific column or field within the file.
+> __-k__ field flag | __2__ field number
+
+.DIV "SUMMARY"
+The __sort__ command is often used in pipelines between __grep__ and __uniq__ to process and clean data. When dealing with numbers, always remember to use the __-n__ flag to avoid incorrect alphabetical ordering.
+
+.DIV "SEE ALSO"
+**mac:uniq** **mac:grep**
+
+documentation: __https://ss64.com/osx/sort.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

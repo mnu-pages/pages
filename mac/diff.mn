@@ -1,0 +1,38 @@
+.TITLE "diff"
+
+.DIV "DESCRIPTION"
+Compares two files line by line. It identifies __differences__ between text files and displays the changes required to make them identical.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**diff file1 file2**
+Compares two files and displays the lines that differ.
+> __file1__ first file | __file2__ second file
+
+**diff -u file1 file2**
+Produces a unified diff format which is commonly used for patches.
+> __-u__ unified format flag
+
+**diff -i file1 file2**
+Ignores case differences when comparing file contents.
+> __-i__ ignore case flag
+
+**diff -r folder1 folder2**
+Compares the contents of two directories recursively.
+> __-r__ recursive flag
+
+**diff -w file1 file2**
+Ignores all white space when comparing lines.
+> __-w__ ignore white space flag
+
+.DIV "SUMMARY"
+Unified diffs generated with __-u__ are the industry standard for sharing code changes. When comparing large directories, using __-r__ alongside __-q__ can provide a quick summary of which files differ without showing the content changes.
+
+.DIV "SEE ALSO"
+
+documentation: __https://ss64.com/osx/diff.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

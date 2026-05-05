@@ -1,0 +1,35 @@
+.TITLE "copy"
+
+.DIV "DESCRIPTION"
+Copies one or more files to another location. It creates a duplicate of the source file at the destination path.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**copy source destination**
+Copies a file from the source path to the destination path.
+> __source__ the file to copy | __destination__ the target location
+
+**copy *.txt destination**
+Copies all text files in the current directory to the destination.
+> __*.txt__ wildcard for text files
+
+**copy /v source destination**
+Verifies that the new files are written correctly.
+> __/v__ verify flag
+
+**copy /y source destination**
+Suppresses prompting to confirm you want to overwrite an existing destination file.
+> __/y__ overwrite flag
+
+.DIV "SUMMARY"
+The __/y__ flag is essential for automation in scripts to avoid pausing for user input. For copying entire directory trees, consider using **windows:robocopy** instead.
+
+.DIV "SEE ALSO"
+**windows:move** **windows:del**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/copy__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

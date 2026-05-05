@@ -1,0 +1,35 @@
+.TITLE "uname"
+
+.DIV "DESCRIPTION"
+Displays system information. It reports details about the __operating system__, kernel version, and hardware architecture of the local machine.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**uname**
+Displays the name of the operating system kernel (Darwin on macOS).
+> 
+
+**uname -a**
+Displays all available system information in a single line.
+> __-a__ all information flag
+
+**uname -m**
+Shows the hardware architecture name, such as x86_64 or arm64.
+> __-m__ machine architecture flag
+
+**uname -r**
+Displays the specific release version of the operating system kernel.
+> __-r__ release flag
+
+.DIV "SUMMARY"
+On macOS, __uname__ identifies the system as Darwin. Checking the hardware architecture with __uname -m__ is particularly useful on modern Macs to determine if the system is running on Intel or Apple Silicon.
+
+.DIV "SEE ALSO"
+**mac:sw_vers** **mac:sysctl**
+
+documentation: __https://ss64.com/osx/uname.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

@@ -1,45 +1,33 @@
 .TITLE "scutil"
 
 .DIV "DESCRIPTION"
-Manages and queries system configuration parameters on macOS. This command-line
-utility allows users to inspect and modify network settings, hostname, DNS
-configuration, and other system-level preferences managed by the `SystemConfiguration`
-framework. It is a powerful tool for network diagnostics and configuration.
-
-.DIV "ALIAS"
-**sysconfig**
+Manages system configuration and the dynamic store. it is used to retrieve and set system parameters like __HostName__, __ComputerName__, and __DNS__ configurations.
 
 .DIV "TLDR"
-**scutil --get __HostName__**
-Gets the current system hostname.
-> __HostName__: The SystemConfiguration key to retrieve.
+**scutil --get HostName**
+Retrieves the current network hostname of the system.
+> __--get__ retrieval flag | __HostName__ parameter name
 
-**scutil --set __HostName__ __MyMacbook__**
-Sets the system hostname to __MyMacbook__.
-> __HostName__: The SystemConfiguration key to set. | __MyMacbook__: The new value for the hostname.
+**scutil --set HostName "newname"**
+Changes the system hostname to a new value.
+> __--set__ modification flag | __HostName__ parameter name | __"newname"__ the new name
 
 **scutil --dns**
-Displays the current DNS configuration, including resolver settings.
-> 
+Displays the current DNS configuration as understood by the system resolver.
+> __--dns__ DNS info flag
 
-**scutil --get __ComputerName__**
-Gets the computer name displayed in Finder and System Settings.
-> __ComputerName__: The SystemConfiguration key to retrieve.
-
-**scutil --set __LocalHostName__ __mymacbook__**
-Sets the local hostname for Bonjour/mDNS.
-> __LocalHostName__: The SystemConfiguration key to set. | __mymacbook__: The new value for the local hostname.
+**scutil --get ComputerName**
+Prints the user-friendly computer name shown in the Sharing preferences.
+> __--get__ retrieval flag | __ComputerName__ parameter name
 
 .DIV "SUMMARY"
-`scutil` provides granular control over network and system identification settings.
-Changes made with `scutil --set` are typically persistent across reboots.
-Misconfigurations can affect network connectivity, so exercise caution.
+Changing the __HostName__ with __scutil__ is the most direct way to ensure your terminal prompt reflects the correct name across reboots.
 
 .DIV "SEE ALSO"
-**mac:networksetup**
+**mac:networksetup** **linux:uname**
 
-documentation: https://ss64.com/osx/scutil.html
-license: MIT
+documentation: __https://ss64.com/osx/scutil.html__
+license: Apple Public Source License
 
 .DIV "AUTHOR"
 written by mnu contributor

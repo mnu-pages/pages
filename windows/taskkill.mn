@@ -1,0 +1,35 @@
+.TITLE "taskkill"
+
+.DIV "DESCRIPTION"
+Ends one or more tasks or processes. Processes can be ended by process ID or image name, making it a powerful tool for __process management__.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**taskkill /pid 1234**
+Ends the process with the specified process ID.
+> __/pid 1234__ the target PID
+
+**taskkill /im notepad.exe**
+Ends the process with the specified image name.
+> __/im notepad.exe__ the target image name
+
+**taskkill /f /im notepad.exe**
+Forcefully ends the specified process.
+> __/f__ force flag
+
+**taskkill /t /im notepad.exe**
+Ends the specified process and any child processes started by it.
+> __/t__ tree kill flag
+
+.DIV "SUMMARY"
+Use the __/f__ flag only when a process is unresponsive and cannot be closed normally. Forcefully ending processes may lead to __unsaved data loss__.
+
+.DIV "SEE ALSO"
+**windows:tasklist** **windows:systeminfo**
+
+documentation: __https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/taskkill__
+license: Proprietary
+
+.DIV "AUTHOR"
+written by mnu contributor

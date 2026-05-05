@@ -1,41 +1,37 @@
 .TITLE "cp"
 
 .DIV "DESCRIPTION"
-Copies files and directories on macOS. This command creates duplicates of files or
-directories from a source to a destination. It is a fundamental utility for
-__filesystem management__ and has options for preserving attributes,
-recursive copying, and handling symbolic links.
-
-.DIV "ALIAS"
-**copy**
+Copies files and directories. It creates a duplicate of the __source__ at the specified __destination__ and is the primary tool for file duplication on macOS.
 
 .DIV "TLDR"
-**cp __source_file__ __destination_file__**
-Copies a __source_file__ to a __destination_file__.
-> __source_file__: The path to the file to copy. | __destination_file__: The path for the new copied file.
+**cp source.txt destination.txt**
+Copies a single file to a new location or filename.
+> __source.txt__ the original file | __destination.txt__ the new copy
 
-**cp -R __source_directory__ __destination_directory__**
-Recursively copies a __source_directory__ and its contents to a __destination_directory__.
-> __-R__: recursive flag | __source_directory__: The path to the directory to copy. | __destination_directory__: The path for the new copied directory.
+**cp -R source_dir destination_dir**
+Copies an entire directory and all its contents recursively.
+> __-R__ recursive flag | __source_dir__ original directory | __destination_dir__ target directory
 
-**cp -v __source_file__ __destination_directory__**
-Copies a __source_file__ to a __destination_directory__, showing verbose output.
-> __-v__: verbose flag | __source_file__: The path to the file to copy. | __destination_directory__: The path to the destination directory.
+**cp -p source.txt destination.txt**
+Preserves the original file's modification time, access time, and permissions.
+> __-p__ preserve flag
 
-**cp -p __source_file__ __destination_file__**
-Copies a __source_file__ to a __destination_file__, preserving attributes (modes, ownership, timestamps).
-> __-p__: preserve attributes flag | __source_file__: The path to the file to copy. | __destination_file__: The path for the new copied file.
+**cp -v source.txt destination.txt**
+Displays the name of each file as it is being copied.
+> __-v__ verbose flag
+
+**cp -n source.txt destination.txt**
+Prevents overwriting an existing file at the destination.
+> __-n__ no-clobber flag
 
 .DIV "SUMMARY"
-`cp` is a core command for managing files. When copying directories, always use the
-`-R` (recursive) option. Be cautious when specifying destinations to avoid overwriting
-files unexpectedly. Use `cp -i` for interactive prompts before overwriting.
+On macOS, using the __-R__ flag is preferred over __-r__ for recursive copies to ensure proper handling of symbolic links and special files. Use __-i__ if you want to be prompted before overwriting files.
 
 .DIV "SEE ALSO"
 **mac:mv** **mac:rm**
 
-documentation: https://ss64.com/osx/cp.html
-license: MIT
+documentation: __https://ss64.com/osx/cp.html__
+license: BSD
 
 .DIV "AUTHOR"
 written by mnu contributor

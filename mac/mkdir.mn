@@ -1,41 +1,33 @@
 .TITLE "mkdir"
 
 .DIV "DESCRIPTION"
-Creates new directories on macOS. This command allows users to create one or
-more directories at specified paths. It is a fundamental utility for
-__filesystem management__ and organizing files. Options are available
-for creating parent directories as needed and setting permissions.
-
-.DIV "ALIAS"
-**makedir**
+Creates new directories. It allows you to build the __filesystem structure__ by generating one or more folders at specified paths.
 
 .DIV "TLDR"
-**mkdir __new_directory__**
-Creates a single new directory named __new_directory__ in the current location.
-> __new_directory__: The name of the directory to create.
+**mkdir folder_name**
+Creates a single new directory in the current path.
+> __folder_name__ name of the new directory
 
-**mkdir -p __parent_dir/new_directory__**
-Creates __new_directory__ and any necessary parent directories.
-> __-p__: parents flag | __parent_dir/new_directory__: The path to the new directory, including parents.
+**mkdir -p path/to/directory**
+Creates parent directories as needed to build a full path.
+> __-p__ parents flag | __path/to/directory__ the full path structure
 
-**mkdir __dir1__ __dir2__**
-Creates multiple directories (__dir1__, __dir2__) simultaneously.
-> __dir1__: Name of the first directory. | __dir2__: Name of the second directory.
+**mkdir -v folder_name**
+Displays a message for each directory created.
+> __-v__ verbose flag
 
-**mkdir -m __755__ __permissions_dir__**
-Creates a directory named __permissions_dir__ with specific octal __755__ permissions.
-> __-m__: mode flag | __755__: The octal representation of file permissions. | __permissions_dir__: The name of the directory to create.
+**mkdir -m 755 folder_name**
+Sets the file permissions (mode) for the new directory at the time of creation.
+> __-m__ mode flag | __755__ octal permissions | __folder_name__ the new directory
 
 .DIV "SUMMARY"
-`mkdir -p` is particularly useful for creating nested directory structures
-without needing to create each parent directory individually. Ensure you have
-write permissions in the parent directory where you intend to create new ones.
+The __-p__ flag is essential for automation and scripts, as it prevents errors if the directory already exists and ensures all necessary parent folders are created in one command.
 
 .DIV "SEE ALSO"
-**mac:rm** **mac:mv**
+**mac:rm** **mac:ls**
 
-documentation: https://ss64.com/osx/mkdir.html
-license: MIT
+documentation: __https://ss64.com/osx/mkdir.html__
+license: BSD
 
 .DIV "AUTHOR"
 written by mnu contributor

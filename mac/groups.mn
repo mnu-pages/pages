@@ -1,0 +1,27 @@
+.TITLE "groups"
+
+.DIV "DESCRIPTION"
+Displays the group memberships for a user. It lists the names of __groups__ to which the current or specified user belongs.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**groups**
+Lists the groups for the current user.
+> 
+
+**groups user**
+Lists the groups for a specific username.
+> __user__ target username
+
+.DIV "SUMMARY"
+In macOS, group memberships are managed through the Open Directory system. The __groups__ command provides a quick way to verify permissions and access levels associated with group identities.
+
+.DIV "SEE ALSO"
+**mac:whoami** **mac:id**
+
+documentation: __https://ss64.com/osx/groups.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

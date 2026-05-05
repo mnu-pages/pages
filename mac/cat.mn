@@ -1,42 +1,33 @@
 .TITLE "cat"
 
 .DIV "DESCRIPTION"
-Concatenates and displays file contents on macOS. This command reads one or
-more files sequentially and writes their contents to standard output. It is
-commonly used to display the contents of small files, concatenate multiple
-files into one, or create new files from standard input.
-
-.DIV "ALIAS"
-**type**
+Concatenates and displays file content. It reads data from files or standard input and writes it to the terminal or redirects it to another location.
 
 .DIV "TLDR"
-**cat __file.txt__**
-Displays the content of a single __file.txt__ to standard output.
-> __file.txt__: The path to the file to display.
+**cat file.txt**
+Prints the entire contents of a file to the terminal.
+> __file.txt__ the source file
 
-**cat __file1.txt__ __file2.txt__**
-Concatenates and displays the contents of __file1.txt__ and __file2.txt__.
-> __file1.txt__: The path to the first file. | __file2.txt__: The path to the second file.
+**cat -n file.txt**
+Displays the file contents with line numbers.
+> __-n__ number lines flag
 
-**cat __file1.txt__ >> __output.txt__**
-Appends the content of __file1.txt__ to __output.txt__.
-> __file1.txt__: The path to the input file. | __output.txt__: The path to the output file.
+**cat source.txt > destination.txt**
+Copies the content of one file into another using redirection.
+> __source.txt__ source file | __>__ redirection | __destination.txt__ target file
 
-**cat -n __file.txt__**
-Displays the content of __file.txt__ with line numbers.
-> __-n__: number lines flag | __file.txt__: The path to the file to display.
+**cat file1.txt file2.txt > combined.txt**
+Joins the contents of multiple files into a single new file.
+> __file1.txt__ first file | __file2.txt__ second file | __combined.txt__ output file
 
 .DIV "SUMMARY"
-While `cat` is useful for quickly viewing file contents, for larger files,
-`less` or `more` are often preferred as they allow pagination. `cat` is
-frequently used in combination with pipes (`|`) to feed file contents
-as input to other commands.
+While __cat__ is excellent for short files, tools like __less__ or __more__ are better suited for reading long documents as they allow for scrolling and searching.
 
 .DIV "SEE ALSO"
-**mac:less** **mac:grep**
+**mac:ls**
 
-documentation: https://ss64.com/osx/cat.html
-license: MIT
+documentation: __https://ss64.com/osx/cat.html__
+license: BSD
 
 .DIV "AUTHOR"
 written by mnu contributor

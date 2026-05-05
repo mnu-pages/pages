@@ -1,0 +1,23 @@
+.TITLE "uptime"
+
+.DIV "DESCRIPTION"
+Shows how long the system has been running. It reports the __current time__, duration of operation, number of users, and system load averages.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**uptime**
+Displays the system uptime and load averages for the last 1, 5, and 15 minutes.
+> 
+
+.DIV "SUMMARY"
+The load averages displayed by __uptime__ provide a quick way to gauge system performance. A load average higher than the number of CPU cores indicates that the system is experiencing resource contention.
+
+.DIV "SEE ALSO"
+**mac:top** **mac:w**
+
+documentation: __https://ss64.com/osx/uptime.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

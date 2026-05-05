@@ -1,41 +1,37 @@
 .TITLE "touch"
 
 .DIV "DESCRIPTION"
-Updates the access and modification times of files on macOS. If a specified file
-does not exist, `touch` creates an empty new file. This command is commonly
-used to create empty files, or to simply update timestamps without modifying
-file content.
-
-.DIV "ALIAS"
-**createfile**
+Updates file access and modification times. It can also be used to create new __empty files__ if the specified path does not already exist.
 
 .DIV "TLDR"
-**touch __file.txt__**
-Creates a new empty __file.txt__ if it does not exist, or updates its timestamps if it does.
-> __file.txt__: The path to the file to create or update.
+**touch file.txt**
+Updates the access and modification times to the current time, or creates an empty file.
+> __file.txt__ target file
 
-**touch __file1.txt__ __file2.txt__**
-Creates or updates multiple files (__file1.txt__, __file2.txt__) simultaneously.
-> __file1.txt__: The path to the first file. | __file2.txt__: The path to the second file.
+**touch -t YYYYMMDDhhmm file.txt**
+Sets a specific timestamp for a file's modification and access time.
+> __-t__ timestamp flag | __YYYYMMDDhhmm__ the date and time
 
-**touch -a __file.txt__**
-Updates only the access time of __file.txt__.
-> __-a__: access time only flag | __file.txt__: The path to the file.
+**touch -a file.txt**
+Updates only the access time of a file.
+> __-a__ access time flag
 
-**touch -m __file.txt__**
-Updates only the modification time of __file.txt__.
-> __-m__: modification time only flag | __file.txt__: The path to the file.
+**touch -m file.txt**
+Updates only the modification time of a file.
+> __-m__ modification time flag
+
+**touch -r reference.txt file.txt**
+Applies the timestamps of a reference file to another file.
+> __-r__ reference flag | __reference.txt__ source file | __file.txt__ target file
 
 .DIV "SUMMARY"
-`touch` is a simple yet effective command for file management. It is often
-used in scripting to trigger build processes that rely on file modification
-times, or to quickly create placeholder files.
+The __touch__ command is a quick and non-destructive way to signal that a file has been "worked on," which is often used by build systems and automation scripts.
 
 .DIV "SEE ALSO"
-**mac:ls** **mac:mkdir**
+**mac:ls**
 
-documentation: https://ss64.com/osx/touch.html
-license: MIT
+documentation: __https://ss64.com/osx/touch.html__
+license: BSD
 
 .DIV "AUTHOR"
 written by mnu contributor

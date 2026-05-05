@@ -1,0 +1,39 @@
+.TITLE "tar"
+
+.DIV "DESCRIPTION"
+Manipulates file archives. It is used to __combine multiple files__ into a single archive file, often referred to as a tarball, for storage or distribution.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**tar -c -v -f archive.tar folder**
+Creates a new archive from the contents of a specified directory.
+> __-c__ create flag | __-v__ verbose flag | __-f__ file flag | __archive.tar__ target archive name | __folder__ source directory
+
+**tar -x -v -f archive.tar**
+Extracts the contents of an archive into the current directory.
+> __-x__ extract flag
+
+**tar -z -c -v -f archive.tar.gz folder**
+Creates a compressed archive using gzip.
+> __-z__ gzip compression flag
+
+**tar -t -f archive.tar**
+Lists the contents of an archive without extracting them.
+> __-t__ list flag
+
+**tar -j -c -v -f archive.tar.bz2 folder**
+Creates a compressed archive using bzip2.
+> __-j__ bzip2 compression flag
+
+.DIV "SUMMARY"
+On macOS, the __tar__ utility is the BSD version and handles Apple-specific metadata like extended attributes. Using the __-v__ flag is helpful for monitoring progress when archiving large numbers of files.
+
+.DIV "SEE ALSO"
+**mac:zip** **mac:gzip**
+
+documentation: __https://ss64.com/osx/tar.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

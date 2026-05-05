@@ -1,0 +1,27 @@
+.TITLE "passwd"
+
+.DIV "DESCRIPTION"
+Changes a user's password. It updates the __authentication credentials__ for the current or specified user account on the local system.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**passwd**
+Changes the password for the currently logged-in user.
+> 
+
+**sudo passwd user**
+Changes the password for a specific user account using administrative privileges.
+> __user__ target username
+
+.DIV "SUMMARY"
+On macOS, user passwords are synchronized with the login keychain. While __passwd__ updates the system account, you may still need to update your keychain manually if the two become out of sync.
+
+.DIV "SEE ALSO"
+**mac:sudo** **mac:whoami**
+
+documentation: __https://ss64.com/osx/passwd.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor

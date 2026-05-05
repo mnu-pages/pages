@@ -1,0 +1,35 @@
+.TITLE "man"
+
+.DIV "DESCRIPTION"
+Displays the system reference manuals. It provides access to the __documentation__ for terminal commands, system calls, and configuration files.
+
+.DIV "ALIAS"
+
+.DIV "TLDR"
+**man command**
+Displays the manual page for a specific command.
+> __command__ the target tool name
+
+**man -k keyword**
+Searches the manual page descriptions for a specific keyword.
+> __-k__ keyword search flag
+
+**man -f command**
+Displays a short description of what a command does.
+> __-f__ whatis flag
+
+**man 5 configuration_file**
+Opens the manual page for a specific section, such as configuration files.
+> __5__ section number
+
+.DIV "SUMMARY"
+The __man__ system is the primary source of truth for command behavior on macOS. When reading a manual, use the __/ __ key to search for specific text and the __q__ key to exit the viewer.
+
+.DIV "SEE ALSO"
+**mac:whatis** **mac:apropos**
+
+documentation: __https://ss64.com/osx/man.html__
+license: BSD
+
+.DIV "AUTHOR"
+written by mnu contributor
