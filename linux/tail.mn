@@ -24,7 +24,7 @@ Displays the last specific number of bytes from the file.
 The __tail -f__ command is an essential tool for system administrators to monitor live log files. Combining __tail__ with __grep__ allows you to filter for specific events as they occur in a log.
 
 .DIV "SEE ALSO"
-**linux:head** **linux:cat**
+**linux:head** **linux:cat** **linux:journalctl**
 
 documentation: __https://www.gnu.org/software/coreutils/tail__
 license: GPL-3.0
