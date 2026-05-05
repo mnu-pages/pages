@@ -28,7 +28,7 @@ Only copies the file if the source is newer than the destination.
 Using the __-p__ flag is a best practice when creating backups to ensure metadata is kept intact. For large transfers, the __-v__ flag helps you monitor the progress of the copy operation.
 
 .DIV "SEE ALSO"
-**linux:mv** **linux:rm** **linux:rsync**
+**linux:mv** **linux:rm**
 
 documentation: __https://www.gnu.org/software/coreutils/cp__
 license: GPL-3.0

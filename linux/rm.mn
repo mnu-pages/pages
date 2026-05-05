@@ -28,7 +28,7 @@ Displays a message for every file that is removed.
 Always double-check your path before using __rm -r -f__, as it can delete large amounts of data without warning. Using the __-i__ flag is a good habit when working with critical production files.
 
 .DIV "SEE ALSO"
-**linux:rmdir** **linux:mv** **linux:shred**
+**linux:mv**
 
 documentation: __https://www.gnu.org/software/coreutils/rm__
 license: GPL-3.0
