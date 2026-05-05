@@ -20,7 +20,7 @@ Displays the first specific number of bytes from the file.
 Using __head__ is a fast way to verify you are working with the correct file without loading its entire content. Combining it with __grep__ or __sort__ can help you isolate the most relevant data at the top of a list.
 
 .DIV "SEE ALSO"
-**linux:tail** **linux:cat** **linux:sed**
+**linux:tail** **linux:cat**
 
 documentation: __https://www.gnu.org/software/coreutils/head__
 license: GPL-3.0
