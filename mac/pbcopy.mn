@@ -1,0 +1,37 @@
+.TITLE "pbcopy"
+
+.DIV "DESCRIPTION"
+Takes standard input and copies it to the macOS pasteboard (clipboard).
+This command is useful for scripting and piping output from other commands
+directly into the clipboard, making content available for pasting into
+applications.
+
+.DIV "ALIAS"
+**copy**
+
+.DIV "TLDR"
+**pbcopy**
+Copies the content of standard input to the clipboard.
+> 
+
+**echo "__text__" | pbcopy**
+Copies a specific string of __text__ to the clipboard.
+> __text__: The string to be copied.
+
+**cat __file.txt__ | pbcopy**
+Copies the content of a __file.txt__ to the clipboard.
+> __file.txt__: The path to the file whose content will be copied.
+
+.DIV "SUMMARY"
+`pbcopy` operates on standard input, so it is often used with pipes (`|`)
+to capture the output of other commands. The clipboard content can then be
+pasted using `pbpaste`.
+
+.DIV "SEE ALSO"
+**mac:pbpaste**
+
+documentation: https://ss64.com/osx/pbcopy.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

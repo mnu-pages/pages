@@ -1,0 +1,41 @@
+.TITLE "mdfind"
+
+.DIV "DESCRIPTION"
+Finds files and directories on macOS using the Spotlight metadata index.
+This command is significantly faster than traditional file system searches
+(like `find` or `locate`) because it queries a pre-built index of file attributes.
+It supports complex queries based on file names, content, creation dates, and more.
+
+.DIV "ALIAS"
+**findspotlight**
+
+.DIV "TLDR"
+**mdfind "__query__"**
+Finds files matching a simple __query__ string.
+> __query__: The search string.
+
+**mdfind -name "__filename__"**
+Finds files with a specific __filename__.
+> __filename__: The name of the file to search for.
+
+**mdfind -onlyin "__/path/to/directory__" "__query__"**
+Searches for files matching __query__ only within a specified __/path/to/directory__.
+> __/path/to/directory__: The directory to search within. | __query__: The search string.
+
+**mdfind "kMDItemDisplayName == '*__pattern__*'"**
+Finds files where the display name matches a __pattern__ using Spotlight query syntax.
+> __pattern__: The glob pattern to match against the display name.
+
+.DIV "SUMMARY"
+`mdfind` leverages the power of Spotlight, offering quick and efficient searches
+across the entire system or specific locations. It's especially useful for
+locating files when you know some metadata but not the exact path.
+
+.DIV "SEE ALSO"
+**mac:open**
+
+documentation: https://ss64.com/osx/mdfind.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

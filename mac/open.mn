@@ -1,0 +1,41 @@
+.TITLE "open"
+
+.DIV "DESCRIPTION"
+Opens files, directories, and applications using their default macOS applications.
+It can also open URLs in the default web browser and execute scripts or commands.
+This command is a versatile utility for interacting with the graphical environment
+from the command line.
+
+.DIV "ALIAS"
+**start**
+
+.DIV "TLDR"
+**open .**
+Opens the current directory in Finder.
+> 
+
+**open __file.txt__**
+Opens a __file.txt__ with its default application.
+> __file.txt__: The path to the file to open.
+
+**open -a "__Application Name__" __file.txt__**
+Opens a __file.txt__ with a specific "__Application Name__".
+> __Application Name__: The name of the application to use. | __file.txt__: The path to the file to open.
+
+**open __https://www.example.com__**
+Opens a URL in the default web browser.
+> __https://www.example.com__: The URL to open.
+
+.DIV "SUMMARY"
+The `open` command simplifies launching applications and viewing files from
+the terminal. It respects the macOS association of file types with specific
+applications, providing a seamless bridge between the command line and GUI.
+
+.DIV "SEE ALSO"
+**mac:mdfind**
+
+documentation: https://ss64.com/osx/open.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

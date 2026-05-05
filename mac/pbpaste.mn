@@ -1,0 +1,36 @@
+.TITLE "pbpaste"
+
+.DIV "DESCRIPTION"
+Prints the current content of the macOS pasteboard (clipboard) to standard output.
+This command is useful for retrieving text that has been copied to the
+clipboard, allowing it to be piped into other commands or saved to a file.
+
+.DIV "ALIAS"
+**paste**
+
+.DIV "TLDR"
+**pbpaste**
+Prints the content of the clipboard to standard output.
+> 
+
+**pbpaste > __file.txt__**
+Saves the content of the clipboard to a __file.txt__.
+> __file.txt__: The path to the file where the clipboard content will be saved.
+
+**pbpaste | grep "__pattern__"**
+Filters the clipboard content using __pattern__.
+> __pattern__: The regular expression pattern to search for within the clipboard content.
+
+.DIV "SUMMARY"
+`pbpaste` retrieves data from the macOS clipboard. It is commonly used
+in conjunction with `pbcopy` to move data between applications or within
+the command line.
+
+.DIV "SEE ALSO"
+**mac:pbcopy**
+
+documentation: https://ss64.com/osx/pbpaste.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor
