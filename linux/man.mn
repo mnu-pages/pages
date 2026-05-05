@@ -20,7 +20,7 @@ Opens a manual page from a specific section (e.g., section 1 for user commands).
 Navigating a manual page is similar to using __less__; use the arrow keys to scroll and press __q__ to exit. If you are unsure of a command's name, __man -k__ is a great way to discover related utilities.
 
 .DIV "SEE ALSO"
-**linux:info** **linux:help** **linux:whatis**
+
 
 documentation: __https://www.man7.org/linux/man-pages/man1/man.1.html__
 license: GPL-3.0
