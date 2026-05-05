@@ -20,7 +20,7 @@ Forcefully unmounts a filesystem, which is useful for unreachable network drives
 If you receive a "device is busy" error, it means a program or shell is currently using a file on that drive. You must close those programs or navigate out of the directory before you can successfully run __umount__.
 
 .DIV "SEE ALSO"
-**linux:mount** **linux:lsof** **linux:fuser**
+**linux:mount**
 
 documentation: __https://man7.org/linux/man-pages/man8/umount.8.html__
 license: GPL-2.0
