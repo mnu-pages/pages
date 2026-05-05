@@ -24,7 +24,7 @@ Returns to the previously occupied directory.
 Using __cd -__ is an efficient way to toggle between two deeply nested folders. If you encounter permissions issues, ensure you have __execute__ permissions for the target directory.
 
 .DIV "SEE ALSO"
-**linux:pwd** **linux:ls** **linux:pushd**
+**linux:pwd** **linux:ls**
 
 documentation: __https://www.gnu.org/software/bash/manual/html_node/Bourne-Shell-Builtins.html__
 license: GPL-3.0

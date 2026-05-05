@@ -16,7 +16,7 @@ Displays the physical directory path, resolving any symbolic links.
 While __pwd__ usually shows the logical path, using __pwd -P__ is essential when you need to know the actual location of a symlinked directory on the disk.
 
 .DIV "SEE ALSO"
-**linux:cd** **linux:ls** **linux:stat**
+**linux:cd** **linux:ls**
 
 documentation: __https://www.gnu.org/software/coreutils/pwd__
 license: GPL-3.0
