@@ -1,0 +1,45 @@
+.TITLE "screencapture"
+
+.DIV "DESCRIPTION"
+Captures screenshots and screen recordings on macOS. This command-line utility
+offers extensive control over the screen capture process, allowing users to
+capture the entire screen, a specific window, a selected area, or even record
+video of screen activity. It supports various output formats and options.
+
+.DIV "ALIAS"
+**screenshot**
+
+.DIV "TLDR"
+**screencapture __screenshot.png__**
+Captures the entire screen and saves it to a file named __screenshot.png__.
+> __screenshot.png__: The output filename.
+
+**screencapture -i __selection.png__**
+Allows interactive selection of an area to capture and saves it to __selection.png__.
+> __selection.png__: The output filename.
+
+**screencapture -W __window.png__**
+Captures a specific window interactively and saves it to __window.png__.
+> __window.png__: The output filename.
+
+**screencapture -T 5 __delayed.png__**
+Captures the screen after a 5-second delay and saves it to __delayed.png__.
+> __delayed.png__: The output filename.
+
+**screencapture -C -P __clip.png__**
+Captures the screen, includes the cursor, and copies the image to the clipboard, saving to __clip.png__.
+> __clip.png__: The output filename.
+
+.DIV "SUMMARY"
+`screencapture` is a versatile tool for creating visual documentation or sharing
+specific parts of your screen. Explore its many options (`man screencapture`)
+to customize behavior like file format, shadow inclusion, and sound effects.
+
+.DIV "SEE ALSO"
+**mac:sips**
+
+documentation: https://ss64.com/osx/screencapture.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

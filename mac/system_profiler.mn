@@ -1,0 +1,41 @@
+.TITLE "system_profiler"
+
+.DIV "DESCRIPTION"
+Generates a detailed report of a macOS system's hardware, software, and network
+configuration. This command-line utility provides comprehensive information
+similar to the "About This Mac" window and the System Information application,
+but in a format suitable for scripting or command-line analysis.
+
+.DIV "ALIAS"
+**sysinfo**
+
+.DIV "TLDR"
+**system_profiler**
+Generates a full system report, including all available data types.
+> 
+
+**system_profiler __SPHardwareDataType__**
+Generates a report for a specific data type, e.g., hardware information.
+> __SPHardwareDataType__: The data type to report (e.g., `SPSoftwareDataType`, `SPDisplaysDataType`).
+
+**system_profiler __SPUSBDataType__ -detailLevel __mini__**
+Generates a mini-level detail report for USB devices.
+> __SPUSBDataType__: The data type to report. | __mini__: The detail level (full, mini, basic).
+
+**system_profiler -json __> report.json__**
+Generates a full system report in JSON format and redirects to a __report.json__ file.
+> __> report.json__: Redirects output to a specified file.
+
+.DIV "SUMMARY"
+`system_profiler` is an invaluable tool for diagnosing system issues, inventorying
+hardware, or gathering details for support requests. Its output can be extensive,
+so consider piping it to `grep` or saving it to a file for easier analysis.
+
+.DIV "SEE ALSO"
+**mac:diskutil**
+
+documentation: https://ss64.com/osx/system_profiler.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

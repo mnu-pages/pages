@@ -1,0 +1,46 @@
+.TITLE "sips"
+
+.DIV "DESCRIPTION"
+Processes images using the Scriptable Image Processing System on macOS.
+This command-line utility allows for various image manipulations, including
+resizing, rotating, flipping, changing format, and extracting/modifying
+metadata. It is a powerful tool for batch processing image files.
+
+.DIV "ALIAS"
+**imageproc**
+
+.DIV "TLDR"
+**sips -Z 1024 __image.png__**
+Resizes __image.png__ to fit within a 1024-pixel square, preserving aspect ratio.
+> __image.png__: The input image file.
+
+**sips -s format __jpeg__ __image.png__ --out __image.jpg__**
+Converts __image.png__ to JPEG format and saves it as __image.jpg__.
+> __jpeg__: The output format (e.g., jpeg, png, tiff). | __image.png__: The input image file. | __image.jpg__: The output image file.
+
+**sips -r 90 __image.png__**
+Rotates __image.png__ by 90 degrees clockwise.
+> __image.png__: The input image file.
+
+**sips -g pixelWidth __image.png__**
+Gets the pixel width of __image.png__.
+> __pixelWidth__: The property to retrieve. | __image.png__: The input image file.
+
+**sips -i __image.png__**
+Adds ICC profile to __image.png__.
+> __image.png__: The input image file.
+
+.DIV "SUMMARY"
+`sips` is invaluable for automating image processing tasks on macOS.
+It can handle a wide range of formats and operations, making it suitable
+for scripting repetitive graphic manipulations. Always test commands
+on copies of important images to avoid accidental data loss.
+
+.DIV "SEE ALSO"
+**mac:screencapture**
+
+documentation: https://ss64.com/osx/sips.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

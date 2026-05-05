@@ -1,0 +1,45 @@
+.TITLE "launchctl"
+
+.DIV "DESCRIPTION"
+Manages `launchd`, the service management framework on macOS. This command-line
+utility is used to load, unload, enable, and disable system-level daemons
+and user-level agents. It provides fine-grained control over background
+processes and scheduled tasks.
+
+.DIV "ALIAS"
+**services**
+
+.DIV "TLDR"
+**launchctl list**
+Lists all loaded agents and daemons for the current user.
+> 
+
+**launchctl load __~/Library/LaunchAgents/my.agent.plist__**
+Loads a user agent defined by the specified __.plist__ file.
+> __~/Library/LaunchAgents/my.agent.plist__: The path to the LaunchAgent .plist file.
+
+**launchctl unload __~/Library/LaunchAgents/my.agent.plist__**
+Unloads a previously loaded user agent.
+> __~/Library/LaunchAgents/my.agent.plist__: The path to the LaunchAgent .plist file.
+
+**launchctl enable __system/com.apple.coreservicesd__**
+Enables a system daemon, making it persistent across reboots.
+> __system/com.apple.coreservicesd__: The service identifier.
+
+**launchctl disable __user/501/com.apple.Spotlight__**
+Disables a user agent, preventing it from loading automatically.
+> __user/501/com.apple.Spotlight__: The service identifier for user 501.
+
+.DIV "SUMMARY"
+`launchctl` is a powerful and complex tool. Misconfiguring `launchd` items
+can lead to system instability. Always consult the `launchd.plist` man page
+for details on creating and managing property list files.
+
+.DIV "SEE ALSO"
+**mac:defaults**
+
+documentation: https://ss64.com/osx/launchctl.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

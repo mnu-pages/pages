@@ -1,0 +1,46 @@
+.TITLE "brew"
+
+.DIV "DESCRIPTION"
+The missing package manager for macOS. Homebrew installs the __packages__ you need
+that Apple did not include by default. It manages __binaries__, __libraries__,
+and __applications__ within their own sandboxed directories. It simplifies
+the installation and management of open-source software on macOS.
+
+.DIV "ALIAS"
+**homebrew**
+
+.DIV "TLDR"
+**brew install __formula__**
+Installs a specific package or formula (e.g., __node__, __git__).
+> __formula__: The name of the package to install.
+
+**brew uninstall __formula__**
+Removes an installed formula from the system.
+> __formula__: The name of the package to uninstall.
+
+**brew update**
+Fetches the newest versions of Homebrew and all formulae from GitHub.
+> 
+
+**brew upgrade**
+Installs newer versions of all currently installed packages.
+> 
+
+**brew search __text__**
+Searches for available formulae matching the provided __text__.
+> __text__: The search term.
+
+.DIV "SUMMARY"
+`brew` is an essential tool for any macOS developer or power user. Regularly
+running `brew cleanup` helps remove old versions of installed formulae and
+free up disk space. Always run `brew doctor` if you encounter unexpected
+errors after an installation.
+
+.DIV "SEE ALSO"
+**mac:softwareupdate**
+
+documentation: https://brew.sh/
+license: BSD 2-Clause
+
+.DIV "AUTHOR"
+written by mnu contributor

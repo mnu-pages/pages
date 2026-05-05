@@ -1,0 +1,41 @@
+.TITLE "say"
+
+.DIV "DESCRIPTION"
+Converts text to spoken audio using the built-in macOS text-to-speech engine.
+This command allows users to make their Mac speak any provided text, either from
+standard input, a file, or directly from the command-line arguments. It supports
+various voices and speaking rates.
+
+.DIV "ALIAS"
+**speak**
+
+.DIV "TLDR"
+**say "__Hello World__"**
+Speaks the phrase "__Hello World__" using the default system voice.
+> __"Hello World"__: The text string to be spoken.
+
+**say -v __"Samantha"__ "__Good morning__"**
+Speaks the phrase "__Good morning__" using the specified voice, e.g., "__Samantha__".
+> __"Samantha"__: The name of the voice to use. | __"Good morning"__: The text to be spoken.
+
+**say -f __file.txt__**
+Reads and speaks the content of a specified __file.txt__.
+> __file.txt__: The path to the text file to be spoken.
+
+**say -o __output.aiff__ "__Hello__"**
+Saves the spoken audio of "__Hello__" to an __output.aiff__ file instead of speaking aloud.
+> __output.aiff__: The path to the output audio file. | __"Hello"__: The text to be spoken.
+
+.DIV "SUMMARY"
+The `say` command is useful for accessibility, creating audio notifications,
+or simply having your Mac read out documents. You can customize voices and
+their properties in System Settings under Accessibility > Spoken Content.
+
+.DIV "SEE ALSO"
+**mac:afplay**
+
+documentation: https://ss64.com/osx/say.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

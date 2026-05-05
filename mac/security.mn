@@ -1,0 +1,45 @@
+.TITLE "security"
+
+.DIV "DESCRIPTION"
+Manages keychains, certificates, encryption, and other security-related operations
+on macOS. This command-line utility provides access to the macOS Keychain,
+allowing users to store and retrieve passwords, cryptographic keys, and digital
+certificates. It is a fundamental tool for system security.
+
+.DIV "ALIAS"
+**keychain**
+
+.DIV "TLDR"
+**security find-generic-password -s "__Service Name__" -a "__Account__" -w**
+Finds and prints the password for a generic password item with a given __Service Name__ and __Account__.
+> __"Service Name"__: The service name of the password item. | __"Account"__: The account name associated with the password.
+
+**security add-generic-password -s "__Service Name__" -a "__Account__" -w "__Password__"**
+Adds a generic password item to the default keychain.
+> __"Service Name"__: The service name for the new password item. | __"Account"__: The account name for the new password item. | __"Password"__: The password to store.
+
+**security delete-generic-password -s "__Service Name__" -a "__Account__"**
+Deletes a generic password item from the default keychain.
+> __"Service Name"__: The service name of the password item to delete. | __"Account"__: The account name associated with the password.
+
+**security list-keychains**
+Lists the keychains in the current user's search list.
+> 
+
+**security unlock-keychain __~/Library/Keychains/login.keychain-db__**
+Unlocks a specific keychain, allowing programmatic access to its items.
+> __~/Library/Keychains/login.keychain-db__: The path to the keychain file.
+
+.DIV "SUMMARY"
+The `security` command is critical for managing sensitive information on macOS.
+Always handle passwords and keys with care. For complex operations, consider
+referencing the full `man security` page due to the depth of its functionality.
+
+.DIV "SEE ALSO"
+**mac:defaults**
+
+documentation: https://ss64.com/osx/security.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

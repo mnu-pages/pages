@@ -1,0 +1,45 @@
+.TITLE "diskutil"
+
+.DIV "DESCRIPTION"
+Manages disks, volumes, partitions, and RAID sets on macOS. This command-line utility
+provides extensive control over storage devices, including formatting, partitioning,
+repairing, and mounting/unmounting volumes. It is the command-line equivalent
+of Disk Utility.
+
+.DIV "ALIAS"
+**disktool**
+
+.DIV "TLDR"
+**diskutil list**
+Lists all attached disks and their partitions.
+> 
+
+**diskutil mount __/dev/diskNsN__**
+Mounts a specified volume, typically identified by its disk identifier (e.g., __/dev/disk1s2__).
+> __/dev/diskNsN__: The identifier of the disk or volume.
+
+**diskutil unmount __/Volumes/VolumeName__**
+Unmounts a specified volume by its mount point.
+> __/Volumes/VolumeName__: The mount point of the volume.
+
+**diskutil eraseDisk __APFS__ __"MyDisk"__ __/dev/diskN__**
+Erases and formats an entire physical disk with the __APFS__ filesystem and names it __"MyDisk"__.
+> __APFS__: The filesystem to use (e.g., HFS+, APFS). | __"MyDisk"__: The new name for the disk. | __/dev/diskN__: The identifier of the physical disk.
+
+**diskutil repairVolume __/Volumes/VolumeName__**
+Repairs a specified volume, checking for and fixing errors in its filesystem.
+> __/Volumes/VolumeName__: The mount point of the volume to repair.
+
+.DIV "SUMMARY"
+Always use `diskutil` with caution, especially commands like `eraseDisk` and `partitionDisk`,
+as they can lead to data loss if used incorrectly. It is highly recommended to
+backup important data before performing any destructive operations.
+
+.DIV "SEE ALSO"
+**mac:open**
+
+documentation: https://ss64.com/osx/diskutil.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

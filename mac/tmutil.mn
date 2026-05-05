@@ -1,0 +1,45 @@
+.TITLE "tmutil"
+
+.DIV "DESCRIPTION"
+Interacts with the Time Machine backup system on macOS. This command-line utility
+allows users to control Time Machine backups, including starting/stopping backups,
+listing snapshots, restoring items, and managing exclusions. It provides advanced
+control over Time Machine operations.
+
+.DIV "ALIAS"
+**timemachineutil**
+
+.DIV "TLDR"
+**tmutil status**
+Displays the current status of Time Machine, including if a backup is in progress.
+> 
+
+**tmutil startbackup**
+Initiates a Time Machine backup immediately.
+> 
+
+**tmutil stopbackup**
+Stops a currently running Time Machine backup.
+> 
+
+**tmutil latestbackup**
+Prints the path to the latest completed Time Machine backup.
+> 
+
+**tmutil restore __/path/to/item__ __/destination__**
+Restores an item from a Time Machine backup to a specified __/destination__.
+> __/path/to/item__: The path to the item within the Time Machine backup. | __/destination__: The destination path for the restored item.
+
+.DIV "SUMMARY"
+`tmutil` offers powerful control over Time Machine. Be careful when using restore
+commands to avoid overwriting newer data. Regular backups are crucial, and `tmutil`
+can be integrated into scripts for automated backup management.
+
+.DIV "SEE ALSO"
+**mac:diskutil**
+
+documentation: https://ss64.com/osx/tmutil.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor

@@ -1,0 +1,45 @@
+.TITLE "scutil"
+
+.DIV "DESCRIPTION"
+Manages and queries system configuration parameters on macOS. This command-line
+utility allows users to inspect and modify network settings, hostname, DNS
+configuration, and other system-level preferences managed by the `SystemConfiguration`
+framework. It is a powerful tool for network diagnostics and configuration.
+
+.DIV "ALIAS"
+**sysconfig**
+
+.DIV "TLDR"
+**scutil --get __HostName__**
+Gets the current system hostname.
+> __HostName__: The SystemConfiguration key to retrieve.
+
+**scutil --set __HostName__ __MyMacbook__**
+Sets the system hostname to __MyMacbook__.
+> __HostName__: The SystemConfiguration key to set. | __MyMacbook__: The new value for the hostname.
+
+**scutil --dns**
+Displays the current DNS configuration, including resolver settings.
+> 
+
+**scutil --get __ComputerName__**
+Gets the computer name displayed in Finder and System Settings.
+> __ComputerName__: The SystemConfiguration key to retrieve.
+
+**scutil --set __LocalHostName__ __mymacbook__**
+Sets the local hostname for Bonjour/mDNS.
+> __LocalHostName__: The SystemConfiguration key to set. | __mymacbook__: The new value for the local hostname.
+
+.DIV "SUMMARY"
+`scutil` provides granular control over network and system identification settings.
+Changes made with `scutil --set` are typically persistent across reboots.
+Misconfigurations can affect network connectivity, so exercise caution.
+
+.DIV "SEE ALSO"
+**mac:networksetup**
+
+documentation: https://ss64.com/osx/scutil.html
+license: MIT
+
+.DIV "AUTHOR"
+written by mnu contributor
