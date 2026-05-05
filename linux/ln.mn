@@ -20,7 +20,7 @@ Forcefully creates or updates a symbolic link, overwriting existing files.
 Symbolic links are the most common type of link and can span across different filesystems. Hard links are more restrictive as they can only point to files within the same filesystem and cannot point to directories.
 
 .DIV "SEE ALSO"
-**cli:ls** **cli:rm** **cli:readlink**
+**linux:ls** **linux:rm** **linux:readlink**
 
 documentation: __https://www.gnu.org/software/coreutils/ln__
 license: GPL-3.0

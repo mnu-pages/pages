@@ -24,7 +24,7 @@ Locks a user account, preventing them from logging in.
 For security reasons, the characters you type while entering a password will not be displayed on the screen. Always choose a __strong password__ with a mix of letters, numbers, and symbols to protect your account.
 
 .DIV "SEE ALSO"
-**cli:useradd** **cli:usermod** **cli:shadow**
+**linux:useradd** **linux:usermod** **linux:shadow**
 
 documentation: __https://man7.org/linux/man-pages/man1/passwd.1.html__
 license: BSD-3-Clause

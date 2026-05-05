@@ -24,7 +24,7 @@ Displays the machine hardware architecture (e.g., x86_64).
 Using __uname -a__ is a standard first step when troubleshooting system compatibility issues. It provides the essential context needed to download the correct drivers or software packages for your specific hardware and kernel.
 
 .DIV "SEE ALSO"
-**cli:hostnamectl** **cli:lsb_release** **cli:uptime**
+**linux:hostnamectl** **linux:lsb_release** **linux:uptime**
 
 documentation: __https://www.gnu.org/software/coreutils/uname__
 license: GPL-3.0

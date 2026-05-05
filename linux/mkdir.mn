@@ -24,7 +24,7 @@ Displays a message for every directory created.
 The __-p__ flag is highly recommended for scripts to avoid errors if a directory already exists. Using __mkdir -m__ ensures a directory is created with the correct security context from the start.
 
 .DIV "SEE ALSO"
-**cli:rmdir** **cli:ls** **cli:chmod**
+**linux:rmdir** **linux:ls** **linux:chmod**
 
 documentation: __https://www.gnu.org/software/coreutils/mkdir__
 license: GPL-3.0

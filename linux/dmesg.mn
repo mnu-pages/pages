@@ -24,7 +24,7 @@ Filters the output to show only messages with a specific log level (e.g., err, w
 If you plug in a new USB device or experience a hardware failure, __dmesg__ is the first place you should look for error messages. It provides a direct window into how the kernel is interacting with your physical hardware.
 
 .DIV "SEE ALSO"
-**cli:journalctl** **cli:lsblk** **cli:lspci**
+**linux:journalctl** **linux:lsblk** **linux:lspci**
 
 documentation: __https://man7.org/linux/man-pages/man1/dmesg.1.html__
 license: GPL-2.0

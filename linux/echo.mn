@@ -24,7 +24,7 @@ Displays text without appending a newline character at the end.
 Using __echo__ with redirection (e.g., __echo "text" > file__) is a quick way to write content to a file. It is a fundamental tool for debugging scripts and verifying that variables are correctly set.
 
 .DIV "SEE ALSO"
-**cli:printf** **cli:cat** **cli:read**
+**linux:printf** **linux:cat** **linux:read**
 
 documentation: __https://www.gnu.org/software/coreutils/echo__
 license: GPL-3.0

@@ -28,7 +28,7 @@ Displays processes in a tree-like hierarchy to show parent-child relationships.
 Combining flags like __ps -e -f__ is the most common way to get a comprehensive view of all system activity. If you need to find a specific process, pipe the output to grep (e.g., __ps -e -f | grep "name"__).
 
 .DIV "SEE ALSO"
-**cli:top** **cli:htop** **cli:kill**
+**linux:top** **linux:htop** **linux:kill**
 
 documentation: __https://man7.org/linux/man-pages/man1/ps.1.html__
 license: GPL-2.0

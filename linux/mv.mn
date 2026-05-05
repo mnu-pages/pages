@@ -28,7 +28,7 @@ Displays a message for every file that is moved or renamed.
 Renaming a file is simply a __move__ operation within the same directory. To protect against accidental data loss, consider using the __-n__ flag when moving files into a folder that may already contain files with the same name.
 
 .DIV "SEE ALSO"
-**cli:cp** **cli:rm** **cli:rename**
+**linux:cp** **linux:rm** **linux:rename**
 
 documentation: __https://www.gnu.org/software/coreutils/mv__
 license: GPL-3.0

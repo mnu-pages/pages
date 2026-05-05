@@ -32,7 +32,7 @@ Prevents a service from starting automatically during the boot process.
 Managing services usually requires __root privileges__ via __sudo__. If a service fails to start, use __systemctl status__ or __journalctl -u service__ to inspect the error messages and diagnose the issue.
 
 .DIV "SEE ALSO"
-**cli:journalctl** **cli:service** **cli:chkconfig**
+**linux:journalctl** **linux:service** **linux:chkconfig**
 
 documentation: __https://www.freedesktop.org/software/systemd/man/systemctl.html__
 license: LGPL-2.1

@@ -24,7 +24,7 @@ Sets the access and modification times to a specific date and time.
 While __touch__ is often used to create files, its primary purpose is managing timestamps. This is useful for scripts or build systems that rely on file modification times to determine which actions to take.
 
 .DIV "SEE ALSO"
-**cli:mkdir** **cli:rm** **cli:stat**
+**linux:mkdir** **linux:rm** **linux:stat**
 
 documentation: __https://www.gnu.org/software/coreutils/touch__
 license: GPL-3.0

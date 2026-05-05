@@ -24,7 +24,7 @@ Ignores case differences when comparing the contents of the files.
 The unified format (__-u__) is the standard format used for creating patches. Using __diff__ helps you quickly identify exactly what has changed between two versions of a file before committing or applying updates.
 
 .DIV "SEE ALSO"
-**cli:patch** **cli:cmp** **cli:comm**
+**linux:patch** **linux:cmp** **linux:comm**
 
 documentation: __https://www.gnu.org/software/diffutils/diff__
 license: GPL-3.0

@@ -32,7 +32,7 @@ Searches for a specific keyword in the names and descriptions of available packa
 You must run most __apt__ commands with __sudo__ to have the necessary permissions for system-wide changes. It is a good habit to run __apt update__ before performing any installations or upgrades to ensure you are getting the latest versions.
 
 .DIV "SEE ALSO"
-**cli:dpkg** **cli:apt-cache** **cli:apt-get**
+**linux:dpkg** **linux:apt-cache** **linux:apt-get**
 
 documentation: __https://manpages.debian.org/stable/apt/apt.8.en.html__
 license: GPL-2.0

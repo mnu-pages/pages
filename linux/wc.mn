@@ -24,7 +24,7 @@ Displays only the total number of bytes (size) of a file.
 Using __wc -l__ is a popular way to count the number of items in a list by piping the output of another command (e.g., __ls | wc -l__). It provides a quick numeric summary without needing to read the entire file.
 
 .DIV "SEE ALSO"
-**cli:du** **cli:ls** **cli:grep**
+**linux:du** **linux:ls** **linux:grep**
 
 documentation: __https://www.gnu.org/software/coreutils/wc__
 license: GPL-3.0

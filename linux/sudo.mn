@@ -24,7 +24,7 @@ Lists the permissions and commands allowed for the current user.
 Using __sudo__ is safer than logging in as root because it maintains an audit trail of administrative actions. Always verify the command you are running, as mistakes made with __sudo__ can have system-wide consequences.
 
 .DIV "SEE ALSO"
-**cli:su** **cli:visudo** **cli:whoami**
+**linux:su** **linux:visudo** **linux:whoami**
 
 documentation: __https://www.sudo.ws/man/1.8.15/sudo.man.html__
 license: ISC

@@ -28,7 +28,7 @@ Finds and immediately removes files that match the criteria.
 The __find__ command is extremely versatile; you can chain multiple criteria together to perform complex searches. Always run your search without __-delete__ first to verify the results before performing a mass deletion.
 
 .DIV "SEE ALSO"
-**cli:grep** **cli:locate** **cli:xargs**
+**linux:grep** **linux:locate** **linux:xargs**
 
 documentation: __https://www.gnu.org/software/findutils/find__
 license: GPL-3.0

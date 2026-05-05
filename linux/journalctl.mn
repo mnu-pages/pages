@@ -28,7 +28,7 @@ Filters the logs to show only entries with a priority of error or higher.
 The journal is stored in a binary format, so you must use __journalctl__ to read it. Combining __-u__ with __-f__ is the most effective way to debug a service that is currently failing or behaving unexpectedly.
 
 .DIV "SEE ALSO"
-**cli:systemctl** **cli:dmesg** **cli:tail**
+**linux:systemctl** **linux:dmesg** **linux:tail**
 
 documentation: __https://www.freedesktop.org/software/systemd/man/journalctl.html__
 license: LGPL-2.1

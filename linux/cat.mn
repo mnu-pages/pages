@@ -24,7 +24,7 @@ Suppresses multiple consecutive blank lines into a single blank line.
 While __cat__ is convenient for reading files, for larger files, consider using __less__ to avoid cluttering your terminal. You can also use __cat__ with redirection (>) to quickly create or overwrite files with new content.
 
 .DIV "SEE ALSO"
-**cli:less** **cli:tail** **cli:head**
+**linux:less** **linux:tail** **linux:head**
 
 documentation: __https://www.gnu.org/software/coreutils/cat__
 license: GPL-3.0

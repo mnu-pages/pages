@@ -24,7 +24,7 @@ Recursively changes the ownership of a directory and all its contents.
 You typically need __root privileges__ (using __sudo__) to change file ownership. The __user:group__ syntax is the most efficient way to fully reassign a file's security context in a single command.
 
 .DIV "SEE ALSO"
-**cli:chmod** **cli:chgrp** **cli:ls**
+**linux:chmod** **linux:chgrp** **linux:ls**
 
 documentation: __https://www.gnu.org/software/coreutils/chown__
 license: GPL-3.0
