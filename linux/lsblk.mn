@@ -20,7 +20,7 @@ Displays information about the permissions and ownership of the devices.
 Using __lsblk__ is much safer than __fdisk__ for simply viewing your storage layout, as it does not require root privileges and cannot accidentally modify your partitions. It is a great tool for identifying which device corresponds to a specific drive.
 
 .DIV "SEE ALSO"
-**linux:df** **linux:fdisk** **linux:mount**
+**linux:df** **linux:mount**
 
 documentation: __https://man7.org/linux/man-pages/man8/lsblk.8.html__
 license: GPL-2.0

@@ -28,7 +28,7 @@ Shows the size of immediate subdirectories without showing every nested folder.
 Combining __du -s -h__ with a wildcard (e.g., __du -s -h *__) is an excellent way to see the size of everything in your current folder. This tool is essential for cleaning up storage and finding "space hogs."
 
 .DIV "SEE ALSO"
-**linux:df** **linux:ls** **linux:ncdu**
+**linux:df** **linux:ls**
 
 documentation: __https://www.gnu.org/software/coreutils/du__
 license: GPL-3.0

@@ -24,7 +24,7 @@ Mounts all filesystems listed in the configuration file (/etc/fstab).
 You typically need __root privileges__ to mount devices. After you are finished with an external drive, always use __umount__ to safely detach it and prevent data corruption.
 
 .DIV "SEE ALSO"
-**linux:umount** **linux:lsblk**
+**linux:umount** **linux:lsblk** **linux:df**
 
 documentation: __https://man7.org/linux/man-pages/man8/mount.8.html__
 license: GPL-2.0
